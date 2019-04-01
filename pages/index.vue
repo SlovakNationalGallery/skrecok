@@ -16,8 +16,9 @@
       >
       <img src="/skrecok-ball.png" class="bg-image ball"
         v-bind:style="{ 
-          left: this.batOffset + 0.5 * this.batWidth + this.ballOffset + 'px',
+          left: this.batMargin + 0.5 * this.batWidth + this.ballOffset + 'px',
           width: this.ballWidth + 'px',
+          bottom: this.ballBottom + 'px',
         }"
       >
     </div>
@@ -38,7 +39,13 @@
       <ul>
         <li v-for="youtubeVideo in youtubeVideos" class="playlistItem">
           <h3>{{youtubeVideo.title}}</h3>
-          <youtube :video-id="youtubeVideo.id" class="youtube-video" ></youtube>
+          <youtube 
+            :video-id="youtubeVideo.id" 
+            @playing="onPlaying" 
+            @paused="onPaused" 
+            @ended="onEnded" 
+            class="youtube-video" >
+          </youtube>
         </li>
       </ul>
     </section>
@@ -79,8 +86,11 @@ export default {
       ballOffset: 0,
       ballRange: 0,
       ballWidth: 30,
+      ballMargin: 110,
       batWidth: 80,
-      batOffset: 0,
+      batMargin: 10,
+      videoPlaying: false,
+      videoPaused: false,
     }
   },
   methods: {
@@ -90,11 +100,28 @@ export default {
     },
     zigzag (x) {
       return Math.acos(Math.cos(x * Math.PI)) / Math.PI;
-    }
+    },
+    onPlaying (event) {
+      this.videoPlaying = true;
+    },
+    onPaused (event) {
+      this.videoPlaying = false;
+    },
+    onEnded (event) {
+      this.videoPlaying = false;
+    },
+  },
+  computed: {
+    batOffset: function () {
+      return this.videoPlaying ? this.batMargin - this.batWidth : this.batMargin;
+    },
+    ballBottom: function () {
+      return this.videoPlaying ? 0 : this.ballMargin;
+    },
   },
   beforeMount () {
     window.addEventListener('scroll', this.handleScroll);
-    this.ballRange = window.innerWidth - 2 * (this.batOffset + 0.5 * this.batWidth) - this.ballWidth;
+    this.ballRange = window.innerWidth - 2 * (this.batMargin + 0.5 * this.batWidth) - this.ballWidth;
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.handleScroll);
@@ -128,11 +155,14 @@ export default {
     z-index: 2;
     position: fixed;
     bottom: 20px;
+    transition: 
+      left 0.5s cubic-bezier(.68,-0.55,.27,1.55),
+      right 0.5s cubic-bezier(.68,-0.55,.27,1.55);
   }
   .bg-image.ball {
     position: fixed;
     z-index: 1;
-    bottom: 110px;
+    transition: bottom 0.5s cubic-bezier(.68,-0.55,.27,1.55);
   }
 
   @media (max-width: 991.98px) {
