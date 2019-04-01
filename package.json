@@ -1,0 +1,26 @@
+{
+  "name": "skrecok.sng.sk",
+  "version": "1.0.0",
+  "description": "SNG video series",
+  "author": "Philo van Kemenade",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "vue-youtube-embed": "^2.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0"
+  }
+}
