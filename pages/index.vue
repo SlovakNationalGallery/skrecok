@@ -141,7 +141,7 @@ export default {
     list-style: none;
   }
   .playlistItem {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .bg-image {
     position: absolute;
