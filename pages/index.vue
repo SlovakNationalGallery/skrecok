@@ -36,9 +36,10 @@
     
     <section class="container">
       <h2>Videos</h2>
+      <span v-if="!youtubeLoaded">Loading...</span>
       <ul>
         <li v-for="youtubeVideo in youtubeVideos" class="playlistItem">
-          <h3>{{youtubeVideo.title}}</h3>
+          <h3>{{youtubeVideo.name}}</h3>
           <youtube 
             :video-id="youtubeVideo.id" 
             @playing="onPlaying" 
@@ -69,20 +70,7 @@ export default {
   },
   data () {
     return { 
-      youtubeVideos:  [
-        {
-          id: 'C6NquYD0bg8',
-          title: 'Z akadémie do prírody'
-        },
-        {
-          id: 'IdwC8Plxw1M',
-          title: 'Detská noc literatúry v Schaubmarovom mlyne'
-        },
-        {
-          id: 'E1lgwn5o2YY',
-          title: 'Nové akvizície SNG: Leopold Horovitz'
-        },
-      ],
+      youtubeVideos:  [],
       ballOffset: 0,
       ballRange: 0,
       ballWidth: 30,
@@ -123,9 +111,19 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
     this.ballRange = window.innerWidth - 2 * (this.batMargin + 0.5 * this.batWidth) - this.ballWidth;
   },
+  mounted () {
+    const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
+    const YTPLAYLIST_URL = 'https://www.youtube.com/playlist?list=PLdCkSFojiBUrJpsoPCVo_RzIkoSZmNc4N';
+    const ytlist = require('youtube-playlist');
+
+    ytlist(CORS_URL+YTPLAYLIST_URL, ['id', 'name']).then(res => {
+      this.youtubeVideos = res.data.playlist;
+      this.youtubeLoaded = true;
+    });
+  },
   beforeDestroy () {
     window.removeEventListener('scroll', this.handleScroll);
-  }
+  },
 }
 </script>
 
