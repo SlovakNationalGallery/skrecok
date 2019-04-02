@@ -36,7 +36,7 @@
     
     <section class="container">
       <h2>Videos</h2>
-      <span v-if="!youtubeLoaded">Loading...</span>
+      <span v-if="!videosLoaded">Loading...</span>
       <ul>
         <li v-for="youtubeVideo in youtubeVideos" class="playlistItem">
           <h3>{{youtubeVideo.name}}</h3>
@@ -77,8 +77,8 @@ export default {
       ballMargin: 110,
       batWidth: 80,
       batMargin: 10,
-      videoPlaying: false,
-      videoPaused: false,
+      videosPlaying: false,
+      videosLoaded: false,
     }
   },
   methods: {
@@ -90,21 +90,21 @@ export default {
       return Math.acos(Math.cos(x * Math.PI)) / Math.PI;
     },
     onPlaying (event) {
-      this.videoPlaying = true;
+      this.videosPlaying = true;
     },
     onPaused (event) {
-      this.videoPlaying = false;
+      this.videosPlaying = false;
     },
     onEnded (event) {
-      this.videoPlaying = false;
+      this.videosPlaying = false;
     },
   },
   computed: {
     batOffset: function () {
-      return this.videoPlaying ? this.batMargin - this.batWidth : this.batMargin;
+      return this.videosPlaying ? this.batMargin - this.batWidth : this.batMargin;
     },
     ballBottom: function () {
-      return this.videoPlaying ? 0 : this.ballMargin;
+      return this.videosPlaying ? 0 : this.ballMargin;
     },
   },
   beforeMount () {
@@ -118,7 +118,7 @@ export default {
 
     ytlist(CORS_URL+YTPLAYLIST_URL, ['id', 'name']).then(res => {
       this.youtubeVideos = res.data.playlist;
-      this.youtubeLoaded = true;
+      this.videosLoaded = true;
     });
   },
   beforeDestroy () {
