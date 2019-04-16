@@ -5,7 +5,14 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@font-face {
+  font-family: 'kakalikrucni';
+  src: url('/fonts/kakalik-rucni.woff2') format('woff2'),
+      url('/fonts/kakalik-rucni.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: 32px;
   word-spacing: 1px;
@@ -21,7 +28,7 @@ body {
   background-color: #ECDBB3;
   background-image: url('/bg-skrecok.jpg');
   background-repeat: repeat;
-  font-family: 'Patrick Hand', cursive, Arial, sans-serif;
+  font-family: 'kakalikrucni', cursive, Arial, sans-serif;
   color: #000;
 }
 
