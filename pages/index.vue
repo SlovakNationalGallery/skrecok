@@ -38,10 +38,10 @@
       <h2>Videos</h2>
       <span v-if="!videosLoaded">Loading...</span>
       <ul>
-        <li v-for="youtubeVideo in youtubeVideos" class="playlistItem">
-          <h3>{{youtubeVideo.name}}</h3>
+        <li v-for="ytPlaylistItem in ytPlaylistItems" class="playlistItem">
+          <h3>{{ytPlaylistItem.snippet.title}}</h3>
           <youtube 
-            :video-id="youtubeVideo.id" 
+            :video-id="ytPlaylistItem.snippet.resourceId.videoId" 
             @playing="onPlaying" 
             @paused="onPaused" 
             @ended="onEnded" 
@@ -65,20 +65,29 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  head () {
+    return {
+      script: [
+        { src: 'https://apis.google.com/js/api.js' }
+      ]
+    }
+  },
   components: {
     // Logo
   },
   data () {
     return { 
-      youtubeVideos:  [],
-      ballOffset: 0,
-      ballRange: 0,
-      ballWidth: 30,
-      ballMargin: 110,
-      batWidth: 80,
-      batMargin: 10,
-      videosPlaying: false,
-      videosLoaded: false,
+      ytAPIKey:        "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
+      ytPlaylistID:    "PLdCkSFojiBUrJpsoPCVo_RzIkoSZmNc4N",
+      ytPlaylistItems: [],
+      ballOffset:      0,
+      ballRange:       0,
+      ballWidth:       30,
+      ballMargin:      110,
+      batWidth:        80,
+      batMargin:       10,
+      videosPlaying:   false,
+      videosLoaded:    false,
     }
   },
   methods: {
@@ -98,6 +107,29 @@ export default {
     onEnded (event) {
       this.videosPlaying = false;
     },
+    loadYTClient (gapi, ytAPIKey, ytPlaylistID) {
+      gapi.client.setApiKey(ytAPIKey);
+      return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+        .then(
+          () => { this.requestYTPlaylistItems(gapi, ytPlaylistID) },
+          function(err) { console.error("Error loading GAPI client for API", err); }
+        );
+    },
+    requestYTPlaylistItems (gapi, playlistId) {
+      return gapi.client.youtube.playlistItems.list({
+        "part": "snippet",
+        "playlistId": playlistId
+      })
+      .then((response) => {
+        this.handleYTPlaylistItems(response.result)
+      },
+      function(err) { console.error("Execute error", err); });
+    },
+    handleYTPlaylistItems (result) {
+      console.log("result.items", result.items);
+      this.ytPlaylistItems = result.items;
+      this.videosLoaded = true;
+    },
   },
   computed: {
     batOffset: function () {
@@ -112,13 +144,17 @@ export default {
     this.ballRange = window.innerWidth - 2 * (this.batMargin + 0.5 * this.batWidth) - this.ballWidth;
   },
   mounted () {
-    const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
-    const YTPLAYLIST_URL = 'https://www.youtube.com/playlist?list=PLdCkSFojiBUrJpsoPCVo_RzIkoSZmNc4N';
-    const ytlist = require('youtube-playlist');
-
-    ytlist(CORS_URL+YTPLAYLIST_URL, ['id', 'name']).then(res => {
-      this.youtubeVideos = res.data.playlist;
-      this.videosLoaded = true;
+    gapi.load('client', {
+      callback: () => {
+        this.loadYTClient(gapi, this.ytAPIKey, this.ytPlaylistID);
+      },
+      onerror: function() {
+        console.error('gapi.client failed to load!');
+      },
+      timeout: 5000, // 5 seconds.
+      ontimeout: function() {
+        console.error('gapi.client could not load in a timely manner!');
+      }
     });
   },
   beforeDestroy () {
