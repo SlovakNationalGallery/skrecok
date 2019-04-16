@@ -126,7 +126,6 @@ export default {
       function(err) { console.error("Execute error", err); });
     },
     handleYTPlaylistItems (result) {
-      console.log("result.items", result.items);
       this.ytPlaylistItems = result.items;
       this.videosLoaded = true;
     },
