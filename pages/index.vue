@@ -22,6 +22,7 @@
           <h3>{{ytPlaylistItem.snippet.title}}</h3>
           <youtube 
             :video-id="ytPlaylistItem.snippet.resourceId.videoId" 
+            :player-vars="{ rel: 0 }"
             @playing="onPlaying" 
             @paused="onPaused" 
             @ended="onEnded" 
