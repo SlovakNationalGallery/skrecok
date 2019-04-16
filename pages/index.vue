@@ -59,7 +59,7 @@ export default {
   data () {
     return { 
       ytAPIKey:        "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
-      ytPlaylistID:    "PLdCkSFojiBUrJpsoPCVo_RzIkoSZmNc4N",
+      ytPlaylistID:    "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
       ytPlaylistItems: [],
       videosPlaying:   false,
       videosLoaded:    false,

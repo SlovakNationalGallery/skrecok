@@ -25,9 +25,7 @@ html {
 }
 
 body {
-  background-color: #ECDBB3;
-  background-image: url('/bg-skrecok.jpg');
-  background-repeat: repeat;
+  background-color: #F3E2BE;
   font-family: 'kakalikrucni', cursive, Arial, sans-serif;
   color: #000;
 }
