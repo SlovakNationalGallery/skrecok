@@ -1,27 +1,7 @@
 <template>
   <div>
     <img src="/skrecok-lamp.png" class="bg-image lamp">
-    <div class="d-none d-sm-block">
-      <img src="/skrecok-withbat-left.png" class="bg-image withbat" 
-        v-bind:style="{
-          left: this.batOffset + 'px',
-          width: this.batWidth + 'px',
-        }"
-      >
-      <img src="/skrecok-withbat-right.png" class="bg-image withbat" 
-        v-bind:style="{
-          right: this.batOffset + 'px',
-          width: this.batWidth + 'px',
-        }"
-      >
-      <img src="/skrecok-ball.png" class="bg-image ball"
-        v-bind:style="{ 
-          left: this.batMargin + 0.5 * this.batWidth + this.ballOffset + 'px',
-          width: this.ballWidth + 'px',
-          bottom: this.ballBottom + 'px',
-        }"
-      >
-    </div>
+    <PingPong v-bind:videosPlaying="videosPlaying" />
     
     <section class="container">
       <div>
@@ -62,7 +42,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import PingPong from '~/components/PingPong.vue'
 
 export default {
   head () {
@@ -73,31 +53,18 @@ export default {
     }
   },
   components: {
-    // Logo
+    PingPong
   },
   data () {
     return { 
       ytAPIKey:        "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
       ytPlaylistID:    "PLdCkSFojiBUrJpsoPCVo_RzIkoSZmNc4N",
       ytPlaylistItems: [],
-      ballOffset:      0,
-      ballRange:       0,
-      ballWidth:       30,
-      ballMargin:      110,
-      batWidth:        80,
-      batMargin:       10,
       videosPlaying:   false,
       videosLoaded:    false,
     }
   },
   methods: {
-    handleScroll () {
-      let scrollPosNormalised = window.scrollY / window.innerHeight;
-      this.ballOffset = this.zigzag(scrollPosNormalised) * this.ballRange;
-    },
-    zigzag (x) {
-      return Math.acos(Math.cos(x * Math.PI)) / Math.PI;
-    },
     onPlaying (event) {
       this.videosPlaying = true;
     },
@@ -130,18 +97,6 @@ export default {
       this.videosLoaded = true;
     },
   },
-  computed: {
-    batOffset: function () {
-      return this.videosPlaying ? this.batMargin - this.batWidth : this.batMargin;
-    },
-    ballBottom: function () {
-      return this.videosPlaying ? 0 : this.ballMargin;
-    },
-  },
-  beforeMount () {
-    window.addEventListener('scroll', this.handleScroll);
-    this.ballRange = window.innerWidth - 2 * (this.batMargin + 0.5 * this.batWidth) - this.ballWidth;
-  },
   mounted () {
     gapi.load('client', {
       callback: () => {
@@ -155,9 +110,6 @@ export default {
         console.error('gapi.client could not load in a timely manner!');
       }
     });
-  },
-  beforeDestroy () {
-    window.removeEventListener('scroll', this.handleScroll);
   },
 }
 </script>
@@ -183,19 +135,6 @@ export default {
   .bg-image.lamp {
     top: 0;
     left: 0;
-  }
-  .bg-image.withbat {
-    z-index: 2;
-    position: fixed;
-    bottom: 20px;
-    transition: 
-      left 0.5s cubic-bezier(.68,-0.55,.27,1.55),
-      right 0.5s cubic-bezier(.68,-0.55,.27,1.55);
-  }
-  .bg-image.ball {
-    position: fixed;
-    z-index: 1;
-    transition: bottom 0.5s cubic-bezier(.68,-0.55,.27,1.55);
   }
 
   @media (max-width: 991.98px) {
