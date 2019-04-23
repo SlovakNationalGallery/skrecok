@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 32px;
+  font-size: 18px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

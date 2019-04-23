@@ -18,16 +18,24 @@
       <h2>Videos</h2>
       <span v-if="!videosLoaded">Loading...</span>
       <ul>
-        <li v-for="ytPlaylistItem in ytPlaylistItems" class="playlistItem">
-          <h3>{{ytPlaylistItem.snippet.title}}</h3>
-          <youtube 
-            :video-id="ytPlaylistItem.snippet.resourceId.videoId" 
-            :player-vars="{ rel: 0 }"
-            @playing="onPlaying" 
-            @paused="onPaused" 
-            @ended="onEnded" 
-            class="youtube-video" >
-          </youtube>
+        <li v-for="ytPlaylistItem in ytPlaylistItems" class="mb-4">
+          <div>
+            <h3>{{ytPlaylistItem.snippet.title}}</h3>
+            <p>{{ytPlaylistItem.descriptionText}}</p>
+          </div>
+          <div class="row">
+            <youtube 
+              class="youtube-video col-lg mb-3"
+              :video-id="ytPlaylistItem.snippet.resourceId.videoId" 
+              :player-vars="{ rel: 0 }"
+              @playing="onPlaying" 
+              @paused="onPaused" 
+              @ended="onEnded" >
+            </youtube>
+            <div class="col-lg">
+              <p>{{ytPlaylistItem.descriptionProfile}}</p>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
@@ -60,6 +68,7 @@ export default {
     return { 
       ytAPIKey:        "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
       ytPlaylistID:    "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
+      ytPlaylistItemDescriptionSeparator: "---",
       ytPlaylistItems: [],
       videosPlaying:   false,
       videosLoaded:    false,
@@ -94,9 +103,18 @@ export default {
       function(err) { console.error("Execute error", err); });
     },
     handleYTPlaylistItems (result) {
-      this.ytPlaylistItems = result.items;
+      this.ytPlaylistItems = this.parseResult(result);
       this.videosLoaded = true;
     },
+    parseResult(result) {
+      return result.items.map((item) => {
+        return {
+          ...item,
+          descriptionText:    item.snippet.description.split(this.ytPlaylistItemDescriptionSeparator)[0],
+          descriptionProfile: item.snippet.description.split(this.ytPlaylistItemDescriptionSeparator)[1],
+        }
+      })
+    }
   },
   mounted () {
     gapi.load('client', {
@@ -125,9 +143,6 @@ export default {
   }
   li {
     list-style: none;
-  }
-  .playlistItem {
-    margin-bottom: 2rem;
   }
   .bg-image {
     position: absolute;
