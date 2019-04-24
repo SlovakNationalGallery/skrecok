@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="/skrecok-lamp.png" class="bg-image lamp">
+    <img src="/img/skrecok-lamp.png" class="bg-image lamp">
     <PingPong v-bind:videosPlaying="videosPlaying" />
     
     <section class="container">

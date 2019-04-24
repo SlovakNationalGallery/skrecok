@@ -1,18 +1,18 @@
 <template>
   <div class="d-none d-sm-block">
-    <img src="/skrecok-withbat-left.png" class="bg-image withbat" 
+    <img src="/img/skrecok-withbat-left.png" class="bg-image withbat" 
       v-bind:style="{
         left: this.batOffset + 'px',
         width: this.batWidth + 'px',
       }"
     >
-    <img src="/skrecok-withbat-right.png" class="bg-image withbat" 
+    <img src="/img/skrecok-withbat-right.png" class="bg-image withbat" 
       v-bind:style="{
         right: this.batOffset + 'px',
         width: this.batWidth + 'px',
       }"
     >
-    <img src="/skrecok-ball.png" class="bg-image ball"
+    <img src="/img/skrecok-ball.png" class="bg-image ball"
       v-bind:style="{ 
         left: this.batMargin + 0.5 * this.batWidth + this.ballOffset + 'px',
         width: this.ballWidth + 'px',
