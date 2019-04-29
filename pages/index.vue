@@ -3,39 +3,31 @@
     <img src="/img/skrecok-lamp.png" class="bg-image lamp">
     <PingPong v-bind:videosPlaying="videosPlaying" />
     
-    <section class="container">
+    <section class="container my-5 py-5">
       <div>
-        <h1 class="title">
-          Skrecok
+        <h1 class="title my-5">
+          Profesor Škrečok
         </h1>
-        <h3 class="subtitle">
-          SNG video series
-        </h3>
       </div>
     </section>
     
     <section class="container">
-      <h2>Videos</h2>
       <span v-if="!videosLoaded">Loading...</span>
       <ul>
         <li v-for="ytPlaylistItem in ytPlaylistItems" class="mb-4">
-          <div>
-            <h3>{{ytPlaylistItem.snippet.title}}</h3>
-            <p>{{ytPlaylistItem.descriptionText}}</p>
-          </div>
-          <div class="row">
+
             <youtube 
-              class="youtube-video col-lg mb-3"
+              class="youtube-video mb-3"
               :video-id="ytPlaylistItem.snippet.resourceId.videoId" 
               :player-vars="{ rel: 0 }"
               @playing="onPlaying" 
               @paused="onPaused" 
               @ended="onEnded" >
             </youtube>
-            <div class="col-lg">
-              <p>{{ytPlaylistItem.descriptionProfile}}</p>
-            </div>
-          </div>
+            
+            <p class="measure mx-auto">{{ytPlaylistItem.descriptionText}}</p>
+
+            <ArtistProfile v-bind:ytPlaylistItem="ytPlaylistItem"/>
         </li>
       </ul>
     </section>
@@ -52,6 +44,7 @@
 
 <script>
 import PingPong from '~/components/PingPong.vue'
+import ArtistProfile from '~/components/ArtistProfile.vue'
 
 export default {
   head () {
@@ -62,16 +55,64 @@ export default {
     }
   },
   components: {
-    PingPong
+    PingPong, ArtistProfile
   },
   data () {
     return { 
       ytAPIKey:        "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
       ytPlaylistID:    "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
       ytPlaylistItemDescriptionSeparator: "---",
+      ytPlaylistItemTitleSeparator: " – ",
       ytPlaylistItems: [],
       videosPlaying:   false,
       videosLoaded:    false,
+      profiles: {
+        'Intro': {
+          subtitle: '✸ 2019, Bratislava',
+          avatarSrc: '/img/avatar-skrecok.png',
+          linkSrc: '',
+        },
+        'Július Koller': {
+          subtitle: '✸ 1939, Piešťany <br> ✝ 2007, Bratislava',
+          avatarSrc: '/img/avatar-koller.png',
+          linkSrc: 'https://www.webumenia.sk/autor/5089',
+        },
+        'Anna Daučíková': {
+            subtitle: '✸ 1950, Bratislava',
+            avatarSrc: 'img/avatar-daucikova.png',
+            linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1918',
+        },
+        'Štefan Papčo': {
+            subtitle: '✸ 1983, Ružomberok',
+            avatarSrc: 'img/avatar-papco.png',
+            linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1004610',
+        },
+        'Roman Ondak': {
+            subtitle: '✸ 1966, Žilina',
+            avatarSrc: 'img/avatar-ondak.png',
+            linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/7446',
+        },
+        'Vladimír Dedeček': {
+            subtitle: '✸ 1929, Martin',
+            avatarSrc: 'img/avatar-dedecek.png',
+            linkSrc: 'https://www.webumenia.sk/en/autor/1052763',
+        },
+        'Peter Kalmus': {
+            subtitle: '✸ 1953, Piešťany',
+            avatarSrc: 'avatar-kalmus.png',
+            linkSrc: 'https://www.webumenia.sk/autor/4684',
+        },
+        'Maria Bartuszová': {
+            subtitle: '✸ 1936, Praha <br> ✝ 1996, Košice',
+            avatarSrc: 'avatar-bartuszova.png',
+            linkSrc: 'https://www.webumenia.sk/autor/513',
+        },
+        'default': {
+          subtitle: '',
+          avatarSrc: '',
+          linkSrc: '',
+        },
+      },
     }
   },
   methods: {
@@ -108,10 +149,16 @@ export default {
     },
     parseResult(result) {
       return result.items.map((item) => {
+        let [descriptionText, profileText] = item.snippet.description.split(this.ytPlaylistItemDescriptionSeparator);
+        let [_, profileName] = item.snippet.title.split(this.ytPlaylistItemTitleSeparator);
+        let profileData = this.profiles[profileName] || this.profiles['default'];
+        
         return {
           ...item,
-          descriptionText:    item.snippet.description.split(this.ytPlaylistItemDescriptionSeparator)[0],
-          descriptionProfile: item.snippet.description.split(this.ytPlaylistItemDescriptionSeparator)[1],
+          descriptionText: descriptionText,
+          profileText: profileText,
+          profileName: profileName,
+          profileData: profileData,
         }
       })
     }
@@ -135,7 +182,6 @@ export default {
 
 <style lang="scss">
   .container {
-    // margin: 4rem auto; 
     text-align: center;
   }
   ul {
@@ -157,7 +203,6 @@ export default {
     .youtube-video {
       position: relative;
       padding-bottom: 56.25%;
-      // padding-top: 30px;
       height: 0;
       overflow: hidden;
       max-width: 640px;
@@ -172,5 +217,7 @@ export default {
     }
   }
 
-
+  .measure {
+    max-width: 32em;
+  }
 </style>
