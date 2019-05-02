@@ -5,15 +5,17 @@
     
     <section class="container my-5 py-5">
       <div>
-        <h1 class="title my-5">
-          Profesor Škrečok
+        <h1 class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">
+          {{pageTitle}}
         </h1>
+        <p class="bg-light">{{pageIntro}}</p>
+        <a href="#videos" class="button">{{pageCTA}}</a>
       </div>
     </section>
     
     <section class="container">
-      <span v-if="!videosLoaded">Loading...</span>
-      <ul>
+      <span class="d-inline-block vh-100" v-if="!videosLoaded">Loading...</span>
+      <ul id="videos">
         <li v-for="ytPlaylistItem in ytPlaylistItems" class="mb-4">
 
             <youtube 
@@ -32,12 +34,16 @@
       </ul>
     </section>
 
-    <section class="container">
-      <h2>About</h2>
+    <section class="container mt-5">
+      <h2 class="mb-4 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
+      <img class="w-100 mb-3" src="/img/installation.jpg">
+      <p>{{installationIntro}}</p>
+      <a target="_blank" :href="installationURL">Viac info</a>
     </section>
 
-    <footer class="container">
-      Footer Content
+    <footer class="container h-footer mt-5">
+      <p class="text-center text-sm-left small position-block position-sm-absolute bottom-0" v-html="footerHTML"></p>
+      <img src="/img/skrecok-carrots.png" class="bg-image carrots">
     </footer>
   </div>
 </template>
@@ -59,13 +65,20 @@ export default {
   },
   data () {
     return { 
-      ytAPIKey:        "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
-      ytPlaylistID:    "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
+      pageTitle:         "Profesor Škrečok",
+      pageIntro:         "Svet umenia je plný zvláštnych príbehov a pestrých charakterov. Objavujte ich spolu s profesorom škrečkom, ktorý na staré kolená zistil, že výtvarná výchova predsa len nie je nuda. V sérii krátkych videí sa škrečok postupne zoznámi so slovenskými aj svetovými umeleckými osobnosťami, a zašpekuluje si nad ich tvorbou a výtvarným myslením.",
+      pageCTA:           "Poďme na to!",
+      installationTitle: "Navštívte Profesora Škrečka",
+      installationIntro: "Profesora škrečka môžete stretnúť aj v interaktívnej inštalácii na prvom poschodí Esterházyho paláca v Bratislave. Prevedie vás podivuhodnými dejinami umenia s pomocou animácie a loptových hier. Áno, všetko je možné!",
+      installationURL: "https://www.sng.sk/sk/vystavy/2158_krajina-za-mapou",
+      footerHTML:        "Videá: <a href='http://portfolio.kakalik.cz/'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/'>lab.SNG</a>",
+      ytAPIKey:          "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
+      ytPlaylistID:      "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
       ytPlaylistItemDescriptionSeparator: "---",
       ytPlaylistItemTitleSeparator: " – ",
-      ytPlaylistItems: [],
-      videosPlaying:   false,
-      videosLoaded:    false,
+      ytPlaylistItems:   [],
+      videosPlaying:     false,
+      videosLoaded:      false,
       profiles: {
         'Intro': {
           subtitle: '✸ 2019, Bratislava',
@@ -198,6 +211,17 @@ export default {
     top: 0;
     left: 0;
   }
+  .bg-image.carrots {
+    width: 100%;
+    max-width: 829px;
+    right: 0;
+
+    @media (min-width: 576px) {
+      width: 50%;
+    }
+  }
+
+  
 
   @media (max-width: 991.98px) {
     .youtube-video {
@@ -217,7 +241,68 @@ export default {
     }
   }
 
+  a {
+    color: #000;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #000;
+    border-bottom: none;
+    text-decoration: none;
+  }
+
+  p {
+    // add horizontal margin for ping pong hamsters
+    @media (min-width: 768px) {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    @media (min-width: 1300px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   .measure {
     max-width: 32em;
+  }
+  .bg-dark {
+    background-color: #000 !important;
+  }
+  .bg-light {
+    background-color: #F3E2BE !important;
+  }
+  .text-light {
+    color: #F3E2BE !important;
+  }
+  .tilted {
+    transform: rotate(-3deg);
+  }
+  .button {
+    border: solid 2px #000;
+    padding: 0.5rem;
+    box-shadow: 4px 4px #000;
+  }
+  .button:hover {
+    border: solid 2px #000;
+    box-shadow: 2px 2px #000;
+  }
+  .button:active {
+    box-shadow: 0px 0px #000;
+  }
+
+  .h-footer {
+    height: calc(50vw * 0.59);
+  }
+
+  .position-sm-absolute {
+    @media (min-width: 576px) {
+      position: absolute;
+    }
+  }
+
+  .bottom-0 {
+    bottom: 0;
   }
 </style>

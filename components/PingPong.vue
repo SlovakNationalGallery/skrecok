@@ -1,5 +1,5 @@
 <template>
-  <div class="d-none d-sm-block">
+  <div class="d-none d-md-block">
     <img src="/img/skrecok-withbat-left.png" class="bg-image withbat" 
       v-bind:style="{
         left: this.batOffset + 'px',

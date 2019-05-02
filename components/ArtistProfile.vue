@@ -25,23 +25,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   img.avatar {
     background-color: #66ccf480;
     width: 122px;
     @media (min-width: 768px) {
       width: 100px;
     }
-  }
-  a {
-    color: #000;
-    border-bottom: 1px solid #000;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #000;
-    border-bottom: none;
-    text-decoration: none;
-
   }
 </style>
