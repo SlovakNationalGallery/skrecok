@@ -27,15 +27,18 @@
               @ended="onEnded" >
             </youtube>
             
-            <p class="description measure mx-auto mb-4">{{ytPlaylistItem.descriptionText}}</p>
+            <p class="measure mx-auto mx-pingpong mb-4">{{ytPlaylistItem.descriptionText}}</p>
 
-            <ArtistProfile v-bind:ytPlaylistItem="ytPlaylistItem"/>
+            <ArtistProfile 
+              v-bind:ytPlaylistItem="ytPlaylistItem"
+              v-bind:inGallery="inGallery"
+            />
             <hr v-if="index != ytPlaylistItems.length - 1">
         </li>
       </ul>
     </section>
 
-    <section class="container mt-5">
+    <section v-if="!inGallery" class="container mt-5">
       <h2 class="mb-4 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
       <img class="w-100 mb-3" src="/img/installation.jpg">
       <p>{{installationIntro}}</p>
@@ -43,7 +46,7 @@
     </section>
 
     <footer class="container h-footer mt-5">
-      <p class="text-center text-sm-left small position-block position-sm-absolute bottom-0" v-html="footerHTML"></p>
+      <p v-bind:class='{ disabled: inGallery }' class="text-center text-sm-left small position-block position-sm-absolute bottom-0 mx-pingpong" v-html="footerHTML"></p>
       <img src="/img/skrecok-carrots.png" class="bg-image carrots">
     </footer>
   </div>
@@ -73,6 +76,7 @@ export default {
       installationIntro: "Profesora škrečka môžete stretnúť aj v interaktívnej inštalácii na prvom poschodí Esterházyho paláca v Bratislave. Prevedie vás podivuhodnými dejinami umenia s pomocou animácie a loptových hier. Áno, všetko je možné!",
       installationURL: "https://www.sng.sk/sk/vystavy/2158_krajina-za-mapou",
       footerHTML:        "Videá: <a href='https://umeleckestrevo.cz/'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/'>lab.SNG</a>",
+      inGallery:         false,
       ytAPIKey:          "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
       ytPlaylistID:      "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
       ytPlaylistItemDescriptionSeparator: "---",
@@ -175,9 +179,13 @@ export default {
           profileData: profileData,
         }
       })
-    }
+    },
+    parseQuery(query) {
+      this.inGallery = Boolean(query['in-gallery']);
+    },
   },
   mounted () {
+    // init YouTube API client
     gapi.load('client', {
       callback: () => {
         this.loadYTClient(gapi, this.ytAPIKey, this.ytPlaylistID);
@@ -190,6 +198,8 @@ export default {
         console.error('gapi.client could not load in a timely manner!');
       }
     });
+    // parse URL query params
+    this.parseQuery(this.$route.query)
   },
 }
 </script>
@@ -253,7 +263,7 @@ export default {
     text-decoration: none;
   }
 
-  p.description {
+  p.mx-pingpong {
     // add horizontal margin for ping pong hamsters
     @media (min-width: 768px) {
       margin-left: 3rem;
@@ -312,5 +322,16 @@ export default {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+  .disabled > a {
+    color: currentColor;
+    display: inline-block;  /* For IE11/ MS Edge bug */
+    pointer-events: none;
+    text-decoration: none;
+    border-bottom: none;
   }
 </style>
