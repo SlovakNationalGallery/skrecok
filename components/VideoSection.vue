@@ -27,7 +27,7 @@ export default {
     ArtistProfile
   },
   data: () => ({}),
-  props : ['videoId', 'descriptionText', 'profile', 'inGallery', 'videosPlaying'],
+  props : ['videoId', 'descriptionText', 'profile', 'last', 'videosPlaying', 'inGallery'],
   methods: {
     onPlaying (event) {
       this.$emit('update:videosPlaying', true)
