@@ -16,7 +16,7 @@
     <section class="container">
       <span class="d-inline-block vh-100" v-if="!videosLoaded">Loading...</span>
       <ul id="videos">
-        <li v-for="ytPlaylistItem in ytPlaylistItems" class="mb-4">
+        <li v-for="ytPlaylistItem in ytPlaylistItems" class="mb-5">
 
             <youtube 
               class="youtube-video mb-3"
@@ -27,9 +27,10 @@
               @ended="onEnded" >
             </youtube>
             
-            <p class="measure mx-auto">{{ytPlaylistItem.descriptionText}}</p>
+            <p class="description measure mx-auto mb-4">{{ytPlaylistItem.descriptionText}}</p>
 
             <ArtistProfile v-bind:ytPlaylistItem="ytPlaylistItem"/>
+            <hr>
         </li>
       </ul>
     </section>
@@ -252,7 +253,7 @@ export default {
     text-decoration: none;
   }
 
-  p {
+  p.description {
     // add horizontal margin for ping pong hamsters
     @media (min-width: 768px) {
       margin-left: 3rem;
@@ -304,5 +305,12 @@ export default {
 
   .bottom-0 {
     bottom: 0;
+  }
+
+  hr {
+    border-top: 3px dotted black;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
