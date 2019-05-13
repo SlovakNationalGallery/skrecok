@@ -13,30 +13,25 @@
       </div>
     </section>
     
-    <section class="container">
+    <div id="videos" class="container">
       <span class="d-inline-block vh-100" v-if="!videosLoaded">Loading...</span>
-      <ul id="videos">
-        <li v-for="(ytPlaylistItem, index) in ytPlaylistItems" class="mb-5">
-
-            <youtube 
-              class="youtube-video mb-3"
-              :video-id="ytPlaylistItem.snippet.resourceId.videoId" 
-              :player-vars="{ rel: 0 }"
-              @playing="onPlaying" 
-              @paused="onPaused" 
-              @ended="onEnded" >
-            </youtube>
-            
-            <p class="measure mx-auto mx-pingpong mb-4">{{ytPlaylistItem.descriptionText}}</p>
-
-            <ArtistProfile 
-              v-bind:ytPlaylistItem="ytPlaylistItem"
-              v-bind:inGallery="inGallery"
-            />
-            <hr v-if="index != ytPlaylistItems.length - 1">
-        </li>
-      </ul>
-    </section>
+      <VideoSection
+        v-for="(ytPlaylistItem, index) in ytPlaylistItems"
+        v-bind:videoId="ytPlaylistItem.snippet.resourceId.videoId"
+        v-bind:descriptionText="ytPlaylistItem.descriptionText"
+        v-bind:profile="{
+          profileName: ytPlaylistItem.profileName,
+          profileText: ytPlaylistItem.profileText,
+          avatarSrc: ytPlaylistItem.profileData.avatarSrc,
+          subtitle: ytPlaylistItem.profileData.subtitle,
+          linkSrc: ytPlaylistItem.profileData.linkSrc,
+        }"        
+        v-bind:last="index == ytPlaylistItems.length - 1"
+        v-bind:videosPlaying.sync="videosPlaying"
+        v-bind:inGallery="inGallery"
+        class="mb-5"
+      />
+    </div>
 
     <section v-if="!inGallery" class="container mt-5">
       <h2 class="mb-4 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
@@ -54,7 +49,7 @@
 
 <script>
 import PingPong from '~/components/PingPong.vue'
-import ArtistProfile from '~/components/ArtistProfile.vue'
+import VideoSection from '~/components/VideoSection.vue'
 
 export default {
   head () {
@@ -65,7 +60,7 @@ export default {
     }
   },
   components: {
-    PingPong, ArtistProfile
+    PingPong, VideoSection
   },
   data () {
     return { 
@@ -134,15 +129,6 @@ export default {
     }
   },
   methods: {
-    onPlaying (event) {
-      this.videosPlaying = true;
-    },
-    onPaused (event) {
-      this.videosPlaying = false;
-    },
-    onEnded (event) {
-      this.videosPlaying = false;
-    },
     loadYTClient (gapi, ytAPIKey, ytPlaylistID) {
       gapi.client.setApiKey(ytAPIKey);
       return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
@@ -208,12 +194,6 @@ export default {
   .container {
     text-align: center;
   }
-  ul {
-    padding: 0;
-  }
-  li {
-    list-style: none;
-  }
   .bg-image {
     position: absolute;
     z-index: -1;
@@ -229,26 +209,6 @@ export default {
 
     @media (min-width: 576px) {
       width: 50%;
-    }
-  }
-
-  
-
-  @media (max-width: 991.98px) {
-    .youtube-video {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 640px;
-      margin: auto;
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
     }
   }
 
@@ -302,28 +262,17 @@ export default {
   .button:active {
     box-shadow: 0px 0px #000;
   }
-
   .h-footer {
     height: calc(50vw * 0.59);
   }
-
   .position-sm-absolute {
     @media (min-width: 576px) {
       position: absolute;
     }
   }
-
   .bottom-0 {
     bottom: 0;
   }
-
-  hr {
-    border-top: 3px dotted black;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .disabled {
     cursor: not-allowed;
   }
