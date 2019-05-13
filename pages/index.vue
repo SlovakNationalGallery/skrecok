@@ -70,7 +70,7 @@ export default {
       installationTitle: "Navštívte Profesora Škrečka",
       installationIntro: "Profesora škrečka môžete stretnúť aj v interaktívnej inštalácii na prvom poschodí Esterházyho paláca v Bratislave. Prevedie vás podivuhodnými dejinami umenia s pomocou animácie a loptových hier. Áno, všetko je možné!",
       installationURL: "https://www.sng.sk/sk/vystavy/2158_krajina-za-mapou",
-      footerHTML:        "Videá: <a href='https://umeleckestrevo.cz/'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/'>lab.SNG</a>",
+      footerHTML:        "Videá: <a href='https://umeleckestrevo.cz/' target='_blank'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/' target='_blank'>lab.SNG</a>",
       inGallery:         false,
       ytAPIKey:          "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
       ytPlaylistID:      "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
