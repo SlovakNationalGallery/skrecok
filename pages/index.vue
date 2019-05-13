@@ -16,7 +16,7 @@
     <section class="container">
       <span class="d-inline-block vh-100" v-if="!videosLoaded">Loading...</span>
       <ul id="videos">
-        <li v-for="ytPlaylistItem in ytPlaylistItems" class="mb-5">
+        <li v-for="(ytPlaylistItem, index) in ytPlaylistItems" class="mb-5">
 
             <youtube 
               class="youtube-video mb-3"
@@ -30,7 +30,7 @@
             <p class="description measure mx-auto mb-4">{{ytPlaylistItem.descriptionText}}</p>
 
             <ArtistProfile v-bind:ytPlaylistItem="ytPlaylistItem"/>
-            <hr>
+            <hr v-if="index != ytPlaylistItems.length - 1">
         </li>
       </ul>
     </section>
