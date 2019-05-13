@@ -36,7 +36,7 @@
     <section v-if="!inGallery" class="container mt-5">
       <h2 class="mb-4 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
       <img class="w-100 mb-3" src="/img/installation.jpg">
-      <p>{{installationIntro}}</p>
+      <p class="mx-pingpong">{{installationIntro}}</p>
       <a target="_blank" :href="installationURL">Viac info</a>
     </section>
 
