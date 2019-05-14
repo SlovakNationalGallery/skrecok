@@ -28,12 +28,12 @@
         }"        
         v-bind:last="index == ytPlaylistItems.length - 1"
         v-bind:videosPlaying.sync="videosPlaying"
-        v-bind:inGallery="inGallery"
+        v-bind:kiosk="kiosk"
         class="mb-5"
       />
     </div>
 
-    <section v-if="!inGallery" class="container mt-5">
+    <section v-if="!kiosk" class="container mt-5">
       <h2 class="mb-4 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
       <img class="w-100 mb-3" src="/img/installation.jpg">
       <p class="mx-pingpong">{{installationIntro}}</p>
@@ -41,7 +41,7 @@
     </section>
 
     <footer class="container h-footer mt-5">
-      <p v-bind:class='{ disabled: inGallery }' class="text-center text-sm-left small position-block position-sm-absolute bottom-0 mx-pingpong" v-html="footerHTML"></p>
+      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left small position-block position-sm-absolute bottom-0 mx-pingpong" v-html="footerHTML"></p>
       <img src="/img/skrecok-carrots.png" class="bg-image carrots">
     </footer>
   </div>
@@ -71,7 +71,7 @@ export default {
       installationIntro: "Profesora škrečka môžete stretnúť aj v interaktívnej inštalácii na prvom poschodí Esterházyho paláca v Bratislave. Prevedie vás podivuhodnými dejinami umenia s pomocou animácie a loptových hier. Áno, všetko je možné!",
       installationURL: "https://www.sng.sk/sk/vystavy/2158_krajina-za-mapou",
       footerHTML:        "Videá: <a href='https://umeleckestrevo.cz/' target='_blank'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/' target='_blank'>lab.SNG</a>",
-      inGallery:         false,
+      kiosk:         false,
       ytAPIKey:          "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
       ytPlaylistID:      "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
       ytPlaylistItemDescriptionSeparator: "---",
@@ -167,7 +167,7 @@ export default {
       })
     },
     parseQuery(query) {
-      this.inGallery = Boolean(query['in-gallery']);
+      this.kiosk = Boolean(query['kiosk']);
     },
   },
   mounted () {

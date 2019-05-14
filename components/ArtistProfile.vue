@@ -8,7 +8,7 @@
       <div class="text-left text-sm-center">
         <h4 class="d-block d-sm-none">{{profile.profileName}}</h4>
         <div v-html="profile.subtitle"></div>
-        <a v-if="!inGallery" :href="profile.linkSrc">Viac info</a>
+        <a v-if="!kiosk" :href="profile.linkSrc">Viac info</a>
       </div>
     </div>
     <div class="col-sm-7 col-md-8 col-lg-7 text-left">
@@ -21,7 +21,7 @@
 <script>
 export default {
   data: () => ({}),
-  props : ['profile', 'inGallery'],
+  props : ['profile', 'kiosk'],
 }
 </script>
 

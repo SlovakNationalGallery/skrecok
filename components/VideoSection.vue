@@ -11,7 +11,7 @@
     <p class="measure mx-auto mx-pingpong mb-4">{{descriptionText}}</p>
 
     <ArtistProfile 
-      v-bind:inGallery="inGallery"
+      v-bind:kiosk="kiosk"
       v-bind:profile="profile"
     />
 
@@ -26,7 +26,7 @@ export default {
     ArtistProfile
   },
   data: () => ({}),
-  props : ['videoId', 'descriptionText', 'profile', 'last', 'videosPlaying', 'inGallery'],
+  props : ['videoId', 'descriptionText', 'profile', 'last', 'videosPlaying', 'kiosk'],
   methods: {
     onPlaying (event) {
       this.$emit('update:videosPlaying', true)
