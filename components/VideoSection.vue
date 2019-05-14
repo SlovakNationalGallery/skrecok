@@ -61,5 +61,7 @@ export default {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 </style>
