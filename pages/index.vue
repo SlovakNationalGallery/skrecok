@@ -4,12 +4,12 @@
     <PingPong v-bind:videosPlaying="videosPlaying" />
     
     <section class="container my-5 py-5">
-      <div>
+      <div class="mt-2">
         <h1 class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">
           {{pageTitle}}
         </h1>
-        <p class="bg-light">{{pageIntro}}</p>
-        <a href="#videos" class="button">{{pageCTA}}</a>
+        <p class="mt-4 bg-light measure mx-auto">{{pageIntro}}</p>
+        <a href="#videos" class="button d-inline-block mt-3">{{pageCTA}}</a>
       </div>
     </section>
     
