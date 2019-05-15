@@ -69,7 +69,7 @@ export default {
       pageCTA:           "Poďme na to!",
       installationTitle: "Navštív profesora Škrečka",
       installationIntro: "Profesora Škrečka môžeš v nadživotnej veľkosti stretnúť v Slovenskej národnej galérii. Na prvom poschodí Esterházyho paláca v Bratislave nájdeš interaktívnu inštaláciu, v ktorej ťa Škrečok prevedie podivuhodnými dejinami umenia od praveku až po súčasnosť. Animácia, mamuty, hlodavce a loptové hry v jednom. Áno, čítaš správne. Príď sa pozrieť!",
-      installationURL: "https://www.sng.sk/sk/vystavy/2158_krajina-za-mapou",
+      installationURL: "https://www.sng.sk/sk/vystavy/2295_podivuhodne-dejiny-umenia-s-profesorom-skreckom",
       footerHTML:        "Videá: <a href='https://umeleckestrevo.cz/' target='_blank'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/' target='_blank'>lab.SNG</a>",
       kiosk:         false,
       ytAPIKey:          "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
