@@ -73,7 +73,7 @@ export default {
       footerHTML:        "Videá: <a href='https://umeleckestrevo.cz/' target='_blank'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/' target='_blank'>lab.SNG</a>",
       kiosk:         false,
       ytAPIKey:          "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
-      ytPlaylistID:      "PLWlvb2JmqI-RA8NwmUZU9gSXabCaxL5Vb",
+      ytPlaylistID:      "PLdCkSFojiBUqLrSe_6yF7tJulN4X_Vm9I",
       ytPlaylistItemDescriptionSeparator: "---",
       ytPlaylistItemTitleSeparator: " – ",
       ytPlaylistItems:   [],
