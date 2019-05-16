@@ -1,8 +1,8 @@
 {
-  "name": "skrecok.sng.sk",
+  "name": "Príbehy umenia s profesorom Škrečkom",
   "version": "1.0.0",
-  "description": "SNG video series",
-  "author": "Philo van Kemenade",
+  "description": "Animovaná séria o slovenských a svetových osobnostiach umenia",
+  "author": "lab.SNG",
   "private": true,
   "scripts": {
     "dev": "nuxt",
