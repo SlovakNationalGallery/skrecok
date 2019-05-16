@@ -42,6 +42,10 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-19030232-12',
+      dev: false,
+    }],
   ],
 
   /*
