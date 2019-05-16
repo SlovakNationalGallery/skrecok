@@ -17,6 +17,7 @@
       <span class="d-inline-block vh-100" v-if="!videosLoaded">Loading...</span>
       <VideoSection
         v-for="(ytPlaylistItem, index) in ytPlaylistItems"
+        v-bind:key="index"
         v-bind:videoId="ytPlaylistItem.snippet.resourceId.videoId"
         v-bind:descriptionText="ytPlaylistItem.descriptionText"
         v-bind:profile="{
