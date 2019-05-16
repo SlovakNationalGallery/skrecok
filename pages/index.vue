@@ -83,7 +83,7 @@ export default {
         'Intro': {
           subtitle: '✸ 2019, Bratislava',
           avatarSrc: '/img/avatar-skrecok.png',
-          linkSrc: '',
+          linkSrc: 'https://www.sng.sk/sk/vystavy/2295_podivuhodne-dejiny-umenia-s-profesorom-skreckom',
         },
         'Július Koller': {
           subtitle: '✸ 1939, Piešťany <br> ✝ 2007, Bratislava',
