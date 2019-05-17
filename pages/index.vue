@@ -180,8 +180,10 @@ export default {
       window.history.go();
     },
     resetIdleTimer() {
-      clearTimeout(this.idleTimeout);
-      this.idleTimeout = setTimeout(this.onIdle, this.idleTime);
+      if (this.kiosk) {
+        clearTimeout(this.idleTimeout);
+        this.idleTimeout = setTimeout(this.onIdle, this.idleTime);
+      }
     },
   },
   mounted () {
