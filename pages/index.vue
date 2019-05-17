@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @mousemove="onActive" @mousedown="onActive" @scroll="onActive" @touchstart="onActive">
     <img src="/img/skrecok-lamp.png" class="bg-image lamp">
     <PingPong v-bind:videosPlaying="videosPlaying" />
     
@@ -64,7 +64,7 @@ export default {
     PingPong, VideoSection
   },
   data () {
-    return { 
+    return {
       pageTitle:         "Profesor Škrečok",
       pageIntro:         "Svet umenia je plný zvláštnych príbehov a pestrých charakterov. Objavuj ich spolu s profesorom Škrečkom, ktorý na staré kolená zistil, že výtvarná výchova predsa len nie je nuda. V sérii krátkych animovaných videí ťa Škrečok postupne zoznámi so slovenskými aj svetovými umeleckými osobnosťami a zašpekuluje si nad ich tvorbou a výtvarným myslením.",
       pageCTA:           "Poďme na to!",
@@ -72,7 +72,7 @@ export default {
       installationIntro: "Profesora Škrečka môžeš v nadživotnej veľkosti stretnúť v Slovenskej národnej galérii. Na prvom poschodí Esterházyho paláca v Bratislave nájdeš interaktívnu inštaláciu, v ktorej ťa Škrečok prevedie podivuhodnými dejinami umenia od praveku až po súčasnosť. Animácia, mamuty, hlodavce a loptové hry v jednom. Áno, čítaš správne. Príď sa pozrieť!",
       installationURL: "https://www.sng.sk/sk/vystavy/2295_podivuhodne-dejiny-umenia-s-profesorom-skreckom",
       footerHTML:        "Videá: <a href='https://umeleckestrevo.cz/' target='_blank'>Autorská dvojica Fuczik-Kakalík</a><br>Web: <a href='http://lab.sng.sk/' target='_blank'>lab.SNG</a>",
-      kiosk:         false,
+      kiosk:             false,
       ytAPIKey:          "AIzaSyD18NomcL0M4uAZZiDxkUgwEHre9Lk-KU0",
       ytPlaylistID:      "PLdCkSFojiBUqLrSe_6yF7tJulN4X_Vm9I",
       ytPlaylistItemDescriptionSeparator: "---",
@@ -80,6 +80,8 @@ export default {
       ytPlaylistItems:   [],
       videosPlaying:     false,
       videosLoaded:      false,
+      idleTime:          300000, // time until Idle in ms
+      idleTimeout:       null,
       profiles: {
         'Intro': {
           subtitle: '✸ 2019, Bratislava',
@@ -170,6 +172,17 @@ export default {
     parseQuery(query) {
       this.kiosk = Boolean(query['kiosk']);
     },
+    onActive() {
+      this.resetIdleTimer();
+    },
+    onIdle() {
+      window.scrollTo(0, 0);
+      window.history.go();
+    },
+    resetIdleTimer() {
+      clearTimeout(this.idleTimeout);
+      this.idleTimeout = setTimeout(this.onIdle, this.idleTime);
+    },
   },
   mounted () {
     // init YouTube API client
@@ -186,7 +199,9 @@ export default {
       }
     });
     // parse URL query params
-    this.parseQuery(this.$route.query)
+    this.parseQuery(this.$route.query);
+    // start idleTimer countdown
+    this.resetIdleTimer();
   },
 }
 </script>
