@@ -42,7 +42,7 @@
     </section>
 
     <footer class="container h-footer mt-5">
-      <small v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong" v-html="footerHTML"></small>
+      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong small" v-html="footerHTML"></p>
       <img src="/img/skrecok-carrots.png" class="bg-image carrots">
     </footer>
   </div>
