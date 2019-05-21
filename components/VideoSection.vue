@@ -2,7 +2,7 @@
   <section>
     <div class="youtube-wrapper mb-3">
       <iframe 
-        :src="'https://www.youtube.com/embed/'+videoId+'?modestbranding=1&fs=0&rel=0'" 
+        :src="'https://www.youtube.com/embed/'+videoId+'?modestbranding=1&rel=0'" 
         frameborder="0"
         sandbox="allow-same-origin allow-scripts"
       ></iframe>
