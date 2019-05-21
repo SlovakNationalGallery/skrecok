@@ -1,5 +1,7 @@
 <template>
   <div @mousemove="onActive" @mousedown="onActive" @scroll="onActive" @touchstart="onActive">
+    <div class="bg-dots top-0"></div>
+    <div class="bg-dots-fadedown top-1"></div>
     <img src="/img/skrecok-lamp.png" class="bg-image lamp">
     <PingPong v-bind:videosPlaying="videosPlaying" />
     
@@ -31,20 +33,24 @@
         v-bind:kiosk="kiosk"
         class="mb-5"
       />
-      <p class="measure mx-auto mx-pingpong lead">Ďalší diel čoskoro...</p>
+      <p class="measure mx-auto mx-pingpong lead mb-7">Ďalší diel čoskoro...</p>
     </div>
 
     <section v-if="!kiosk" class="container mt-5">
-      <h2 class="mb-4 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
+      <h2 class="mb-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
       <img class="w-100 mb-3" src="/img/installation.jpg?v=2">
-      <p class="mx-pingpong mx-auto measure">{{installationIntro}}</p>
-      <a target="_blank" :href="installationURL">Viac info</a>
+      <p class="mx-pingpong mx-auto measure bg-light p-2 mb-0">{{installationIntro}}</p>
+      <div class="d-inline-block bg-light p-3">
+        <a target="_blank" :href="installationURL">Viac info</a>
+      </div>
     </section>
 
     <footer class="container h-footer mt-5">
-      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong small" v-html="footerHTML"></p>
+      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong small bg-light p-3 p-md-4" v-html="footerHTML"></p>
       <img src="/img/skrecok-carrots.png" class="bg-image carrots">
     </footer>
+    <div class="bg-dots-fadedown flip-vertical bottom-1"></div>
+    <div class="bg-dots bottom-0"></div>
   </div>
 </template>
 
@@ -309,5 +315,45 @@ export default {
     pointer-events: none;
     text-decoration: none;
     border-bottom: none;
+  }
+  .mb-7 {
+    margin-bottom: 6rem !important;
+  }
+  :root {
+    --bg-unit-height: 180px;
+  }
+  .bg-dots {
+    background-image: url('/img/bg-dots.png');
+    width: 100%;
+    height: var(--bg-unit-height);
+    position: absolute;
+    z-index: -2;
+  }
+  .bg-dots-fadedown {
+    background-image: url('/img/bg-dots-fadedown.png');
+    width: 100%;
+    height: var(--bg-unit-height);
+    position: absolute;
+    z-index: -2;
+  }
+  .top-0 {
+    top: 0;
+  }
+  .top-1 {
+    top: var(--bg-unit-height);
+  }
+  .bottom-0 {
+    bottom: 0;
+  }
+  .bottom-1 {
+    bottom: var(--bg-unit-height);
+  }
+  .flip-vertical {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
   }
 </style>
