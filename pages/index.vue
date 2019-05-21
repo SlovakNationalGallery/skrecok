@@ -169,6 +169,13 @@ export default {
         }
       })
     },
+    loadYTIframeAPI() {
+      var tag = document.createElement('script');
+      tag.id = 'iframe-api';
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    },
     parseQuery(query) {
       this.kiosk = Boolean(query['kiosk']);
     },
@@ -200,6 +207,8 @@ export default {
         console.error('gapi.client could not load in a timely manner!');
       }
     });
+    // load YouTube iframe API
+    this.loadYTIframeAPI();
     // parse URL query params
     this.parseQuery(this.$route.query);
     // start idleTimer countdown

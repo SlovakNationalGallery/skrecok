@@ -2,9 +2,10 @@
   <section>
     <div class="youtube-wrapper mb-3">
       <iframe 
-        :src="'https://www.youtube.com/embed/'+videoId+'?modestbranding=1&rel=0'" 
+        :id="videoId"
+        :src="'https://www.youtube.com/embed/'+videoId+'?modestbranding=1&rel=0&enablejsapi=1'" 
+        :sandbox="kiosk ? 'allow-same-origin allow-scripts allow-presentation' : false"
         frameborder="0"
-        sandbox="allow-same-origin allow-scripts allow-presentation"
       ></iframe>
     </div>
     
@@ -25,19 +26,29 @@ export default {
   components: {
     ArtistProfile
   },
-  data: () => ({}),
+  data: () => ({
+    player: undefined,
+  }),
   props : ['videoId', 'descriptionText', 'profile', 'last', 'videosPlaying', 'kiosk'],
   methods: {
-    onPlaying (event) {
-      this.$emit('update:videosPlaying', true)
+    onPlayerStateChange (event) {
+      let playerStatus = event.data;
+      if (playerStatus == 0) { // ended
+        this.$emit('update:videosPlaying', false)
+      } else if (playerStatus == 1) { // playing
+        this.$emit('update:videosPlaying', true)
+      } else if (playerStatus == 2) { // paused
+        this.$emit('update:videosPlaying', false)
+      } 
     },
-    onPaused (event) {
-      this.$emit('update:videosPlaying', false)
-    },
-    onEnded (event) {
-      this.$emit('update:videosPlaying', false)
-    },
-  }
+  },
+  mounted () {
+    this.player = new YT.Player(this.videoId, {
+        events: {
+          'onStateChange': this.onPlayerStateChange
+        }
+    });
+  },
 }
 </script>
 
