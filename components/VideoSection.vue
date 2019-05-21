@@ -16,7 +16,7 @@
       v-bind:profile="profile"
     />
 
-    <hr v-if="!last">
+    <hr>
   </section>
 </template>
 
@@ -29,7 +29,7 @@ export default {
   data: () => ({
     player: undefined,
   }),
-  props : ['videoId', 'descriptionText', 'profile', 'last', 'videosPlaying', 'kiosk'],
+  props : ['videoId', 'descriptionText', 'profile', 'videosPlaying', 'kiosk'],
   methods: {
     onPlayerStateChange (event) {
       let playerStatus = event.data;
@@ -72,7 +72,11 @@ export default {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media (min-width: 768px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
   }
 </style>

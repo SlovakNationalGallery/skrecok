@@ -9,7 +9,7 @@
           {{pageTitle}}
         </h1>
         <p class="mt-4 bg-light measure mx-auto">{{pageIntro}}</p>
-        <a href="#videos" class="button d-inline-block mt-3">{{pageCTA}}</a>
+        <a href="#videos" class="button d-inline-block mt-3 lead">{{pageCTA}}</a>
       </div>
     </section>
     
@@ -26,12 +26,12 @@
           avatarSrc: ytPlaylistItem.profileData.avatarSrc,
           subtitle: ytPlaylistItem.profileData.subtitle,
           linkSrc: ytPlaylistItem.profileData.linkSrc,
-        }"        
-        v-bind:last="index == ytPlaylistItems.length - 1"
+        }"
         v-bind:videosPlaying.sync="videosPlaying"
         v-bind:kiosk="kiosk"
         class="mb-5"
       />
+      <p class="measure mx-auto mx-pingpong lead">Ďalší diel čoskoro...</p>
     </div>
 
     <section v-if="!kiosk" class="container mt-5">
@@ -42,7 +42,7 @@
     </section>
 
     <footer class="container h-footer mt-5">
-      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left small position-block position-sm-absolute bottom-0 mx-pingpong" v-html="footerHTML"></p>
+      <small v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong" v-html="footerHTML"></small>
       <img src="/img/skrecok-carrots.png" class="bg-image carrots">
     </footer>
   </div>
