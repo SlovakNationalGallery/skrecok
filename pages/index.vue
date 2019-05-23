@@ -16,7 +16,10 @@
     </section>
     
     <div id="videos" class="container">
-      <span class="d-inline-block vh-100" v-if="!videosLoaded">Loading...</span>
+      <div class="d-inline-block vh-100" v-if="!videosLoaded">
+        <div>videá sú na ceste...</div>
+        <img src="/img/skrecok-loop.gif">
+      </div>
       <VideoSection
         v-for="(ytPlaylistItem, index) in ytPlaylistItems"
         v-bind:key="index"
