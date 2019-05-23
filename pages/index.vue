@@ -55,7 +55,7 @@
       <img class="w-100 mb-3" src="/img/installation.jpg?v=2">
       <p class="mx-pingpong mx-auto measure bg-light p-2 mb-0">{{installationIntro}}</p>
       <div class="d-inline-block bg-light p-3">
-        <a target="_blank" :href="installationURL">Viac info</a>
+        <a target="_blank" :href="installationURL" class="lead">Viac info</a>
       </div>
       <div>
         <Button 
@@ -67,7 +67,7 @@
     </section>
 
     <footer class="container h-footer mt-5">
-      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong small bg-light p-3 p-md-4" v-html="footerHTML"></p>
+      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong bg-light p-3 p-md-4" v-html="footerHTML"></p>
       <img src="/img/skrecok-carrots.png" class="bg-image carrots">
     </footer>
     <div class="bg-dots-fadedown flip-vertical bottom-1"></div>
