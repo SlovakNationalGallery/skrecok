@@ -22,6 +22,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body {

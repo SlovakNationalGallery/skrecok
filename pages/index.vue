@@ -23,6 +23,8 @@
       <VideoSection
         v-for="(ytPlaylistItem, index) in ytPlaylistItems"
         v-bind:key="index"
+        v-bind:index="index"
+        v-bind:lastIndex="ytPlaylistItems.length - 1"
         v-bind:videoId="ytPlaylistItem.snippet.resourceId.videoId"
         v-bind:descriptionText="ytPlaylistItem.descriptionText"
         v-bind:profile="{
@@ -34,7 +36,7 @@
         }"
         v-bind:videosPlaying.sync="videosPlaying"
         v-bind:kiosk="kiosk"
-        class="mb-5"
+        :id="'video-section-'+index"
       />
       <p class="measure mx-auto mx-pingpong lead mb-7">Ďalší diel čoskoro...</p>
     </div>

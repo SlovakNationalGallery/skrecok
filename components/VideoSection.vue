@@ -1,12 +1,21 @@
 <template>
-  <section>
-    <div class="youtube-wrapper mb-3">
+  <section class="mb-5 pt-4">
+    <div class="youtube-wrapper">
       <iframe 
         :id="videoId"
         :src="'https://www.youtube.com/embed/'+videoId+'?modestbranding=1&rel=0&enablejsapi=1'" 
         :sandbox="kiosk ? 'allow-same-origin allow-scripts allow-presentation' : false"
         frameborder="0"
       ></iframe>
+    </div>
+
+    <div>
+      <a v-if="prevIndex !== undefined" :href="'#video-section-'+prevIndex" class="button d-inline-block m-4">
+        predošlé video
+      </a>
+      <a v-if="nextIndex !== undefined" :href="'#video-section-'+nextIndex" class="button d-inline-block m-4">
+      ďalšie video
+      </a>
     </div>
     
     <p class="measure mx-auto mx-pingpong mb-4">{{descriptionText}}</p>
@@ -29,7 +38,15 @@ export default {
   data: () => ({
     player: undefined,
   }),
-  props : ['videoId', 'descriptionText', 'profile', 'videosPlaying', 'kiosk'],
+  props : ['index', 'lastIndex', 'videoId', 'descriptionText', 'profile', 'videosPlaying', 'kiosk'],
+  computed: {
+    nextIndex: function () {
+      return this.index !== this.lastIndex ? this.index + 1 : undefined;
+    },
+    prevIndex: function () {
+      return this.index !== 0 ? this.index - 1 : undefined;
+    },
+  },
   methods: {
     onPlayerStateChange (event) {
       let playerStatus = event.data;
