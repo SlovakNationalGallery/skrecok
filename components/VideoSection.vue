@@ -10,12 +10,18 @@
     </div>
 
     <div>
-      <a v-if="prevIndex !== undefined" :href="'#video-section-'+prevIndex" class="button d-inline-block m-4">
-        predošlé video
-      </a>
-      <a v-if="nextIndex !== undefined" :href="'#video-section-'+nextIndex" class="button d-inline-block m-4">
-      ďalšie video
-      </a>
+      <Button
+        v-if="prevIndex !== undefined" 
+        v-bind:text="'predošlé video'"
+        v-bind:href="'#video-section-'+prevIndex"
+        v-bind:classNames="'mx-4 my-5'"
+      />
+      <Button
+        v-if="nextIndex !== undefined" 
+        v-bind:text="'ďalšie video'"
+        v-bind:href="'#video-section-'+nextIndex"
+        v-bind:classNames="'mx-4 my-5'"
+      />
     </div>
     
     <p class="measure mx-auto mx-pingpong mb-4">{{descriptionText}}</p>
@@ -30,10 +36,11 @@
 </template>
 
 <script>
+import Button from '~/components/Button.vue'  
 import ArtistProfile from '~/components/ArtistProfile.vue'
 export default {
   components: {
-    ArtistProfile
+    ArtistProfile, Button
   },
   data: () => ({
     player: undefined,

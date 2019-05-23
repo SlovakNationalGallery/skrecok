@@ -11,7 +11,11 @@
           {{pageTitle}}
         </h1>
         <p class="mt-4 bg-light measure mx-auto">{{pageIntro}}</p>
-        <a href="#videos" class="button d-inline-block mt-3 lead">{{pageCTA}}</a>
+        <Button 
+          v-bind:text="pageCTA"
+          v-bind:href="'#videos'"
+          v-bind:classNames="'mt-3 lead'"
+        />
       </div>
     </section>
     
@@ -60,6 +64,7 @@
 </template>
 
 <script>
+import Button from '~/components/Button.vue'
 import PingPong from '~/components/PingPong.vue'
 import VideoSection from '~/components/VideoSection.vue'
 
@@ -72,7 +77,7 @@ export default {
     }
   },
   components: {
-    PingPong, VideoSection
+    PingPong, VideoSection, Button
   },
   data () {
     return {
@@ -288,18 +293,6 @@ export default {
   }
   .tilted {
     transform: rotate(-3deg);
-  }
-  .button {
-    border: solid 2px #000;
-    padding: 0.5rem;
-    box-shadow: 4px 4px #000;
-  }
-  .button:hover {
-    border: solid 2px #000;
-    box-shadow: 2px 2px #000;
-  }
-  .button:active {
-    box-shadow: 0px 0px #000;
   }
   .h-footer {
     height: calc(50vw * 0.59);
