@@ -244,6 +244,7 @@ export default {
     width: 100%;
     max-width: 829px;
     right: 0;
+    bottom: 0;
 
     @media (min-width: 576px) {
       width: 50%;
