@@ -1,5 +1,5 @@
 <template>
-  <div @mousemove="onActive" @mousedown="onActive" @scroll="onActive" @touchstart="onActive">
+  <div id="top" @mousemove="onActive" @mousedown="onActive" @scroll="onActive" @touchstart="onActive">
     <div class="bg-dots top-0"></div>
     <div class="bg-dots-fadedown top-1"></div>
     <img src="/img/skrecok-lamp.png" class="bg-image lamp">
@@ -42,15 +42,27 @@
         v-bind:kiosk="kiosk"
         :id="'video-section-'+index"
       />
-      <p class="measure mx-auto mx-pingpong lead mb-7">Ďalší diel čoskoro...</p>
+      <p class="measure mx-auto mx-pingpong lead">Ďalší diel čoskoro...</p>
+      <Button 
+        v-bind:text="backToTop"
+        v-bind:href="'#top'"
+        v-bind:classNames="'mt-4'"
+      />
     </div>
 
-    <section v-if="!kiosk" class="container mt-5">
+    <section v-if="!kiosk" class="container mt-7">
       <h2 class="mb-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
       <img class="w-100 mb-3" src="/img/installation.jpg?v=2">
       <p class="mx-pingpong mx-auto measure bg-light p-2 mb-0">{{installationIntro}}</p>
       <div class="d-inline-block bg-light p-3">
         <a target="_blank" :href="installationURL">Viac info</a>
+      </div>
+      <div>
+        <Button 
+          v-bind:text="backToTop"
+          v-bind:href="'#top'"
+          v-bind:classNames="'mt-5'"
+        />
       </div>
     </section>
 
@@ -84,6 +96,7 @@ export default {
       pageTitle:         "Profesor Škrečok",
       pageIntro:         "Svet umenia je plný zvláštnych príbehov a pestrých charakterov. Objavuj ich spolu s profesorom Škrečkom, ktorý na staré kolená zistil, že výtvarná výchova predsa len nie je nuda. V sérii krátkych animovaných videí ťa Škrečok postupne zoznámi so slovenskými aj svetovými umeleckými osobnosťami a zašpekuluje si nad ich tvorbou a výtvarným myslením.",
       pageCTA:           "Poďme na to!",
+      backToTop:         "naspäť na začiatok",
       installationTitle: "Navštív profesora Škrečka",
       installationIntro: "Profesora Škrečka môžeš v nadživotnej veľkosti stretnúť v Slovenskej národnej galérii. Na prvom poschodí Esterházyho paláca v Bratislave nájdeš interaktívnu inštaláciu, v ktorej ťa Škrečok prevedie podivuhodnými dejinami umenia od praveku až po súčasnosť. Animácia, mamuty, hlodavce a loptové hry v jednom. Áno, čítaš správne. Príď sa pozrieť!",
       installationURL: "https://www.sng.sk/sk/vystavy/2295_podivuhodne-dejiny-umenia-s-profesorom-skreckom",
@@ -315,8 +328,8 @@ export default {
     text-decoration: none;
     border-bottom: none;
   }
-  .mb-7 {
-    margin-bottom: 6rem !important;
+  .mt-7 {
+    margin-top: 6rem !important;
   }
   :root {
     --bg-unit-height: 180px;
