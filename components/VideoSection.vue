@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-5 pt-4">
+  <section :id="'video-'+index" class="mb-5 pt-4">
     <div class="youtube-wrapper">
       <iframe 
         :id="videoId"
@@ -13,13 +13,13 @@
       <Button
         v-if="prevIndex !== undefined" 
         v-bind:text="'predošlé video'"
-        v-bind:href="'#video-section-'+prevIndex"
+        v-bind:href="'#video-'+prevIndex"
         v-bind:classNames="'mx-4 my-5'"
       />
       <Button
         v-if="nextIndex !== undefined" 
         v-bind:text="'ďalšie video'"
-        v-bind:href="'#video-section-'+nextIndex"
+        v-bind:href="'#video-'+nextIndex"
         v-bind:classNames="'mx-4 my-5'"
       />
     </div>

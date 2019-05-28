@@ -40,7 +40,6 @@
         }"
         v-bind:videosPlaying.sync="videosPlaying"
         v-bind:kiosk="kiosk"
-        :id="'video-section-'+index"
       />
       <p class="measure mx-auto mx-pingpong lead">Ďalší diel čoskoro...</p>
       <Button 
