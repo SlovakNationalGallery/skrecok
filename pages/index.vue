@@ -14,7 +14,7 @@
         <Button 
           v-bind:text="pageCTA"
           v-bind:href="'#videos'"
-          class="mt-3 lead"
+          class="mt-3 lead anim-pulse"
         />
       </div>
     </section>
@@ -373,5 +373,17 @@ export default {
     transform: scaleY(-1);
     filter: FlipV;
     -ms-filter: "FlipV";
+  }
+
+  .anim-pulse {
+    animation: pulse 0.8s ease-out alternate infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    100% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
   }
 </style>
