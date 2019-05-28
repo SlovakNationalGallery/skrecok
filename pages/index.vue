@@ -32,9 +32,9 @@
         v-bind:videoId="ytPlaylistItem.snippet.resourceId.videoId"
         v-bind:descriptionText="ytPlaylistItem.descriptionText"
         v-bind:profile="{
-          profileName: ytPlaylistItem.profileName,
           profileText: ytPlaylistItem.profileText,
           avatarSrc: ytPlaylistItem.profileData.avatarSrc,
+          title: ytPlaylistItem.profileData.title,
           subtitle: ytPlaylistItem.profileData.subtitle,
           linkSrc: ytPlaylistItem.profileData.linkSrc,
         }"
@@ -113,41 +113,49 @@ export default {
       idleTimeout:       null,
       profiles: {
         'Intro': {
+          title: 'Škrečok',
           subtitle: '✸ 2019, Bratislava',
           avatarSrc: '/img/avatar-skrecok.png',
           linkSrc: 'https://www.sng.sk/sk/vystavy/2295_podivuhodne-dejiny-umenia-s-profesorom-skreckom',
         },
         'Július Koller': {
+          title: 'Július Koller',
           subtitle: '✸ 1939, Piešťany <br> ✝ 2007, Bratislava',
           avatarSrc: '/img/avatar-koller.png',
           linkSrc: 'https://www.webumenia.sk/autor/5089',
         },
         'Anna Daučíková': {
+            title: 'Anna Daučíková',
             subtitle: '✸ 1950, Bratislava',
             avatarSrc: 'img/avatar-daucikova.png',
             linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1918',
         },
         'Štefan Papčo': {
+            title: 'Štefan Papčo',
             subtitle: '✸ 1983, Ružomberok',
             avatarSrc: 'img/avatar-papco.png',
             linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1004610',
         },
         'Roman Ondak': {
+            title: 'Roman Ondak',
             subtitle: '✸ 1966, Žilina',
             avatarSrc: 'img/avatar-ondak.png',
             linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/7446',
         },
         'Vladimír Dedeček': {
+            title: 'Vladimír Dedeček',
             subtitle: '✸ 1929, Martin',
             avatarSrc: 'img/avatar-dedecek.png',
             linkSrc: 'https://www.webumenia.sk/en/autor/1052763',
         },
         'Peter Kalmus': {
+            title: 'Peter Kalmus',
             subtitle: '✸ 1953, Piešťany',
             avatarSrc: 'avatar-kalmus.png',
             linkSrc: 'https://www.webumenia.sk/autor/4684',
         },
         'Maria Bartuszová': {
+            title: 'Maria Bartuszová',
             subtitle: '✸ 1936, Praha <br> ✝ 1996, Košice',
             avatarSrc: 'avatar-bartuszova.png',
             linkSrc: 'https://www.webumenia.sk/autor/513',
@@ -186,14 +194,13 @@ export default {
     parseResult(result) {
       return result.items.map((item) => {
         let [descriptionText, profileText] = item.snippet.description.split(this.ytPlaylistItemDescriptionSeparator);
-        let [_, profileName] = item.snippet.title.split(this.ytPlaylistItemTitleSeparator);
-        let profileData = this.profiles[profileName] || this.profiles['default'];
+        let [_, profileKey] = item.snippet.title.split(this.ytPlaylistItemTitleSeparator);
+        let profileData = this.profiles[profileKey] || this.profiles['default'];
         
         return {
           ...item,
           descriptionText: descriptionText,
           profileText: profileText,
-          profileName: profileName,
           profileData: profileData,
         }
       })

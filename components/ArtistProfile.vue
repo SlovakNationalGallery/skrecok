@@ -6,13 +6,13 @@
         class="avatar rounded-circle mr-3 mb-2 float-left float-sm-none" 
       >
       <div class="text-left text-sm-center">
-        <h4 class="d-block d-sm-none">{{profile.profileName}}</h4>
+        <h4 class="d-block d-sm-none">{{profile.title}}</h4>
         <div v-html="profile.subtitle"></div>
         <a v-if="!kiosk" :href="profile.linkSrc">Viac info</a>
       </div>
     </div>
     <div class="col-sm-7 col-md-8 col-lg-7 text-left">
-      <h4 class="d-none d-sm-block">{{profile.profileName}}</h4>
+      <h4 class="d-none d-sm-block">{{profile.title}}</h4>
       <p class="measure">{{profile.profileText}}</p>
     </div>
   </div>
