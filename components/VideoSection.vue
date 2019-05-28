@@ -14,13 +14,13 @@
         v-if="prevIndex !== undefined" 
         v-bind:text="'predošlé video'"
         v-bind:href="'#video-'+prevIndex"
-        v-bind:classNames="'mx-4 my-5'"
+        class="mx-4 my-5"
       />
       <Button
         v-if="nextIndex !== undefined" 
         v-bind:text="'ďalšie video'"
         v-bind:href="'#video-'+nextIndex"
-        v-bind:classNames="'mx-4 my-5'"
+        class="mx-4 my-5"
       />
     </div>
     

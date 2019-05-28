@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" :class="'button d-inline-block ' + classNames">{{text}}</a>
+  <a :href="href" :target="newTab ? '_blank' : false" class="button d-inline-block">{{text}}</a>
 </template>
 
 <script>
@@ -16,9 +16,6 @@ export default {
     newTab: {
       type: Boolean,
       default: false
-    },
-    classNames: {
-      type: String,
     },
   },
 }

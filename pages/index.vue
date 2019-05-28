@@ -14,7 +14,7 @@
         <Button 
           v-bind:text="pageCTA"
           v-bind:href="'#videos'"
-          v-bind:classNames="'mt-3 lead'"
+          class="mt-3 lead"
         />
       </div>
     </section>
@@ -45,7 +45,7 @@
       <Button 
         v-bind:text="backToTop"
         v-bind:href="'#top'"
-        v-bind:classNames="'mt-4'"
+        class="mt-4"
       />
     </div>
 
@@ -60,7 +60,7 @@
         <Button 
           v-bind:text="backToTop"
           v-bind:href="'#top'"
-          v-bind:classNames="'mt-5'"
+          class="mt-5"
         />
       </div>
     </section>
