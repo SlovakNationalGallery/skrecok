@@ -16,6 +16,13 @@
           v-bind:href="'#videos'"
           class="mt-3 lead anim-pulse"
         />
+        <SocialSharing
+          v-if="!kiosk"
+          v-bind:paragraph-sm="socialSharing.paragraphSm"
+          v-bind:facebook="socialSharing.facebook"
+          v-bind:twitter="socialSharing.twitter"
+          v-bind:email="socialSharing.email"
+        />
       </div>
     </section>
     
@@ -42,6 +49,18 @@
         v-bind:kiosk="kiosk"
       />
       <p class="measure mx-auto mx-pingpong lead">Ďalší diel čoskoro...</p>
+    </div>
+
+    <SocialSharing
+      v-if="!kiosk"
+      v-bind:paragraph="socialSharing.paragraph"
+      v-bind:paragraph-sm="socialSharing.paragraphSm"
+      v-bind:facebook="socialSharing.facebook"
+      v-bind:twitter="socialSharing.twitter"
+      v-bind:email="socialSharing.email"
+    />
+    
+    <div class="text-center">
       <Button 
         v-bind:text="backToTop"
         v-bind:href="'#top'"
@@ -78,6 +97,7 @@
 import Button from '~/components/Button.vue'
 import PingPong from '~/components/PingPong.vue'
 import VideoSection from '~/components/VideoSection.vue'
+import SocialSharing from '~/components/SocialSharing.vue'
 
 export default {
   head () {
@@ -88,7 +108,7 @@ export default {
     }
   },
   components: {
-    PingPong, VideoSection, Button
+    PingPong, VideoSection, Button, SocialSharing
   },
   data () {
     return {
@@ -110,6 +130,16 @@ export default {
       videosLoaded:      false,
       idleTime:          300000, // time until Idle in ms
       idleTimeout:       null,
+      socialSharing:     {
+        paragraph: "Páčia sa ti Škrečkove príbehy umenia?<br>Podeľ sa o ne s priateľmi na sociálnych sieťach alebo cez e-mail:",
+        paragraphSm: "Zdieľaj s priateľmi:",
+        facebook: "http://skrecok.sng.sk/",
+        twitter: "Profesor%20%C5%A0kre%C4%8Dok%20objavuje%20osobnosti%20modern%C3%A9ho%20a%20s%C3%BA%C4%8Dasn%C3%A9ho%20umenia.%20Koller%2C%20Ondak%2C%20Picasso%20a%20%C4%8Fal%C5%A1%C3%AD%20v%20animovan%C3%BDch%20vide%C3%A1ch%20od%20SNG.%20Pozeraj%20tu%3A%20https%3A%2F%2Fskrecok.sng.sk",
+        email: {
+          subject: 'Pozri%20si%20pr%C3%ADbehy%20umenia%20s%20Profesorom%20%C5%A0kre%C4%8Dkom',
+          body: 'Kr%C3%A1tke%20animovan%C3%A9%20vide%C3%A1%20z%20dielne%20SNG%20o%20osobnostiach%20modern%C3%A9ho%20a%20s%C3%BA%C4%8Dasn%C3%A9ho%20umenia%3A%20%5Blink%5D'
+        },
+      },
       profiles: {
         'Intro': {
           title: 'Škrečok',
