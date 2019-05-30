@@ -9,18 +9,18 @@
       ></iframe>
     </div>
 
-    <div>
+    <div class="my-4 my-md-5">
       <Button
         v-if="prevIndex !== undefined" 
         v-bind:text="'predošlé video'"
         v-bind:href="'#video-'+prevIndex"
-        class="mx-4 my-5"
+        class="m-2"
       />
       <Button
         v-if="nextIndex !== undefined" 
         v-bind:text="'ďalšie video'"
         v-bind:href="'#video-'+nextIndex"
-        class="mx-4 my-5"
+        class="m-2"
       />
     </div>
     
