@@ -159,11 +159,11 @@ export default {
             avatarSrc: 'img/avatar-daucikova.png',
             linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1918',
         },
-        'Štefan Papčo': {
-            title: 'Štefan Papčo',
-            subtitle: '✸ 1983, Ružomberok',
-            avatarSrc: 'img/avatar-papco.png',
-            linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1004610',
+        'Pablo Picasso': {
+            title: 'Pablo Picasso',
+            subtitle: '✸ 1881, Malaga, Španielsko <br> ✝ 1973, Mougins, Francúzsko',
+            avatarSrc: 'img/avatar-picasso.png',
+            linkSrc: 'https://www.webumenia.sk/autor/7821',
         },
         'Roman Ondak': {
             title: 'Roman Ondak',
@@ -177,11 +177,17 @@ export default {
             avatarSrc: 'img/avatar-dedecek.png',
             linkSrc: 'https://www.webumenia.sk/en/autor/1052763',
         },
-        'Peter Kalmus': {
-            title: 'Peter Kalmus',
-            subtitle: '✸ 1953, Piešťany',
-            avatarSrc: 'avatar-kalmus.png',
-            linkSrc: 'https://www.webumenia.sk/autor/4684',
+        'Marcel Duchamp': {
+            title: 'Marcel Duchamp',
+            subtitle: '✸ 1887, Blainville-Crevon, Francúzsko <br> ✝ 1968, Neuilly-sur-Seine, Francúzsko',
+            avatarSrc: 'avatar-duchamp.png',
+            linkSrc: 'https://sk.wikipedia.org/wiki/Marcel_Duchamp',
+        },
+        'Andy Warhol': {
+            title: 'Andy Warhol',
+            subtitle: '✸ 1928, Pittsburgh, USA <br> ✝ 1987, New York, USA',
+            avatarSrc: 'avatar-warhol.png',
+            linkSrc: 'https://www.webumenia.sk/autor/11636',
         },
         'Maria Bartuszová': {
             title: 'Maria Bartuszová',
