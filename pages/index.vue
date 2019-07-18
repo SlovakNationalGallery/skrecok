@@ -180,19 +180,19 @@ export default {
         'Marcel Duchamp': {
             title: 'Marcel Duchamp',
             subtitle: '✸ 1887, Blainville-Crevon, Francúzsko <br> ✝ 1968, Neuilly-sur-Seine, Francúzsko',
-            avatarSrc: 'avatar-duchamp.png',
+            avatarSrc: 'img/avatar-duchamp.png',
             linkSrc: 'https://sk.wikipedia.org/wiki/Marcel_Duchamp',
         },
         'Andy Warhol': {
             title: 'Andy Warhol',
             subtitle: '✸ 1928, Pittsburgh, USA <br> ✝ 1987, New York, USA',
-            avatarSrc: 'avatar-warhol.png',
+            avatarSrc: 'img/avatar-warhol.png',
             linkSrc: 'https://www.webumenia.sk/autor/11636',
         },
         'Maria Bartuszová': {
             title: 'Maria Bartuszová',
             subtitle: '✸ 1936, Praha <br> ✝ 1996, Košice',
-            avatarSrc: 'avatar-bartuszova.png',
+            avatarSrc: 'img/avatar-bartuszova.png',
             linkSrc: 'https://www.webumenia.sk/autor/513',
         },
         'default': {
