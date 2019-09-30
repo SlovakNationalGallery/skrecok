@@ -4,14 +4,14 @@
     <div class="bg-dots-fadedown top-1"></div>
     <img src="/img/skrecok-lamp.png" class="bg-image lamp">
     <PingPong v-bind:videosPlaying="videosPlaying" />
-    
+
     <section class="container my-5 py-5">
       <div class="mt-2">
         <h1 class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">
           {{pageTitle}}
         </h1>
         <p class="mt-4 bg-light measure mx-auto">{{pageIntro}}</p>
-        <Button 
+        <Button
           v-bind:text="pageCTA"
           v-bind:href="'#videos'"
           class="mt-3 lead anim-pulse"
@@ -25,7 +25,7 @@
         />
       </div>
     </section>
-    
+
     <div id="videos" class="container">
       <div class="d-inline-block vh-100" v-if="!videosLoaded">
         <div>videá sú na ceste...</div>
@@ -59,9 +59,9 @@
       v-bind:twitter="socialSharing.twitter"
       v-bind:email="socialSharing.email"
     />
-    
+
     <div class="text-center">
-      <Button 
+      <Button
         v-bind:text="backToTop"
         v-bind:href="'#top'"
         class="mt-4"
@@ -76,7 +76,7 @@
         <a target="_blank" :href="installationURL" class="lead">Viac info</a>
       </div>
       <div>
-        <Button 
+        <Button
           v-bind:text="backToTop"
           v-bind:href="'#top'"
           class="mt-5"
@@ -215,9 +215,11 @@ export default {
     requestYTPlaylistItems (gapi, playlistId) {
       return gapi.client.youtube.playlistItems.list({
         "part": "snippet",
-        "playlistId": playlistId
+        "playlistId": playlistId,
+        "maxResults": 20
       })
       .then((response) => {
+        console.log(response.result);
         this.handleYTPlaylistItems(response.result)
       },
       function(err) { console.error("Execute error", err); });
@@ -231,7 +233,7 @@ export default {
         let [descriptionText, profileText] = item.snippet.description.split(this.ytPlaylistItemDescriptionSeparator);
         let [_, profileKey] = item.snippet.title.split(this.ytPlaylistItemTitleSeparator);
         let profileData = this.profiles[profileKey] || this.profiles['default'];
-        
+
         return {
           ...item,
           descriptionText: descriptionText,
