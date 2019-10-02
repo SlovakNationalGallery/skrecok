@@ -219,7 +219,6 @@ export default {
         "maxResults": 20
       })
       .then((response) => {
-        console.log(response.result);
         this.handleYTPlaylistItems(response.result)
       },
       function(err) { console.error("Execute error", err); });
