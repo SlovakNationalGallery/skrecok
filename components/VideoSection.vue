@@ -31,6 +31,9 @@
       v-bind:profile="profile"
     />
 
+    <img  v-if="profile.workListImg" :src="profile.workListImg" class="worklist-img"/>
+    <nuxt-link v-if="profile.workList" :to="profile.workList" class="button d-inline-block">{{worklist}}</nuxt-link>
+    
     <hr>
   </section>
 </template>
@@ -45,7 +48,7 @@ export default {
   data: () => ({
     player: undefined,
   }),
-  props : ['index', 'lastIndex', 'videoId', 'descriptionText', 'profile', 'videosPlaying', 'kiosk'],
+  props : ['index', 'lastIndex', 'videoId', 'descriptionText', 'profile', 'videosPlaying', 'kiosk', 'worklist'],
   computed: {
     nextIndex: function () {
       return this.index !== this.lastIndex ? this.index + 1 : undefined;
