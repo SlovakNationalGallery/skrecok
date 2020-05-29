@@ -37,7 +37,7 @@ export default {
       backToTop: "naspäť na začiatok",
       downloadPdf: "Stiahni ako PDF",
       installationTitle: "Navštív profesora Škrečka",
-      worklist: "Pracovný list",
+      worklist: "Metodický list",
       installationIntro:
         "Profesora Škrečka môžeš v nadživotnej veľkosti stretnúť v Slovenskej národnej galérii. Na prvom poschodí Esterházyho paláca v Bratislave nájdeš interaktívnu inštaláciu, v ktorej ťa Škrečok prevedie podivuhodnými dejinami umenia od praveku až po súčasnosť. Animácia, mamuty, hlodavce a loptové hry v jednom. Áno, čítaš správne. Príď sa pozrieť!",
       installationURL:

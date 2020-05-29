@@ -155,8 +155,8 @@
     </section>
     <div class="text-center">
       <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Andy_Warhol.pdf'" :newTab="true" class="mt-4" />
-      <br/>
-      <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" />
+      <!-- <br/>
+      <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>
 
     <footer class="container h-footer mt-5">

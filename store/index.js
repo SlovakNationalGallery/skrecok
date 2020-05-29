@@ -51,9 +51,7 @@ export const state = () => ({
         subtitle: '✸ 1928, Pittsburgh, USA <br> ✝ 1987, New York, USA',
         avatarSrc: 'img/avatar-warhol.png',
         linkSrc: 'https://www.webumenia.sk/autor/11636',
-        workList: 'warhol',
-        workListImg: 'img/warhol/warhol_can.png',
-
+        workList: 'warhol'
     },
     'Maria Bartuszová': {
         title: 'Maria Bartuszová',
