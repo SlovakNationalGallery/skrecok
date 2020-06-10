@@ -23,7 +23,7 @@
           v-bind:profile="{ 
             ...profile, 
             title: '', 
-            profileText: `This is Andy's description`
+            profileText: `Americký maliar, filmový tvorca a dôležitá osobnosť umeleckého hnutia pop-art. Narodil sa a vyrástol v Pittsburghu v rodine rusínskych emigrantov z obce Miková pri Medzilaborciach. Vyštudoval odbor grafický dizajn na Carnegie Institute of Technology v Pittsburghu a presťahoval sa do New Yorku, aby sa venoval kariére komerčného umelca. V 60. rokoch začal vytvárať serigrafie dobre známych amerických produktov ako sú plechovky Campbellovej polievky či Coca-Coly. Neskôr ho preslávili portréty osobností ako Marilyn Monroe, Elizabeth Taylor, Elvis Presley či diktátora Mao Ce-tunga.`
            }"
         />
       </div>
@@ -34,49 +34,37 @@
         <div class="col-sm-12 col-md-6 text-left">
           <h4 class="text-left">Diela a témy</h4>
           <p>
-            Warhol bol od útleho veku posadnutý slávou, módou, celebritami a
-            Hollywoodom. Útek z každodennej reality hľadal v populárnych
-            časopisoch a zbieraním autogramov filmových hviezd. Dobre rozumel
-            tomu, ako v prospech predaja, marketingové firmy vytvárajú žiarivý
-            (ale klamlivý) imidž osobností americkej spoločnosti.
-          </p>
-          <p>
-            Okolo roku 1960 začal tvoriť diela, ktoré kombinujú reklamu a
-            expresívne maliarstvo. Skúmal vzťah medzi umením, masmédiami,
-            reklamou a populárnou kultúrou. Zámerne kopíroval ich prvky,
-            umocňoval ich a zároveň poukazoval na ich manipulatívnu moc. Warhol
-            radikálne mení predstavu o tom, čo môže byť umením. Vnímal ho ako
-            PRODUKT, rovnaký ako oblečenie, ktoré nosíme alebo jedlo, ktoré
-            konzumujeme. Ako námet diel sa snaží nájsť niečo, čo pozná takmer
-            každý. Napríklad plechovku Campbellovej polievky, symbol obyčajného
-            amerického života. V tomto období začal robiť aj série portrétov
-            hviezd ako boli Elizabeth Taylor, Elvis Presley, Jackie Kennedy či
-            Marilyn Monroe. Využíva pri tom fotografiu, ktorú ľudia už poznajú z
-            (bulvárnej) tlače alebo iných médií a ďalej ju mení, množí a variuje
-            a pomocou sieťotlače prenáša priamo na plátno. SIEŤOTLAČ
-            (serigrafia) je tradičná tlačiarenská technika, jej princíp spočíva
-            v pretláčaní hmoty farby cez očká textilnej sieťoviny priamo na
-            potláčaný povrch (všimnite si vo videu autentický záber, na ktorom
-            AW prechádza cez sieťku stierkou).
-          </p>
-          <p>
-            Warhol sa stáva kľúčovým predstaviteľom umeleckej tendencie s názvom
-            POP-ART (skratka slova popular art, populárne, masové umenie), ktorá
-            vznikla okolo roku 1955 nezávisle od seba v Anglicku a v USA.
-            Východiskom tvorivých postupov pop-artu je predovšetkým životný štýl
-            konzumnej spoločnosti, expanzia nových masmédií a reklamy v 60.
-            rokoch v USA a západnej Európe. Pop-art odmietal pompéznosť, obracal
-            sa k umeniu populárnemu, ktoré reflektovalo bežný život. Prikláňa sa
-            k trivialite konzumnej spoločnosti a prejavom jej vizuálneho klišé
-            (fast food, reklama, billboardy, komiksy, a pod.). Obraz sa stal
-            vecou a vec obrazom.
+            Prečo bol Andy Warhol fascinovaný <b>reklamou a svetom šoubiznisu</b>? To, čo sa nám dnes zdá úplne bežné, bolo pred vyše 60 rokmi niečím novým. Reklama, tak ako ju poznáme dnes, sa začala masovo šíriť predovšetkým vďaka <b>rozmachu televízie</b>. Koncom 50. rokov sa skoro v každej americkej domácnosti nachádzal malý čiernobiely televízny prijímač, ktorý zmenil nielen svet reklamy, ale aj kultúry ako takej. Televízia sa stala krbom domu a vďaka nej oslovila reklama veľa ľudí naraz a priamo doma v obývačke.
           </p>
         </div>
 
         <div class="col-sm-12 col-md-6">
           <img class="framed" src="/img/warhol/warhol_studio.jpg" />
+        </div>        
+
+        <div class="col-sm-12 col-md-6 text-left">
+          <p>
+            Umelci v tomto období reagovali nielen na reklamu, ale aj na dobu, v ktorej bol „dobrý život“ definovaný predovšetkým z ekonomického hľadiska. Čo to znamená? Otvárali sa nové továrne, ktoré vďaka sériovej výrobe dokázali produkty bežnej spotreby vyrábať lacnejšie a spravili ich dostupnými pre širší okruh ľudí. Vďaka rozvoju <b>masovej produkcie</b> si ľudia mohli užívať radosť z nakupovania a reklama im pomáhala vybrať si z množstva produktov na trhu. 
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
           <img class="framed" src="/img/warhol/warhol_banana.jpg" />
         </div>
+
+        <div class="col-sm-12 col-md-6 text-left">
+          <p>
+            Okolo roku 1955 vzniklo nezávisle od seba v Anglicku a v USA nové umelecké hnutie <b>POP-ART</b> (skratka slova popular art – populárne, masové umenie). Východiskom pop-artu bolo priblížiť umenie človeku, životnému štýlu konzumnej spoločnosti a k bežnému životu.
+          </p>
+          <p>
+            Medzi typické prejavy pop-artu patrilo zjednodušovanie tvarov, neprirodzené zväčšenie objektov, výrazné farby a kontrast. V dielach sa často objavovali slávne osobnosti, značky, predmety bežnej potreby, komiks či fotografia. Obraz sa stal vecou a vec obrazom. Warholovu tvorbu charakterizovalo aj mechanické, a v mnohých prípadoch neosobné, sériové vytváranie diel a ich kópií sieťotlačovou technikou, ktorá umožňuje takéto diela vytvárať vo vyššom počte.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <img class="framed" src="/img/warhol/warhol_cans.jpg" />
+        </div>
+
       </div>
     </section>
 
@@ -85,44 +73,61 @@
         <div class="col-sm-12 col-md-6 text-left">
           <h4>Námety na diskusiu</h4>
           <p>
-            Populárna kultúra je súbor fenoménov, ktoré sú považované za
-            najvýraznejšie časti hlavného prúdu určitej kultúry (do polovice 20.
-            Storočia západnej kultúry, v súčasnosti kultúry globálnej). Jej
-            vznik úzko súvisí z rozvojom médií, sú vzájomne priam prepojené a na
-            sebe závislé. Prediskutujte so žiakmi, čo si predstavujú pod
-            populárnou kultúrou? Aké sú jej prejavy? Čo by mohlo byť jej opakom?
+            Tvorba Andyho Warhola bola zrkadlom doby a jej kultúry. Pre <b>populárnu kultúru</b> je charakteristické, že tvorí hlavný prúd každodennej kultúry bežného človeka. Čo si predstavujete pod pojmom populárna kultúra a hlavný prúd? Môže byť aj umenie súčasťou populárnej kultúry? Pri odpovedi skúste vychádzať z výrokov Andyho Warhola:
           </p>
           <p>
-            Andy Warhol miloval krásu, umelú hmotu, veci ktoré sa rýchlo menili
-            a boli moderné. Ak by žil dnes, čo by ho zaujímalo a inšpirovalo?
-            Vysvetlite prečo?
+            „V budúcnosti bude mať každý pätnásť minút slávy.“
+          </p>
+          <p>
+            „Keď sa niečo prezentuje ako umenie a povie sa o tom, že to je „umenie“, tak to aj je umenie.“
           </p>
         </div>
+
         <div class="col-sm-12 col-md-6">
           <img class="framed" src="/img/warhol/warhol_cans_idea.jpg" />
         </div>
-      </div>
+
+      	<div class="col-sm-12 col-md-6 text-left">
+					<p>
+						Andy Warhol miloval krásu, <b>umelú hmotu</b>, reklamu, veci ktoré sa rýchlo menili a boli moderné. Ak by žil dnes, čo by ho zaujímalo a inšpirovalo? Vysvetlíte prečo?
+					</p>
+					<p>
+					Aké nástroje používa súčasná reklama? Môže reklama zavádzať? Kedy nám reklama pomáha?
+					</p>
+				</div>
+
+				<div class="col-sm-12 col-md-6">
+          <img class="framed" src="/img/warhol/warhol_attraction.jpg" />
+        </div>
+
+			</div>
     </section>
 
     <section class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 text-left">
-          <h4>Návrh aktivít</h4>
+          <h4>Aktivity</h4>
           <p>
-            Warhol vytváral často portréty celebrít či obrazy všedných vecí v
-            sériách. Rad opakujúcich sa hláv či objektov nám môže pripomínať
-            poštové známky, reklamné plagáty, filmové pásy alebo niečo ďalšie?
-            Vytvor si sériu vlastných autoportrétov. Odfoť sa mobilom a vytvor z
-            jednej (selfie) fotografie sériu 4 alebo 6 vlastných portrétov
-            využitím rôznych farebných filtrov a rastrov (pracuj s mobilom alebo
-            PC). Skús na každej z fotografii vizuálne zvýrazniť tvoje
-            charakteristické črty tváre (alebo tvoj osobný štýlový účes,
-            okuliare, úsmev a pod.).
+						Skôr, ako sa v časopisoch začali objavovať fotografie, bola reklama kreslená ručne. Zvoľte si bežný predmet zo svojho okolia a <b>vytvorte jeho kreslenú reklamu</b>. 
+					</p>	
+					<p>
+						Nakreslite jeho tvar čo najvernejšie obyčajnou ceruzkou na papier (A4). Čiarami kreslite iba obrysy predmetu, detaily vynechajte. Snažte sa využiť celý formát papiera. Na svoju kresbu položte čistý papier a oba papiere umiestnite na okno oproti slnku, aby ste pôvodnú kresbu vedeli obkresliť. Použite ceruzku alebo experimentujte s atramentovým perom. Vytvorte aspoň 2 kópie pôvodnej kresby.
+					</p>	
+					<p>
+						Nakreslený predmet dotvorte podľa vlastnej fantázie. Na každom papieri vytvorte iný návrh zvoleného predmetu, ktorý by sa mohol v rámci reklamnej kampane objaviť v časopise. Porozmýšľajte, komu by bol predmet v reklame určený a podľa toho vyberajte farby, dokresľujte predmet alebo pridávajte detaily. Použite vodové, zriedené temperové, akrylové farby alebo farebné ceruzky. Vytvorte 3 rozdielne reklamné návrhy toho istého predmetu. 
           </p>
         </div>
         <div class="col-sm-12 col-md-6">
-          <img class="framed" src="/img/warhol/warhol_studio.jpg" />
-        </div>
+          <img class="framed" src="/img/warhol/warhol_products.jpg" />
+				</div>
+				<div class="col-sm-12 col-md-6 text-left">
+					<p>
+						Starší žiaci môžu zostaviť návrh reklamy do časopisu na vymyslený produkt <b>technikou koláže</b>. Zvoľte vhodné farby, mierku a jazyk. Vymyslite ľahko zapamätateľný slogan (slogan je stručný, zapamätateľný a výstižný text, veta alebo slovné spojenie). Na záver slovne zdôvodnite techniky a stratégie, ktoré ste použili vo svojom návrhu a svoj návrh predstavte pred spolužiakmi. 
+					</p>
+				</div>
+				<div class="col-sm-12 col-md-6">
+          <img class="framed" src="/img/warhol/warhol_monroe.jpg" />
+				</div>
       </div>
     </section>
 
@@ -133,6 +138,12 @@
             Externé odkazy
           </h4>
           <ul>
+						<li>
+              Andy Warhol na Webe umenia:
+              <a href="https://www.webumenia.sk/autor/11636" target="_blank"
+                >https://www.webumenia.sk/autor/11636
+              </a>
+            </li>
             <li>
               Múzeum Andyho Warhola v Pittsburghu:
               <a href="https://www.warhol.org" target="_blank"
@@ -146,11 +157,11 @@
               </a>
             </li>
             <li>
-              Wikipedia
+              Videoukážka techniky kresby Andyho Warhola:
               <a
-                href="https://en.wikipedia.org/wiki/Andy_Warhol"
+                href="https://www.youtube.com/watch?v=laOLC2eYZRM"
                 target="_blank"
-                >https://en.wikipedia.org/wiki/Andy_Warhol
+                >https://www.youtube.com/watch?v=laOLC2eYZRM
               </a>
             </li>
           </ul>
