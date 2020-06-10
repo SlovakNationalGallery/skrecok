@@ -20,7 +20,11 @@
 
         <ArtistProfile
           v-bind:kiosk="kiosk"
-          v-bind:profile="{ ...profile, title: '' }"
+          v-bind:profile="{ 
+            ...profile, 
+            title: '', 
+            profileText: `This is Andy's description`
+           }"
         />
       </div>
     </section>
