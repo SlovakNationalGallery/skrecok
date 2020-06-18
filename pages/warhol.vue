@@ -31,28 +31,28 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left">
           <h4 class="text-left">Diela a témy</h4>
           <p>
             Prečo bol Andy Warhol fascinovaný <b>reklamou a svetom šoubiznisu</b>? To, čo sa nám dnes zdá úplne bežné, bolo pred vyše 60 rokmi niečím novým. Reklama, tak ako ju poznáme dnes, sa začala masovo šíriť predovšetkým vďaka <b>rozmachu televízie</b>. Koncom 50. rokov sa skoro v každej americkej domácnosti nachádzal malý čiernobiely televízny prijímač, ktorý zmenil nielen svet reklamy, ale aj kultúry ako takej. Televízia sa stala krbom domu a vďaka nej oslovila reklama veľa ľudí naraz a priamo doma v obývačke.
           </p>
         </div>
 
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_studio.jpg" />
         </div>        
 
-        <div class="col-sm-12 col-md-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left">
           <p>
             Umelci v tomto období reagovali nielen na reklamu, ale aj na dobu, v ktorej bol „dobrý život“ definovaný predovšetkým z ekonomického hľadiska. Čo to znamená? Otvárali sa nové továrne, ktoré vďaka sériovej výrobe dokázali produkty bežnej spotreby vyrábať lacnejšie a spravili ich dostupnými pre širší okruh ľudí. Vďaka rozvoju <b>masovej produkcie</b> si ľudia mohli užívať radosť z nakupovania a reklama im pomáhala vybrať si z množstva produktov na trhu. 
           </p>
         </div>
 
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_banana.jpg" />
         </div>
 
-        <div class="col-sm-12 col-md-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left">
           <p>
             Okolo roku 1955 vzniklo nezávisle od seba v Anglicku a v USA nové umelecké hnutie <b>POP-ART</b> (skratka slova popular art – populárne, masové umenie). Východiskom pop-artu bolo priblížiť umenie človeku, životnému štýlu konzumnej spoločnosti a k bežnému životu.
           </p>
@@ -61,7 +61,7 @@
           </p>
         </div>
 
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_cans.jpg" />
         </div>
 
@@ -70,12 +70,11 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left">
           <h4>Námety na diskusiu</h4>
           <p>
-            Tvorba Andyho Warhola bola zrkadlom doby a jej kultúry. Pre <b>populárnu kultúru</b> je charakteristické, že tvorí hlavný prúd každodennej kultúry bežného človeka. Čo si predstavujete pod pojmom populárna kultúra a hlavný prúd? Môže byť aj umenie súčasťou populárnej kultúry? Pri odpovedi skúste vychádzať z výrokov Andyho Warhola:
-          </p>
-          <p>
+            Tvorba Andyho Warhola bola zrkadlom doby a jej kultúry. Pre <b>populárnu kultúru</b> je charakteristické, že tvorí hlavný prúd každodennej kultúry bežného človeka. 
+          <p class="with-circle" >  Čo si predstavujete pod pojmom populárna kultúra a hlavný prúd? Môže byť aj umenie súčasťou populárnej kultúry? Pri odpovedi skúste vychádzať z výrokov Andyho Warhola:
             „V budúcnosti bude mať každý pätnásť minút slávy.“
           </p>
           <p>
@@ -83,11 +82,11 @@
           </p>
         </div>
 
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_cans_idea.jpg" />
         </div>
 
-      	<div class="col-sm-12 col-md-6 text-left">
+      	<div class="col-sm-12 col-lg-6 text-left">
 					<p>
 						Andy Warhol miloval krásu, <b>umelú hmotu</b>, reklamu, veci ktoré sa rýchlo menili a boli moderné. Ak by žil dnes, čo by ho zaujímalo a inšpirovalo? Vysvetlíte prečo?
 					</p>
@@ -96,7 +95,7 @@
 					</p>
 				</div>
 
-				<div class="col-sm-12 col-md-6">
+				<div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_attraction.jpg" />
         </div>
 
@@ -105,7 +104,7 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left">
           <h4>Aktivity</h4>
           <p>
 						Skôr, ako sa v časopisoch začali objavovať fotografie, bola reklama kreslená ručne. Zvoľte si bežný predmet zo svojho okolia a <b>vytvorte jeho kreslenú reklamu</b>. 
@@ -117,15 +116,15 @@
 						Nakreslený predmet dotvorte podľa vlastnej fantázie. Na každom papieri vytvorte iný návrh zvoleného predmetu, ktorý by sa mohol v rámci reklamnej kampane objaviť v časopise. Porozmýšľajte, komu by bol predmet v reklame určený a podľa toho vyberajte farby, dokresľujte predmet alebo pridávajte detaily. Použite vodové, zriedené temperové, akrylové farby alebo farebné ceruzky. Vytvorte 3 rozdielne reklamné návrhy toho istého predmetu. 
           </p>
         </div>
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_products.jpg" />
 				</div>
-				<div class="col-sm-12 col-md-6 text-left">
+				<div class="col-sm-12 col-lg-6 text-left">
 					<p>
 						Starší žiaci môžu zostaviť návrh reklamy do časopisu na vymyslený produkt <b>technikou koláže</b>. Zvoľte vhodné farby, mierku a jazyk. Vymyslite ľahko zapamätateľný slogan (slogan je stručný, zapamätateľný a výstižný text, veta alebo slovné spojenie). Na záver slovne zdôvodnite techniky a stratégie, ktoré ste použili vo svojom návrhu a svoj návrh predstavte pred spolužiakmi. 
 					</p>
 				</div>
-				<div class="col-sm-12 col-md-6">
+				<div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_monroe.jpg" />
 				</div>
       </div>
@@ -230,6 +229,8 @@ export default {
 img.framed {
   max-width: 100%;
   margin-bottom: 10%;
+  width: 90%;
+  margin-left:10%;
   border: 1px solid black;
 }
 
@@ -240,4 +241,13 @@ section + section {
 li {
   list-style: none;
 }
+
+.with-circle::before{
+    content: "○";
+    display: block;
+    position: absolute;
+    left: -.5em;
+    list-style: circle;
+    }
+
 </style>
