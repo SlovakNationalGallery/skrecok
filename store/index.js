@@ -33,6 +33,7 @@ export const state = () => ({
         subtitle: '✸ 1966, Žilina',
         avatarSrc: 'img/avatar-ondak.png',
         linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/7446',
+        workList: 'ondak'
     },
     'Vladimír Dedeček': {
         title: 'Vladimír Dedeček',
@@ -45,6 +46,7 @@ export const state = () => ({
         subtitle: '✸ 1887, Blainville-Crevon, Francúzsko <br> ✝ 1968, Neuilly-sur-Seine, Francúzsko',
         avatarSrc: 'img/avatar-duchamp.png',
         linkSrc: 'https://sk.wikipedia.org/wiki/Marcel_Duchamp',
+        workList: 'duchamp'
     },
     'Andy Warhol': {
         title: 'Andy Warhol',
