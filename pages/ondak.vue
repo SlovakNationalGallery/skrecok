@@ -15,7 +15,7 @@
         <h1
           class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1"
         >
-          Andy Warhol
+          Roman Ondak
         </h1>
 
         <ArtistProfile
