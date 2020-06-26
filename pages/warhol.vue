@@ -70,11 +70,17 @@
 
     <section class="container">
       <div class="row">
+
+        <div class="col-sm-12 col-lg-6">
+          <img class="framed" src="/img/warhol/warhol_cans_idea.jpg" />
+        </div>
+
         <div class="col-sm-12 col-lg-6 text-left">
           <h4>Námety na diskusiu</h4>
           <p>
             Tvorba Andyho Warhola bola zrkadlom doby a jej kultúry. Pre <b>populárnu kultúru</b> je charakteristické, že tvorí hlavný prúd každodennej kultúry bežného človeka. 
-          <p class="with-circle" >  Čo si predstavujete pod pojmom populárna kultúra a hlavný prúd? Môže byť aj umenie súčasťou populárnej kultúry? Pri odpovedi skúste vychádzať z výrokov Andyho Warhola:
+          <p class="with-circle" >  Čo si predstavujete pod pojmom populárna kultúra a hlavný prúd? Môže byť aj umenie súčasťou populárnej kultúry? Pri odpovedi skúste vychádzať z výrokov Andyho Warhola:</p>
+          <p>
             „V budúcnosti bude mať každý pätnásť minút slávy.“
           </p>
           <p>
@@ -82,22 +88,18 @@
           </p>
         </div>
 
-        <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/warhol/warhol_cans_idea.jpg" />
-        </div>
-
-      	<div class="col-sm-12 col-lg-6 text-left">
-					<p>
-						Andy Warhol miloval krásu, <b>umelú hmotu</b>, reklamu, veci ktoré sa rýchlo menili a boli moderné. Ak by žil dnes, čo by ho zaujímalo a inšpirovalo? Vysvetlíte prečo?
-					</p>
-					<p>
-					Aké nástroje používa súčasná reklama? Môže reklama zavádzať? Kedy nám reklama pomáha?
-					</p>
-				</div>
-
 				<div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_attraction.jpg" />
         </div>
+
+      	<div class="col-sm-12 col-lg-6 text-left">
+					<p class="with-circle">
+						Andy Warhol miloval krásu, <b>umelú hmotu</b>, reklamu, veci ktoré sa rýchlo menili a boli moderné. Ak by žil dnes, čo by ho zaujímalo a inšpirovalo? Vysvetlíte prečo?
+					</p>
+					<p class="with-circle">
+					Aké nástroje používa súčasná reklama? Môže reklama zavádzať? Kedy nám reklama pomáha?
+					</p>
+				</div>
 
 			</div>
     </section>
@@ -109,24 +111,21 @@
           <p>
 						Skôr, ako sa v časopisoch začali objavovať fotografie, bola reklama kreslená ručne. Zvoľte si bežný predmet zo svojho okolia a <b>vytvorte jeho kreslenú reklamu</b>. 
 					</p>	
-					<p>
+					<p class="with-circle">
 						Nakreslite jeho tvar čo najvernejšie obyčajnou ceruzkou na papier (A4). Čiarami kreslite iba obrysy predmetu, detaily vynechajte. Snažte sa využiť celý formát papiera. Na svoju kresbu položte čistý papier a oba papiere umiestnite na okno oproti slnku, aby ste pôvodnú kresbu vedeli obkresliť. Použite ceruzku alebo experimentujte s atramentovým perom. Vytvorte aspoň 2 kópie pôvodnej kresby.
 					</p>	
-					<p>
+					<p class="with-circle">
 						Nakreslený predmet dotvorte podľa vlastnej fantázie. Na každom papieri vytvorte iný návrh zvoleného predmetu, ktorý by sa mohol v rámci reklamnej kampane objaviť v časopise. Porozmýšľajte, komu by bol predmet v reklame určený a podľa toho vyberajte farby, dokresľujte predmet alebo pridávajte detaily. Použite vodové, zriedené temperové, akrylové farby alebo farebné ceruzky. Vytvorte 3 rozdielne reklamné návrhy toho istého predmetu. 
           </p>
         </div>
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_products.jpg" />
-				</div>
-				<div class="col-sm-12 col-lg-6 text-left">
-					<p>
-						Starší žiaci môžu zostaviť návrh reklamy do časopisu na vymyslený produkt <b>technikou koláže</b>. Zvoľte vhodné farby, mierku a jazyk. Vymyslite ľahko zapamätateľný slogan (slogan je stručný, zapamätateľný a výstižný text, veta alebo slovné spojenie). Na záver slovne zdôvodnite techniky a stratégie, ktoré ste použili vo svojom návrhu a svoj návrh predstavte pred spolužiakmi. 
-					</p>
-				</div>
-				<div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/warhol/warhol_monroe.jpg" />
 				</div>
+				<div class="col-sm-12 col-lg-6 text-left">
+					<p class="with-circle">
+						Starší žiaci môžu zostaviť návrh reklamy do časopisu na vymyslený produkt <b>technikou koláže</b>. Zvoľte vhodné farby, mierku a jazyk. Vymyslite ľahko zapamätateľný slogan (slogan je stručný, zapamätateľný a výstižný text, veta alebo slovné spojenie). Na záver slovne zdôvodnite techniky a stratégie, ktoré ste použili vo svojom návrhu a svoj návrh predstavte pred spolužiakmi. 
+					</p>
       </div>
     </section>
 
