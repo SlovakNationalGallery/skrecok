@@ -78,7 +78,7 @@
         <div class="col-sm-12 col-lg-6 text-left">
           <h4>Námety na diskusiu</h4>
           <p>
-            Tvorba Andyho Warhola bola zrkadlom doby a jej kultúry. Pre <b>populárnu kultúru</b> je charakteristické, že tvorí hlavný prúd každodennej kultúry bežného človeka. 
+            Tvorba Andyho Warhola bola zrkadlom doby a jej kultúry. Pre <b>populárnu kultúru</b> je charakteristické, že tvorí hlavný prúd každodennej kultúry bežného človeka.</p> 
           <p class="with-circle" >  Čo si predstavujete pod pojmom populárna kultúra a hlavný prúd? Môže byť aj umenie súčasťou populárnej kultúry? Pri odpovedi skúste vychádzať z výrokov Andyho Warhola:</p>
           <p>
             „V budúcnosti bude mať každý pätnásť minút slávy.“
