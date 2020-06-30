@@ -40,6 +40,7 @@ export const state = () => ({
         subtitle: '✸ 1929, Martin',
         avatarSrc: 'img/avatar-dedecek.png',
         linkSrc: 'https://www.webumenia.sk/en/autor/1052763',
+        workList: 'dedecek'
     },
     'Marcel Duchamp': {
         title: 'Marcel Duchamp',
