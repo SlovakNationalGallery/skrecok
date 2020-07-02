@@ -15,6 +15,7 @@ export const state = () => ({
       subtitle: '✸ 1939, Piešťany <br> ✝ 2007, Bratislava',
       avatarSrc: '/img/avatar-koller.png',
       linkSrc: 'https://www.webumenia.sk/autor/5089',
+      worklist: 'koller'
     },
     'Anna Daučíková': {
         title: 'Anna Daučíková',
