@@ -69,7 +69,7 @@
       <div class="row">
 
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/warhol/ondak_radiator.jpg" />
+          <img class="framed" src="/img/ondak/ondak_radiator.jpg" />
         </div>
 
         <div class="col-sm-12 col-lg-6 text-left">
@@ -91,7 +91,7 @@
           </p>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/warhol/ondak_wc.jpg" />
+          <img class="framed" src="/img/ondak/ondak_wc.jpg" />
         </div>
         <div class="col-sm-12 col-lg-6 text-left">
 					<p class="with-circle">
@@ -99,7 +99,7 @@
           </p>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/warhol/ondak_gondola.jpg" />
+          <img class="framed" src="/img/ondak/ondak_gondola.jpg" />
         </div>
     </section>
 
