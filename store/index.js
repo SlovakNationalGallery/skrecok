@@ -28,6 +28,7 @@ export const state = () => ({
         subtitle: '✸ 1881, Malaga, Španielsko <br> ✝ 1973, Mougins, Francúzsko',
         avatarSrc: 'img/avatar-picasso.png',
         linkSrc: 'https://www.webumenia.sk/autor/7821',
+        worklist: 'picasso'
     },
     'Roman Ondak': {
         title: 'Roman Ondak',
