@@ -42,7 +42,7 @@
         </div>
 
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/koller/koller_ufonaut.jpg" />
+          <img class="framed" src="/img/koller/koller_ufonaut.jpeg" />
         </div>
       </div>        
 
@@ -54,7 +54,7 @@
         </div>
 
         <div class="col-sm-12 col-lg-6">
-            <img class="framed" src="/img/koller/koller_umeNie.jpg" />
+            <img class="framed" src="/img/koller/koller_umeNie.jpeg" />
         </div>
       </div>
       
@@ -66,7 +66,7 @@
         </div>
 
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/koller/koller_futbal.jpg" />
+          <img class="framed" src="/img/koller/koller_futbal.jpeg" />
         </div>
       </div>
     </section>
@@ -119,7 +119,7 @@
           </p>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/koller/koller_nazivot.jpg" />
+          <img class="framed" src="/img/koller/koller_nazivot.jpeg" />
         </div>
       </div>
 
