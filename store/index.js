@@ -22,6 +22,7 @@ export const state = () => ({
         subtitle: '✸ 1950, Bratislava',
         avatarSrc: 'img/avatar-daucikova.png',
         linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1918',
+        worklist: 'daucikova'
     },
     'Pablo Picasso': {
         title: 'Pablo Picasso',
