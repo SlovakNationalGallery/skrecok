@@ -1,8 +1,6 @@
 
 
 export const state = () => ({
-  videosLoaded: false,
-  ytPlaylistItems:[],
   profiles: {
     'Intro': {
       title: 'Škrečok',
@@ -15,21 +13,21 @@ export const state = () => ({
       subtitle: '✸ 1939, Piešťany <br> ✝ 2007, Bratislava',
       avatarSrc: '/img/avatar-koller.png',
       linkSrc: 'https://www.webumenia.sk/autor/5089',
-      worklist: 'koller'
+      workList: 'koller'
     },
     'Anna Daučíková': {
         title: 'Anna Daučíková',
         subtitle: '✸ 1950, Bratislava',
         avatarSrc: 'img/avatar-daucikova.png',
         linkSrc: 'http://artbase.kunsthallebratislava.sk/umelec/1918',
-        worklist: 'daucikova'
+        workList: 'daucikova'
     },
     'Pablo Picasso': {
         title: 'Pablo Picasso',
         subtitle: '✸ 1881, Malaga, Španielsko <br> ✝ 1973, Mougins, Francúzsko',
         avatarSrc: 'img/avatar-picasso.png',
         linkSrc: 'https://www.webumenia.sk/autor/7821',
-        worklist: 'picasso'
+        workList: 'picasso'
     },
     'Roman Ondak': {
         title: 'Roman Ondak',
@@ -72,11 +70,3 @@ export const state = () => ({
     },
   },
 })
-
-
-export const mutations = {
-  setYtPlaylistItems (state, ytPlaylistItems) {
-    state.ytPlaylistItems = ytPlaylistItems;
-    state.videosLoaded = true;
-  }
-}

@@ -82,7 +82,7 @@
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/duchamp/duchamp_fontana2.jpg" />
         </div>
-
+      </div>
     </section>
 
     <section class="container">
@@ -98,6 +98,7 @@
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/duchamp/duchamp_ram.jpg" />
         </div>
+      </div>
     </section>
 
     <section class="container">
@@ -159,28 +160,9 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() {
-      let profile = { ...this.profiles["Marcel_Duchamp"] };
-      if (this.ytPlaylistItems.length > 0) {
-        const ytPlaylistItem = (this.ytPlaylistItems || []).find(function(i) {
-          return i.profileData.title === "Marcel_Duchamp";
-        });
-        if (!!ytPlaylistItem) {
-          profile = {
-            ...profile,
-            profileText: ytPlaylistItem.profileText
-          };
-        }
-      }
-      return profile;
-    }
+    profile() { return { ...this.profiles["Marcel Duchamp"] };}
   },
   mounted() {
-    this.initGapi();
-    // load YouTube iframe API
-    this.loadYTIframeAPI();
-    // parse URL query params
-    this.parseQuery(this.$route.query);
     // start idleTimer countdown
     this.resetIdleTimer();
   }

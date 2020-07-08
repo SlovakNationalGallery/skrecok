@@ -116,6 +116,81 @@ export default {
   },
 
   methods: {
+    loadYTClient(gapi, ytAPIKey, ytPlaylistID) {
+      gapi.client.setApiKey(ytAPIKey);
+      return gapi.client
+        .load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+        .then(
+          () => {
+            this.requestYTPlaylistItems(gapi, ytPlaylistID);
+          },
+          function(err) {
+            console.error("Error loading GAPI client for API", err);
+          }
+        );
+    },
+    requestYTPlaylistItems(gapi, playlistId) {
+      return gapi.client.youtube.playlistItems
+        .list({
+          part: "snippet",
+          playlistId: playlistId,
+          maxResults: 20
+        })
+        .then(
+          response => {
+            this.handleYTPlaylistItems(response.result);
+          },
+          function(err) {
+            console.error("Execute error", err);
+          }
+        );
+    },
+    handleYTPlaylistItems(result) {
+      this.ytPlaylistItems = this.parseResult(result);
+      this.videosLoaded = true;
+    },
+    parseResult(result) {
+      return result.items.map(item => {
+        let [descriptionText, profileText] = item.snippet.description.split(
+          this.ytPlaylistItemDescriptionSeparator
+        );
+        let [_, profileKey] = item.snippet.title.split(
+          this.ytPlaylistItemTitleSeparator
+        );
+        let profileData = this.profiles[profileKey] || this.profiles["default"];
+
+        return {
+          ...item,
+          descriptionText: descriptionText,
+          profileText: profileText,
+          profileData: profileData
+        };
+      });
+    },
+    loadYTIframeAPI() {
+      var tag = document.createElement("script");
+      tag.id = "iframe-api";
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    },
+
+    initGapi() {
+      // init YouTube API client
+      if (!this.videosLoaded)
+        gapi.load("client", {
+          callback: () => {
+            this.loadYTClient(gapi, this.ytAPIKey, this.ytPlaylistID);
+          },
+          onerror: function() {
+            console.error("gapi.client failed to load!");
+          },
+          timeout: 5000, // 5 seconds.
+          ontimeout: function() {
+            console.error("gapi.client could not load in a timely manner!");
+          }
+        });
+    },
     loadYTIframeAPI() {
       var tag = document.createElement('script');
       tag.id = 'iframe-api';

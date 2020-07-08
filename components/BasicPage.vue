@@ -21,12 +21,6 @@ export default {
     profiles() {
       return this.$store.state.profiles;
     },
-    ytPlaylistItems() {
-      return this.$store.state.ytPlaylistItems;
-    },
-    videosLoaded() {
-      return this.$store.state.videosLoaded;
-    }
   },
   data() {
     return {
@@ -49,6 +43,8 @@ export default {
       ytPlaylistID: "PLdCkSFojiBUqLrSe_6yF7tJulN4X_Vm9I",
       ytPlaylistItemDescriptionSeparator: "---",
       ytPlaylistItemTitleSeparator: " – ",
+      videosLoaded: false,
+      ytPlaylistItems:[],
       videosPlaying: false,
       idleTime: 3000, // time until Idle in ms
       idleTimeout: null,
@@ -69,63 +65,6 @@ export default {
     };
   },
   methods: {
-    loadYTClient(gapi, ytAPIKey, ytPlaylistID) {
-      gapi.client.setApiKey(ytAPIKey);
-      return gapi.client
-        .load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
-        .then(
-          () => {
-            this.requestYTPlaylistItems(gapi, ytPlaylistID);
-          },
-          function(err) {
-            console.error("Error loading GAPI client for API", err);
-          }
-        );
-    },
-    requestYTPlaylistItems(gapi, playlistId) {
-      return gapi.client.youtube.playlistItems
-        .list({
-          part: "snippet",
-          playlistId: playlistId,
-          maxResults: 20
-        })
-        .then(
-          response => {
-            this.handleYTPlaylistItems(response.result);
-          },
-          function(err) {
-            console.error("Execute error", err);
-          }
-        );
-    },
-    handleYTPlaylistItems(result) {
-      this.$store.commit("setYtPlaylistItems", this.parseResult(result));
-    },
-    parseResult(result) {
-      return result.items.map(item => {
-        let [descriptionText, profileText] = item.snippet.description.split(
-          this.ytPlaylistItemDescriptionSeparator
-        );
-        let [_, profileKey] = item.snippet.title.split(
-          this.ytPlaylistItemTitleSeparator
-        );
-        let profileData = this.profiles[profileKey] || this.profiles["default"];
-
-        return {
-          ...item,
-          descriptionText: descriptionText,
-          profileText: profileText,
-          profileData: profileData
-        };
-      });
-    },
-    loadYTIframeAPI() {
-      var tag = document.createElement("script");
-      tag.id = "iframe-api";
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName("script")[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    },
     parseQuery(query) {
       this.kiosk = Boolean(query["kiosk"]);
     },
@@ -134,7 +73,6 @@ export default {
     },
     onIdle() {
       window.scrollTo(0, 0);
-      console.log(this.kiosk);
       this.$router.push({
         path: "/",
         query: this.kiosk ? { kiosk: this.kiosk } : {}
@@ -146,23 +84,6 @@ export default {
         this.idleTimeout = setTimeout(this.onIdle, this.idleTime);
       }
     },
-
-    initGapi() {
-      // init YouTube API client
-      if (!this.$store.state.videosLoaded)
-        gapi.load("client", {
-          callback: () => {
-            this.loadYTClient(gapi, this.ytAPIKey, this.ytPlaylistID);
-          },
-          onerror: function() {
-            console.error("gapi.client failed to load!");
-          },
-          timeout: 5000, // 5 seconds.
-          ontimeout: function() {
-            console.error("gapi.client could not load in a timely manner!");
-          }
-        });
-    }
   }
 };
 </script>

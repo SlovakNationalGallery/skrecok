@@ -110,7 +110,7 @@
           <h4>Aktivity</h4>
           <p class="with-circle">
             Narysujte na výkres rozloženú <b>sieť kocky</b> tak, aby sa dala zlepiť (napríklad vo veľkosti 5 x 5 cm, na okrajoch nechajte malé výbežky, aby sa kocka dala dobre skladať). Vyberte pre žiakov fotky predmetov, ktoré nepoznajú. Ich úlohou bude nakresliť na jednotlivé políčka predmet postupne z každej strany: zhora, zdola, z ľavej strany, z pravej strany, spredu a zozadu. Ak sa niektorý predmet nedá nakresliť zo všetkých strán, vyberte si viac predmetov. Kocku si vystrihnite a zložte. Postavte spoločné zátišie, ktoré sa mení otáčaním strán.</p>	
-		      <p>
+		      </p>
         </div>
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/picasso/picasso_kocka.jpg" />
@@ -189,28 +189,9 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() {
-      let profile = { ...this.profiles["Pablo_Picasso"] };
-      if (this.ytPlaylistItems.length > 0) {
-        const ytPlaylistItem = (this.ytPlaylistItems || []).find(function(i) {
-          return i.profileData.title === "Pablo_Picasso";
-        });
-        if (!!ytPlaylistItem) {
-          profile = {
-            ...profile,
-            profileText: ytPlaylistItem.profileText
-          };
-        }
-      }
-      return profile;
-    }
+    profile() { return { ...this.profiles["Pablo Picasso"] };}
   },
   mounted() {
-    this.initGapi();
-    // load YouTube iframe API
-    this.loadYTIframeAPI();
-    // parse URL query params
-    this.parseQuery(this.$route.query);
     // start idleTimer countdown
     this.resetIdleTimer();
   }

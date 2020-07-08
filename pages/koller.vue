@@ -105,7 +105,7 @@
           <h4>Aktivity</h4>
           <p class="with-circle">
             Vytvorte dvojice, trojice alebo štvorice a zahrajte si <b>kresliarsky pingpong</b>. Striedajte sa pri jednotlivých ťahoch kresby. Reagujte na kresbu „hráča“ na ťahu pred vami. Určite si aj rytmus hry – striedania. Ten sa môže postupne zrýchľovať. Každý nový ťah je komentárom, interpretáciou a dopovedaním  predchádzajúceho ťahu.</p>	
-		      <p>
+		      </p>
         </div>
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/koller/koller_pong.jpg" />
@@ -202,28 +202,9 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() {
-      let profile = { ...this.profiles["Julius_Koller"] };
-      if (this.ytPlaylistItems.length > 0) {
-        const ytPlaylistItem = (this.ytPlaylistItems || []).find(function(i) {
-          return i.profileData.title === "Julius_Koller";
-        });
-        if (!!ytPlaylistItem) {
-          profile = {
-            ...profile,
-            profileText: ytPlaylistItem.profileText
-          };
-        }
-      }
-      return profile;
-    }
+    profile() { return { ...this.profiles["Július Koller"] };}
   },
   mounted() {
-    this.initGapi();
-    // load YouTube iframe API
-    this.loadYTIframeAPI();
-    // parse URL query params
-    this.parseQuery(this.$route.query);
     // start idleTimer countdown
     this.resetIdleTimer();
   }

@@ -12,9 +12,7 @@
 
     <section class="container my-5 py-5">
       <div class="mt-2">
-        <h1
-          class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1"
-        >
+        <h1 class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">
           Roman Ondak
         </h1>
 
@@ -61,7 +59,6 @@
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/ondak/ondak_rad.jpg" />
         </div>
-
       </div>
     </section>
 
@@ -78,7 +75,7 @@
           <p class="with-circle">Po pozretí videa: Pomenujte, čo všetko môže byť podľa vás <b>umeleckým dielom</b>. Prekvapilo alebo nahnevalo vás niekedy nejaké dielo (v galérii, na internete či v TV)? Popíšte ako a prečo?</p>
           <p class="with-circle">Čo vám napadne, keď vidíte <b>rad</b>, v ktorom čakajú ľudia? Priťahuje vás, lebo ste zvedaví, na čo čakajú? Alebo vás naopak hnevá, že pred vami je množstvo ľudí a vy musíte čakať? Ako by ste sa cítili, keby ste po dlhšom čase zistili, že je to hraný rad? </p>
         </div>
-
+      </div>
     </section>
 
     <section class="container">
@@ -101,6 +98,7 @@
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/ondak/ondak_gondola.jpg" />
         </div>
+      </div>
     </section>
 
     <section class="container">
@@ -132,6 +130,7 @@
         </div>
       </div>
     </section>
+    
     <div class="text-center">
       <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Roman_Ondak.pdf'" :newTab="true" class="mt-4" />
       <!-- <br/>
@@ -162,29 +161,10 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() {
-      let profile = { ...this.profiles["Roman Ondak"] };
-      if (this.ytPlaylistItems.length > 0) {
-        const ytPlaylistItem = (this.ytPlaylistItems || []).find(function(i) {
-          return i.profileData.title === "Roman Ondak";
-        });
-        if (!!ytPlaylistItem) {
-          profile = {
-            ...profile,
-            profileText: ytPlaylistItem.profileText
-          };
-        }
-      }
-      return profile;
-    }
+    profile() { return { ...this.profiles["Roman Ondak"] };}
   },
   mounted() {
-    this.initGapi();
-    // load YouTube iframe API
-    this.loadYTIframeAPI();
-    // parse URL query params
-    this.parseQuery(this.$route.query);
-    // start idleTimer countdown
+   // start idleTimer countdown
     this.resetIdleTimer();
   }
 };
@@ -195,7 +175,7 @@ img.framed {
   max-width: 100%;
   margin-bottom: 10%;
   width: 90%;
-  margin-left:10%;
+  margin-left: 10%;
   border: 1px solid black;
 }
 
@@ -207,12 +187,11 @@ li {
   list-style: none;
 }
 
-.with-circle::before{
-    content: "○";
-    display: block;
-    position: absolute;
-    left: -.5em;
-    list-style: circle;
-    }
-
+.with-circle::before {
+  content: "○";
+  display: block;
+  position: absolute;
+  left: -0.5em;
+  list-style: circle;
+}
 </style>

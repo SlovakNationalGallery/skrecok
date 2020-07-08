@@ -105,7 +105,7 @@
           <p class="with-circle">Uvažujte o pojme <b>identita</b>. Čo ju tvorí? Skúste porozmýšľať, čo konkrétne sa najvýznamnejšie podieľa(lo) na utváraní vašej identity. Môže sa identita človeka v rôznych situáciách či prostrediach meniť? </p> 
           <p class="with-circle">Jedným z faktorov, ktoré ovplyvňujú našu identitu, je <b>pohlavie</b>. Spíšte si činnosti alebo situácie, ktoré sa väčšinou spájajú s mužmi a tie prisudzované ženám. Premýšľajte, prečo je to tak a do akej miery je to nemenné. Stretli ste sa niekedy, alebo počuli ste o diskriminácii na základe rodu? Prečo je dôležité sa o tom rozprávať? Poznáte niekoho, kto sa vo svojom tele necíti dobre? Čo všetko môže na takýto pocit vplývať?</p>
         </div>
-
+      </div>
     </section>
 
     <section class="container">
@@ -114,7 +114,7 @@
           <h4>Aktivity</h4>
           <p class="with-circle">
             Funkciou <b>autoportrétu</b> je okrem zachytenia podoby tiež skúmanie a spoznávanie samého seba. Pozorujte sa v zrkadle a na pauzovací papier fixkami zachyťte čo najvernejšie svoju podobu. Náš výzor je ale iba jedna vrstva, ktorá tvorí našu osobnosť, našu identitu. Vezmite si ďalšie pauzovacie papiere a na každý z nich zakreslite to, čo spoluvytvára vašu osobnosť – činnosť, ktorú najradšej robíte, predmety, ktoré najčastejšie používate či váš najintenzívnejší zážitok. Takto si môžete vytvoriť ďalšie nákresy, ktoré vás spoločne charakterizujú. Navrch uložte vašu podobu a všetky ostatné papiere uložte pod ňu. Vznikne vám autoportrét s viacerými vrstvami.</p>	
-		      <p>
+		      </p>
         </div>
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/daucikova/daucikova_sluchadla.jpg" />
@@ -131,7 +131,7 @@
           <h4>Aktivity</h4>
           <p class="with-circle">
             Annu Daučíkovú nezaujíma iba to, na čo sa cez kameru pozerá, ale aj pohľad samotný. Aký dôležitý je pre vás pohľad iných? Prispôsobujete sa mu? Do akej miery si to uvedomujete? Vytvorte <b>sériu krátkych videí</b> z vášho domáceho prostredia alebo miesta, kde budete sami. Nakrúcajte sa pri každodenných činnostiach, ktoré bežne robievate. Zmenilo sa pred kamerou v niečom vykonávanie týchto činností alebo váš pocit z nich? Hoci ste pri nich boli sami, predsa na vás spočíval pohľad kamery – uvažujte, či a ako ste sa tomu prispôsobili. </p>	
-		      <p>
+		      </p>
         </div>
         
       </div>
@@ -197,28 +197,9 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() {
-      let profile = { ...this.profiles["Anna_Daucikova"] };
-      if (this.ytPlaylistItems.length > 0) {
-        const ytPlaylistItem = (this.ytPlaylistItems || []).find(function(i) {
-          return i.profileData.title === "Anna_Daucikova";
-        });
-        if (!!ytPlaylistItem) {
-          profile = {
-            ...profile,
-            profileText: ytPlaylistItem.profileText
-          };
-        }
-      }
-      return profile;
-    }
+    profile() { return { ...this.profiles["Anna Daučíková"] };}
   },
   mounted() {
-    this.initGapi();
-    // load YouTube iframe API
-    this.loadYTIframeAPI();
-    // parse URL query params
-    this.parseQuery(this.$route.query);
     // start idleTimer countdown
     this.resetIdleTimer();
   }
