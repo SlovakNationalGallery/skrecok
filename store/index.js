@@ -62,6 +62,7 @@ export const state = () => ({
         subtitle: '✸ 1936, Praha <br> ✝ 1996, Košice',
         avatarSrc: 'img/avatar-bartuszova.png',
         linkSrc: 'https://www.webumenia.sk/autor/513',
+        workList: 'bartuszova'
     },
     'default': {
       subtitle: '',
