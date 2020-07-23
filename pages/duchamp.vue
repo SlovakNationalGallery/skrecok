@@ -34,18 +34,22 @@
         <div class="col-sm-12 col-lg-6 text-left">
           <h4 class="text-left">Diela a témy</h4>
           <p>
-            Duchampove tvorivé začiatky spadajú do doby, ktorá bola pre európske umenie doslova <b>revolučná</b>. Začiatkom 20. storočia vznikajú avantgardné výtvarné smery ako kubizmus, futurizmus, dadaizmus, surrealizmus a pod. Rodí sa abstraktné, nezobrazujúce umenie, ktoré sa odkláňa od tradičného napodobovania a zobrazenia sveta. Aj pod vplyvom rozvoja fotografie či filmu, schopných zachytiť skutočnosť verne, sa výtvarné umenie mení, hľadá svoj vlastný autentický jazyk. Marcel Duchamp sa prestáva okolo roku 1913 zaujímať o klasickú maľbu, spochybňuje jej význam. Pri pohľade na umelecké dielo neočakáva estetický (zrakový) zážitok, ale oceňuje jeho ideu, nápad, vtip, prípadne prekvapenie. 
+            Duchampove tvorivé začiatky spadajú do doby, ktorá bola pre európske umenie doslova <b>revolučná</b>. Začiatkom 20. storočia vznikajú avantgardné výtvarné smery ako kubizmus, futurizmus, dadaizmus, surrealizmus a pod. Rodí sa abstraktné, nezobrazujúce umenie, ktoré sa odkláňa od tradičného napodobovania a zobrazenia sveta. Aj pod vplyvom rozvoja fotografie či filmu, schopných zachytiť skutočnosť verne, sa výtvarné umenie mení, hľadá svoj vlastný autentický jazyk.
+          </p>
+          <p>
+          Marcel Duchamp sa prestáva okolo roku 1913 zaujímať o klasickú maľbu, spochybňuje jej význam. Pri pohľade na umelecké dielo neočakáva estetický (zrakový) zážitok, ale oceňuje jeho ideu, nápad, vtip, prípadne prekvapenie. 
+          </p>
+          <p>
+          Duchamp postupne mení stratégiu. Nevytvára umelecký objekt sám, ale vyberá si ho z už existujúcich priemyselne vyrobených predmetov. Akoby nebolo nikdy jednoduchšie vytvoriť umelecké dielo. Do prostredia múzea sa dostáva nezvyčajný predmet – <b>ready-made</b> (hotový, konfekčný, sériový predmet). Tvorbu ready-madov môžeme vnímať aj ako udalosť, manifest, ako revoltu či provokáciu voči akceptovaným štandardom vtedajšieho umenia.   
           </p>
         </div>
 
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/duchamp/duchamp_paleta.jpg" />
+          <img class="framed" src="/img/duchamp/duchamp_newyork.jpg" />
         </div>        
 
         <div class="col-sm-12 col-lg-6 text-left">
-          <p>
-            Duchamp postupne mení stratégiu. Nevytvára umelecký objekt sám, ale vyberá si ho z už existujúcich priemyselne vyrobených predmetov. Akoby nebolo nikdy jednoduchšie vytvoriť umelecké dielo. Do prostredia múzea sa dostáva nezvyčajný predmet – <b>ready-made</b> (hotový, konfekčný, sériový predmet). Tvorbu ready-madov môžeme vnímať aj ako udalosť, manifest, ako revoltu či provokáciu voči akceptovaným štandardom vtedajšieho umenia.   
-          </p>
           <p>
             Duchamp do tvorby vnáša aj element humoru. V roku 1919 berie lacnú reprodukciu slávneho portrétu <i>Mona Lisa</i> od Leonarda da Vinciho a prikresľuje jej briadku a fúziky. Obraz dopĺňa textom: L.H.O.O.Q., čo môžeme voľne preložiť ako <i>„tá má ale sexi zadok“</i>. Sám Duchamp to označuje za svätokrádež! Takéto antiumelecké akcie ho spájajú s <b>hnutím Dada</b>, ktoré sa formuje počas a po 1. svetovej vojne. Dadaistické umenie je reakciou na všeobecný rozpad civilizovaného sveta spôsobený vojnou. Do popredia sa dostáva náhoda, absurdita a radikálne antiestetické a nehistorické umenie oslobodené od tradičných vzorov.    
           </p>
@@ -61,7 +65,7 @@
         </div>
 
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/duchamp/duchamp_newyork.jpg" />
+          <img class="framed" src="/img/duchamp/duchamp_fontana1.jpg" />
         </div>
       </div>
     </section>
@@ -75,13 +79,19 @@
 
         <div class="col-sm-12 col-lg-6 text-left">
           <h4>Námety na diskusiu</h4>
-          <p class="with-circle">Pred pozretím videa: Duchampove ready-mady sú priamo položenou otázkou <b>Čo je to umenie?</b> Akú hodnotu má originál? Aká je úloha umelca? A kto určuje, ktoré umenie je dobré? V oblasti umenia vyvolal diskusiu, ktorá trvá dodnes. Diskutujte so žiakmi, čo je umenie podľa nich? </p> 
-          <p class="with-circle">Po pozretí videa: Dielom <i>Fontána</i> (1917) sa Duchamp pokúsil zúčastniť na výstave Nezávislých v New Yorku. Svoje dielo tu mohol vystaviť každý umelec, ktorý zaplatil poplatok 6 dolárov. Spoločnosť nezávislých umelcov nechcela pôvodne žiadne diela cenzurovať. Napriek tomu odmietla Duchampov pisoár vystaviť, čo rozdelilo jej členov na dva tábory. Rozdeľte triedu na skupiny po 4 žiakoch. V skupinách vždy dvaja <b>žiaci argumentujú</b> za vystavenie Fontány a dvaja proti (každá skupina si môže spísať všetky dôvody, prečo by dielo vystavila / nevystavila). Každá skupina predstaví svoje argumenty a výsledky debaty.</p>
+          <p class="with-circle">Pred pozretím videa: Duchampove ready-mady sú priamo položenou otázkou <b>Čo je to umenie?</b> Akú hodnotu má originál? Aká je úloha umelca? A kto určuje, ktoré umenie je dobré? V oblasti umenia vyvolal diskusiu, ktorá trvá dodnes. Diskutujte so žiakmi, čo je umenie podľa nich? </p>
         </div>
-
+        
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/duchamp/duchamp_fontana2.jpg" />
         </div>
+        
+        <div class="col-sm-12 col-lg-6 text-left">
+          <p class="with-circle">Po pozretí videa: Dielom <i>Fontána</i> (1917) sa Duchamp pokúsil zúčastniť na výstave Nezávislých v New Yorku. Svoje dielo tu mohol vystaviť každý umelec, ktorý zaplatil poplatok 6 dolárov. Spoločnosť nezávislých umelcov nechcela pôvodne žiadne diela cenzurovať. Napriek tomu odmietla Duchampov pisoár vystaviť, čo rozdelilo jej členov na dva tábory. 
+          <p>
+          Rozdeľte triedu na skupiny po 4 žiakoch. V skupinách vždy dvaja <b>žiaci argumentujú</b> za vystavenie Fontány a dvaja proti (každá skupina si môže spísať všetky dôvody, prečo by dielo vystavila / nevystavila). Každá skupina predstaví svoje argumenty a výsledky debaty.</p>
+        </div>
+
       </div>
     </section>
 
