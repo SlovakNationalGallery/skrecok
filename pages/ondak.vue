@@ -32,7 +32,7 @@
         <div class="col-sm-12 col-lg-6 text-left">
           <h4 class="text-left">Diela a témy</h4>
           <p>
-            Mnohé Ondakove diela boli vytvorené len raz, nedajú sa zopakovať, ako napríklad <i>Loop</i> na Benátskom bienále alebo dielo <i>SK Parking</i>, ktoré vidíme aj na videu pred budovou Secession vo Viedni. Autor ich koncipoval pre konkrétne miesto a nazývame ich preto <b>miesto-špecifické</b> (site-specific art vytvorené pre daný priestor). Miesto nemá len materiálne vlastnosti, vytvárajú ho aj ľudia tým, ako ho používajú, či aký vzťah k nemu majú. Ak umelec vytvára dielo pre konkrétne miesto, zohľadňuje ako vyzerá, teda jeho materiálnu stránku, ale aj to, ako ho ľudia v danom kontexte vnímajú. Takéto dielo je iba zriedka možné preniesť na iné miesto. 
+            Mnohé Ondakove diela boli vytvorené len raz, nedajú sa zopakovať, ako napríklad <a href="https://www.artdispecing.sk/umelci/roman-ondak/loop/" target="_blank"><i>Loop</i></a> na Benátskom bienále alebo dielo <i>SK Parking</i>, ktoré vidíme aj na videu pred budovou Secession vo Viedni. Autor ich koncipoval pre konkrétne miesto a nazývame ich preto <b>miesto-špecifické</b> (site-specific art vytvorené pre daný priestor). Miesto nemá len materiálne vlastnosti, vytvárajú ho aj ľudia tým, ako ho používajú, či aký vzťah k nemu majú. Ak umelec vytvára dielo pre konkrétne miesto, zohľadňuje ako vyzerá, ale aj to, ako ho ľudia v danom kontexte vnímajú. Takéto dielo je iba zriedka možné preniesť na iné miesto. 
           </p>
         </div>
 
@@ -92,7 +92,9 @@
         </div>
         <div class="col-sm-12 col-lg-6 text-left">
 					<p class="with-circle">
-          <b>Inštruované dielo</b> je dielo, ktoré môže umelec poslať do galérie bez toho, aby tam musel prísť. Pracovníci galérie spravia dielo podľa toho, aký postup im napísal. Vyberte si dielo a začnite opisovať ako vyzerá, z čoho je vytvorené a pod. Napísaný text prečítajte svojmu spolužiakovi, ktorý dielo vyhotoví.  
+          <b>Inštruované dielo</b> je dielo, ktoré môže umelec poslať do galérie bez toho, aby tam musel prísť. Pracovníci galérie spravia dielo podľa toho, aký postup im napísal.</p> 
+          <p>
+          Vyberte si dielo a začnite opisovať ako vyzerá, z čoho je vytvorené a pod. Napísaný text prečítajte svojmu spolužiakovi, ktorý dielo vyhotoví.  
           </p>
         </div>
         <div class="col-sm-12 col-lg-6">
