@@ -36,6 +36,13 @@
           <p>
             Stavby navrhnuté Vladimírom Dedečkom sú dlhodobo predmetom diskusií. Odborná verejnosť vyzdvihuje ich kvality, laická verejnosť zase upozorňuje na <b>výrazné formy</b>, ktoré sú často spájané s prejavmi architektúry predchádzajúceho režimu. Dedečkovi učitelia boli totiž významnými predstaviteľmi modernej architektúry.
           </p>
+        </div>
+        
+        <div class="col-sm-12 col-lg-6">
+          <img class="framed" src="https://www.webumenia.sk/dielo/nahlad/SVK:SNG.A_1631-79/800" />
+        </div> 
+        
+        <div class="col-sm-12 col-lg-6 text-left">
           <p>
             <b>Moderná architektúra</b> zjednodušuje formy a vynecháva ornamenty. Forma, ktorá sleduje funkciu, sa vyvinula s dostupnosťou materiálov ako oceľ, betón a sklo a tiež s vynálezom nových stavebných techník počas priemyselnej revolúcie. Nové konštrukcie boli pevnejšie, ľahšie a vyššie. Železobetón umožnil vytvoriť veľké priestory neprerušené stĺpmi a ďalšími podpornými prvkami a dovolil architektom umiestniť okná po dĺžke celej steny. 
           </p>
@@ -62,16 +69,13 @@
           <p>
             Pri návrhu Poľnohospodárskej univerzity v Nitre využíva <b>hru kompozície</b>. Pracuje so svetlom, proporciou a rovnováhou, ale zohľadňuje aj funkciu, teda to, na čo majú jednotlivé časti architektúry slúžiť. V areáli univerzity majú všetky objekty <b>základné geometrické tvary</b> a v jej centre (na priesečníku osí kompozície) je umiestnená ústredná budova – aula šošovkovitého tvaru pre 600 ľudí. Na tak veľký priestor má vďaka tvaru a unikátnej rebrovej klenbe vhodnú akustiku.
           </p>
+          <p>
+            Viaceré diela sa už za života Vladimíra Dedečka stali ikonami neskorej moderny známymi aj v medzinárodnom kontexte.
+          </p>
         </div>
 
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/dedecek/dedecek_nitra.jpg" />
-        </div>
-
-        <div class="col-sm-12 col-lg-6 text-left">
-          <p>
-            Viaceré diela sa už za života Vladimíra Dedečka stali ikonami neskorej moderny známymi aj v medzinárodnom kontexte.
-          </p>
         </div>
 
       </div>
@@ -109,15 +113,23 @@
           <h4>Aktivity</h4>	
 					<p class="with-circle">
 						Navrhnite <b>architektúru pre verejnosť!</b> Najprv si ujasnite jej účel. Vystrihnite z kartónu rôzne geometrické tvary a zlepením rovnakých tvarov ich spravte rôzne vysoké. Vyskúšajte rôzne varianty usporiadania jednotlivých geometrických prvkov, pracujte s rytmom, symetriou a asymetriou. Varianty porovnajte a porozprávajte sa o výsledku. 
-					</p>	
+					</p>
+        </div>
+        
+        <div class="col-sm-12 col-lg-6">
+          <img class="framed" src="/img/dedecek/dedecek_budova.jpg" />
+				</div>
+        
+        <div class="col-sm-12 col-lg-6 text-left">
 					<p class="with-circle">
 						V zbierkach SNG sa okrem architektonických nárysov nachádzajú aj <a href="https://www.webumenia.sk/dielo/SVK:SNG.A_1618-37" target="_blank">skice Vladimíra Dedečka</a>. Skica zachytáva tie najdôležitejšie črty. Vyhľadajte v okolí školy významné architektonické stavby a pokúste sa ich <b>naskicovať</b>. Skúmajte, ktoré prvky sú dôležité pre funkciu stavby a ktoré tvoria výraz danej architektúry. Vysvetlite si princípy perspektívy. Zachovajte proporcie a pracujte s mierkou. 
           </p>
         </div>
+        
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/dedecek/dedecek_budova.jpg" />
           <img class="framed" src="/img/dedecek/dedecek_studia.jpg" />
 				</div>
+        
       </div>
     </section>
 
