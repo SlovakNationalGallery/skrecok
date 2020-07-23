@@ -60,15 +60,6 @@
           <p>
             Vo videu predstavené <b>autoportréty</b> zachytávajú jej túžbu po zmene identity, telesnosti. Na prvom z nich svoju tvár prekrýva šperkom – maskou, na ďalších vtipne dopĺňa svoje telo časťami, ktoré mu chýbajú.
           </p>
-        </div>
-
-        <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/daucikova/daucikova_vajcia.jpg" />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-12 col-lg-6 text-left">
           <p>
             V staršom fotografickom cykle <i>Moskva / Ženy / Nedeľa</i> zachytáva moskovské ženy na ranných nedeľných nákupoch. Otvára tak otázku <b>typických ženských rolí</b> v spoločnosti.
           </p>
@@ -82,7 +73,10 @@
       <div class="row">
         <div class="col-sm-12 col-lg-6 text-left">
           <p>
-            Po návrate z Moskvy spoluzaložila združenie <b>Aspekt</b>, ktoré sa venuje <b>rodovej rovnosti a feminizmu</b> – hnutiu presadzujúcemu práva žien a snažiacemu sa odstrániť diskrimináciu na základe pohlavia na všetkých úrovniach, v spoločnosti i v súkromí. Takúto diskrimináciu považuje za sociálny problém – dôsledok toho, ako je nastavené vnímanie a postavenie mužov a žien. Pre Annu Daučíkovú predstavujú feministické myšlienky pevný základ jej postoja a uvažovania nielen v tvorbe.
+          Po návrate z Moskvy spoluzaložila združenie <b>Aspekt</b>, ktoré sa venuje <b>rodovej rovnosti a feminizmu</b> – hnutiu presadzujúcemu práva žien a snažiacemu sa odstrániť diskrimináciu na základe pohlavia na všetkých úrovniach, v spoločnosti i v súkromí. Takúto diskrimináciu považuje za sociálny problém – dôsledok toho, ako je nastavené vnímanie a postavenie mužov a žien. 
+          </p>
+          <p>
+          Pre Annu Daučíkovú predstavujú feministické myšlienky pevný základ jej postoja a uvažovania nielen v tvorbe.
           </p>
         </div>
 
@@ -113,7 +107,10 @@
         <div class="col-sm-12 col-lg-6 text-left">
           <h4>Aktivity</h4>
           <p class="with-circle">
-            Funkciou <b>autoportrétu</b> je okrem zachytenia podoby tiež skúmanie a spoznávanie samého seba. Pozorujte sa v zrkadle a na pauzovací papier fixkami zachyťte čo najvernejšie svoju podobu. Náš výzor je ale iba jedna vrstva, ktorá tvorí našu osobnosť, našu identitu. Vezmite si ďalšie pauzovacie papiere a na každý z nich zakreslite to, čo spoluvytvára vašu osobnosť – činnosť, ktorú najradšej robíte, predmety, ktoré najčastejšie používate či váš najintenzívnejší zážitok. Takto si môžete vytvoriť ďalšie nákresy, ktoré vás spoločne charakterizujú. Navrch uložte vašu podobu a všetky ostatné papiere uložte pod ňu. Vznikne vám autoportrét s viacerými vrstvami.</p>	
+            Funkciou <b>autoportrétu</b> je okrem zachytenia podoby tiež skúmanie a spoznávanie samého seba. Pozorujte sa v zrkadle a na pauzovací papier fixkami zachyťte čo najvernejšie svoju podobu. Náš výzor je ale iba jedna vrstva, ktorá tvorí našu osobnosť, našu identitu. Vezmite si ďalšie pauzovacie papiere a na každý z nich zakreslite to, čo spoluvytvára vašu osobnosť – činnosť, ktorú najradšej robíte, predmety, ktoré najčastejšie používate či váš najintenzívnejší zážitok. Takto si môžete vytvoriť ďalšie nákresy, ktoré vás spoločne charakterizujú. 
+          </p>
+          <p>
+            Navrch uložte vašu podobu a všetky ostatné papiere uložte pod ňu. Vznikne vám autoportrét s viacerými vrstvami.	
 		      </p>
         </div>
         <div class="col-sm-12 col-lg-6">
@@ -130,8 +127,11 @@
         <div class="col-sm-12 col-lg-6 text-left">
           <h4>Aktivity</h4>
           <p class="with-circle">
-            Annu Daučíkovú nezaujíma iba to, na čo sa cez kameru pozerá, ale aj pohľad samotný. Aký dôležitý je pre vás pohľad iných? Prispôsobujete sa mu? Do akej miery si to uvedomujete? Vytvorte <b>sériu krátkych videí</b> z vášho domáceho prostredia alebo miesta, kde budete sami. Nakrúcajte sa pri každodenných činnostiach, ktoré bežne robievate. Zmenilo sa pred kamerou v niečom vykonávanie týchto činností alebo váš pocit z nich? Hoci ste pri nich boli sami, predsa na vás spočíval pohľad kamery – uvažujte, či a ako ste sa tomu prispôsobili. </p>	
-		      </p>
+            Annu Daučíkovú nezaujíma iba to, na čo sa cez kameru pozerá, ale aj pohľad samotný. Aký dôležitý je pre vás pohľad iných? Prispôsobujete sa mu? Do akej miery si to uvedomujete? 
+          </p>	
+          <p>
+          Vytvorte <b>sériu krátkych videí</b> z vášho domáceho prostredia alebo miesta, kde budete sami. Nakrúcajte sa pri každodenných činnostiach, ktoré bežne robievate. Zmenilo sa pred kamerou v niečom vykonávanie týchto činností alebo váš pocit z nich? Hoci ste pri nich boli sami, predsa na vás spočíval pohľad kamery – uvažujte, či a ako ste sa tomu prispôsobili. 
+          </p>
         </div>
         
       </div>
