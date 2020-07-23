@@ -76,27 +76,18 @@
 
         <div class="col-sm-12 col-lg-6">
           <img class="framed" src="/img/koller/koller_halda.jpg" />
+          <img class="framed" src="/img/koller/koller_dom.jpg" />
         </div>
 
         <div class="col-sm-12 col-lg-5 text-left">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Pred pozretím videa: Stretli ste sa už s <b>umením mimo galérie?</b> Ako ste zistili, že je to umenie? Skúste sa zamyslieť nad tým, čo pre vás robí umenie umením. </p> 
           <p class="with-circle">Po pozretí videa: Július Koller ešte ako študent zbieral napríklad nálepky zo zápalkových škatuliek, komiksy, knihy, noviny a časopisy. Určite aj vy niečo zbierate. Ale je to naozaj zbieranie alebo iba hromadenie? Porozprávajte sa o tom, <b>čo, ako a prečo zbierate</b>. Máte kritériá, podľa ktorých viete, čo do vašej zbierky patrí a čo nie? Zháňate to, čo v zbierke ešte chýba? Má vaša zbierka aj nejaké kategórie? Ako a kde ju uchovávate? Môže ju niekto vidieť? Podobné otázky „trápia“ aj múzeá a galérie.</p>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/koller/koller_dom.jpg" />
-        </div>
-
-        <div class="col-sm-12 col-lg-5 text-left">
           <p class="with-circle">Porozprávajte sa o možnostiach a <b>význame komunikácie</b> v extrémnych podmienkach akými sú napríklad cenzúra alebo karanténa. Ako sa v takých situáciách dostať k správam, ako sa spojiť s kamarátmi, či dať o sebe vedieť? </p>
         </div>
-      </div>
 
+      </div>
+      
     </section>
 
     <section class="container">
@@ -114,7 +105,7 @@
 
       <div class="row">
         <div class="col-sm-12 col-lg-6 text-left">
-          <p>
+          <p class="with-circle">
             Vyberte z ľubovoľného textu vetu alebo jej časť – <b>odkaz pre ostatných</b>. Nemusí to byť iba odkaz vo forme textu. Tým, že vetu vyjmete z pôvodného kontextu, dostane nový význam. S vetou budete ďalej pracovať a sledovať, ako sa mení jej forma a význam. Napíšte ju 30-krát. Je rozdiel medzi prvou a poslednou? Pozmenil sa význam znásobením? Meňte veľkosť písma, tvar „riadku“, písací nástroj, umiestnenie na papieri... 
           </p>
         </div>
