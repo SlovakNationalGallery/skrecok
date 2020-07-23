@@ -46,7 +46,10 @@
       <div class="row">
         <div class="col-sm-12 col-lg-6 text-left">
           <p>
-            Tvorba Pabla Picassa je veľmi rôznorodá a rozsiahla. Za namaľovaním legendárneho diela <i>Avignonské slečny</i> stojí mnoho úsilia, rozhovorov a skíc. Picasso sa tu pokúsil zaznamenať svoj traumatizujúci zážitok z nevestinca. Vyzývavý pohľad slečien má diváka zneistiť. Pred namaľovaním obrazu uchvátilo Picassa umenie vzdialených kultúr. Africké masky privezené z francúzskych kolónií a iberské sochy ho podnietili k rozmýšľaniu o novom spôsobe maľby objektov. Na reliéfoch obdivoval plochy a proporcie, ich zjednodušenie na geometrické  tvary, ktoré sa stali základom nového umeleckého štýlu – <b>kubizmu</b>. Kubizmus radikálne spochybnil pravidlá zobrazovania, nielen z hľadiska perspektívy a zjednodušovania tvarov. Verejnosťou nebol prijatý s nadšením.    
+            Tvorba Pabla Picassa je veľmi rôznorodá a rozsiahla. Za namaľovaním legendárneho diela <i>Avignonské slečny</i> stojí mnoho úsilia, rozhovorov a skíc. Picasso sa tu pokúsil zaznamenať svoj traumatizujúci zážitok z nevestinca. Vyzývavý pohľad slečien má diváka zneistiť. Pred namaľovaním obrazu uchvátilo Picassa umenie vzdialených kultúr. Africké masky privezené z francúzskych kolónií a iberské sochy ho podnietili k rozmýšľaniu o novom spôsobe maľby objektov. 
+          </p>
+          <p>  
+            Na reliéfoch obdivoval plochy a proporcie, ich zjednodušenie na geometrické tvary, ktoré sa stali základom nového umeleckého štýlu – <b>kubizmu</b>. Kubizmus radikálne spochybnil pravidlá zobrazovania, nielen z hľadiska perspektívy a zjednodušovania tvarov. Verejnosťou nebol prijatý s nadšením.    
           </p>
         </div>
 
@@ -85,8 +88,18 @@
 
         <div class="col-sm-12 col-lg-5 text-left">
           <h4>Námety na diskusiu</h4>
-          <p class="with-circle">Ako ovplyvnil <b>technologický pokrok</b> v 19. storočí umelecký svet? Vynález fotoaparátu, film, farby v tubách, nové dopravné prostriedky a cestovanie, elektrifikácia, väčší prienik informácií zo sveta. Nachádzate aj v Picassovej tvorbe vplyv technologického pokroku?</p> 
-          <p class="with-circle">U Picassa, ako aj v tvorbe ostatných avantgardných umelcov, <b>stráca opodstatnenie presné zachytenie podoby</b> človeka, krajiny a vecí. Pozrite si aj ostatné jeho diela a popremýšľajte, čo všetko môže byť v jeho tvorbe hodnotné. Spomeňte si a opíšte situáciu, kedy ste z vlastného rozhodnutia urobili niečo inak, ako sa od vás očakávalo a malo to pozitívny výsledok.</p>
+          <p class="with-circle">Ako ovplyvnil <b>technologický pokrok</b> v 19. storočí umelecký svet? Vynález fotoaparátu, film, farby v tubách, nové dopravné prostriedky a cestovanie, elektrifikácia, väčší prienik informácií zo sveta.</p> 
+          <p>Nachádzate aj v Picassovej tvorbe vplyv technologického pokroku?</p> 
+        </div>  
+        
+        <div class="col-sm-12 col-lg-6">
+          <img class="framed" src="/img/picasso/picasso_traja.jpg" />
+        </div>
+        
+        <div class="col-sm-12 col-lg-5 text-left">
+          <p class="with-circle">U Picassa, ako aj v tvorbe ostatných avantgardných umelcov, <b>stráca opodstatnenie presné zachytenie podoby</b> človeka, krajiny a vecí.</p> 
+          <p>Pozrite si aj ostatné jeho diela a popremýšľajte, čo všetko môže byť v jeho tvorbe hodnotné.</p> 
+          <p>Spomeňte si a opíšte situáciu, kedy ste z vlastného rozhodnutia urobili niečo inak, ako sa od vás očakávalo a malo to pozitívny výsledok.</p>
         </div>
 
       </div>
@@ -98,7 +111,8 @@
         </div>
 
         <div class="col-sm-12 col-lg-5 text-left">
-          <p class="with-circle">Preskúmajte <i>Avignonské slečny</i>. Je pravá strana namaľovaná rovnakým štýlom ako ľavá? Na ktorej strane vidno <b>inšpiráciu africkými maskami</b>? Diskutujte o fenoméne kolonializmu, ktorý ako systém nadvlády a kontroly jedného štátu nad iným, nemal len ekonomické a politické motivácie, ale aj kultúrny rozmer.</p>
+          <p class="with-circle">Preskúmajte <i>Avignonské slečny</i>. Je pravá strana namaľovaná rovnakým štýlom ako ľavá? Na ktorej strane vidno <b>inšpiráciu africkými maskami</b>?</p> 
+          <p>Diskutujte o fenoméne kolonializmu, ktorý ako systém nadvlády a kontroly jedného štátu nad iným, nemal len ekonomické a politické motivácie, ale aj kultúrny rozmer.</p>
         </div>
       </div>
 
@@ -109,7 +123,8 @@
         <div class="col-sm-12 col-lg-6 text-left">
           <h4>Aktivity</h4>
           <p class="with-circle">
-            Narysujte na výkres rozloženú <b>sieť kocky</b> tak, aby sa dala zlepiť (napríklad vo veľkosti 5 x 5 cm, na okrajoch nechajte malé výbežky, aby sa kocka dala dobre skladať). Vyberte pre žiakov fotky predmetov, ktoré nepoznajú. Ich úlohou bude nakresliť na jednotlivé políčka predmet postupne z každej strany: zhora, zdola, z ľavej strany, z pravej strany, spredu a zozadu. Ak sa niektorý predmet nedá nakresliť zo všetkých strán, vyberte si viac predmetov. Kocku si vystrihnite a zložte. Postavte spoločné zátišie, ktoré sa mení otáčaním strán.</p>	
+            Narysujte na výkres rozloženú <b>sieť kocky</b> tak, aby sa dala zlepiť (napríklad vo veľkosti 5 x 5 cm, na okrajoch nechajte malé výbežky, aby sa kocka dala dobre skladať). Vyberte pre žiakov fotky predmetov, ktoré nepoznajú. Ich úlohou bude nakresliť na jednotlivé políčka predmet postupne z každej strany: zhora, zdola, z ľavej strany, z pravej strany, spredu a zozadu. Ak sa niektorý predmet nedá nakresliť zo všetkých strán, vyberte si viac predmetov.</p> 
+          <p>Kocku si vystrihnite a zložte. Postavte spoločné zátišie, ktoré sa mení otáčaním strán.</p>	
 		      </p>
         </div>
         <div class="col-sm-12 col-lg-6">
