@@ -179,6 +179,9 @@
             návrhu a svoj návrh predstavte pred spolužiakmi.
           </p>
         </div>
+        <div class="col-sm-12 col-lg-6">
+          <img class="framed" src="https://www.webumenia.sk/dielo/nahlad/SVK:OGD.O_2391/800" />
+        </div>
       </div>
     </section>
 
