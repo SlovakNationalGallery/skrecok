@@ -74,12 +74,12 @@
     <section class="container">
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/koller/koller_halda.jpg" />
           <img class="framed" src="/img/koller/koller_dom.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-5 text-left">
+        <div class="col-sm-12 col-lg-5 text-left order-1 order-lg-2">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Pred pozretím videa: Stretli ste sa už s <b>umením mimo galérie?</b> Ako ste zistili, že je to umenie? Skúste sa zamyslieť nad tým, čo pre vás robí umenie umením. </p> 
           <p class="with-circle">Po pozretí videa: Július Koller ešte ako študent zbieral napríklad nálepky zo zápalkových škatuliek, komiksy, knihy, noviny a časopisy. Určite aj vy niečo zbierate. Ale je to naozaj zbieranie alebo iba hromadenie? Porozprávajte sa o tom, <b>čo, ako a prečo zbierate</b>. Máte kritériá, podľa ktorých viete, čo do vašej zbierky patrí a čo nie? Zháňate to, čo v zbierke ešte chýba? Má vaša zbierka aj nejaké kategórie? Ako a kde ju uchovávate? Môže ju niekto vidieť? Podobné otázky „trápia“ aj múzeá a galérie.</p>
@@ -122,7 +122,7 @@
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
 						<li>
               Zberateľskú vášeň Júliusa Kollera približuje v článku kurátorka SNG Petra Hanáková:
               <a href="https://www.webumenia.sk/clanok/julius-koller-zberatel" target="_blank">

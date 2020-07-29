@@ -73,20 +73,21 @@
     <section class="container">
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/duchamp/duchamp_veci.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Pred pozretím videa: Duchampove ready-mady sú priamo položenou otázkou <b>Čo je to umenie?</b> Akú hodnotu má originál? Aká je úloha umelca? A kto určuje, ktoré umenie je dobré? V oblasti umenia vyvolal diskusiu, ktorá trvá dodnes. Diskutujte so žiakmi, čo je umenie podľa nich? </p>
         </div>
+      </div><div class="row">
         
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/duchamp/duchamp_fontana2.jpg" />
         </div>
         
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <p class="with-circle">Po pozretí videa: Dielom <i>Fontána</i> (1917) sa Duchamp pokúsil zúčastniť na výstave Nezávislých v New Yorku. Svoje dielo tu mohol vystaviť každý umelec, ktorý zaplatil poplatok 6 dolárov. Spoločnosť nezávislých umelcov nechcela pôvodne žiadne diela cenzurovať. Napriek tomu odmietla Duchampov pisoár vystaviť, čo rozdelilo jej členov na dva tábory. 
           <p>
           Rozdeľte triedu na skupiny po 4 žiakoch. V skupinách vždy dvaja <b>žiaci argumentujú</b> za vystavenie Fontány a dvaja proti (každá skupina si môže spísať všetky dôvody, prečo by dielo vystavila / nevystavila). Každá skupina predstaví svoje argumenty a výsledky debaty.</p>
@@ -117,7 +118,7 @@
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
 						<li>
               Škótska národná galéria (vo videu nájdete viac o Duchampových kufríkových galériách):
               <a href="https://www.youtube.com/watch?v=Dn18_XOzndg&feature=youtu.be" target="_blank">

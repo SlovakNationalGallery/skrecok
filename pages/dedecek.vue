@@ -84,21 +84,22 @@
     <section class="container">
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/dedecek/dedecek_cement.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Porozprávajte sa, ako <b>vyzerá vaša škola</b>. Poznáte ešte inú takú školu? Koľko má podlaží? Čo nájdete na každom z nich? Kde je schodisko a kde jedáleň? Opakujú sa nejaké vzorce usporiadania? Aká je vaša trieda? Je rovnako veľká ako ostatné triedy v škole? Aké veľké sú okná, ktoré presvetľujú miestnosť? Vysvetlite si, čo je pôdorys a mierka.
           </p>
         </div>
-
-				<div class="col-sm-12 col-lg-6">
+      </div>
+      <div class="row">
+				<div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/dedecek/dedecek_archiv.jpg" />
         </div>
 
-      	<div class="col-sm-12 col-lg-6 text-left">
+      	<div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
 					<p class="with-circle">
 						Vladimír Dedeček tvoril architektúru v období totalitného a <b>autoritárskeho režimu</b>. Čo pre architektov znamenalo navrhovať počas obdobia socializmu? Mali možnosť navrhovať svoje diela tak, aby nespĺňali len požiadavky režimu, ale boli zároveň moderné a prínosné pre spoločnosť? Majú byť stavby z obdobia komunizmu zbúrané ako monumenty, ktoré reprezentujú režim, či naopak zachované a prípadne obnovené?
 					</p>
@@ -139,7 +140,7 @@
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
 						<li>
               Profil architekta na slovenskom architektonickom portáli Archinfo: 
               <a href="https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html" target="_blank">https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html</a>

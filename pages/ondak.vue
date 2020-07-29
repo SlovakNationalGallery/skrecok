@@ -65,11 +65,11 @@
     <section class="container">
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/ondak/ondak_radiator.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Pred pozretím videa: Čo pre vás znamená <b>každodennosť?</b> Máte ju radi? Alebo ste radšej, keď sú dni stále iné? Je pre vás každodennosť dôležitá? Kedy sa bežná situácia môže stať výnimočnou?</p> 
           <p class="with-circle">Po pozretí videa: Pomenujte, čo všetko môže byť podľa vás <b>umeleckým dielom</b>. Prekvapilo alebo nahnevalo vás niekedy nejaké dielo (v galérii, na internete či v TV)? Popíšte ako a prečo?</p>
@@ -109,7 +109,7 @@
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
 						<li>
               Rozhovor s umelcom, v ktorom spomína aj diela z videa:
               <a href="https://www.artantiques.cz/umeni-vsednich-situaci" target="_blank">

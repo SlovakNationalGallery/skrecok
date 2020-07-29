@@ -94,11 +94,11 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/warhol/warhol_cans_idea.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <h4>Námety na diskusiu</h4>
           <p>
             Tvorba Andyho Warhola bola zrkadlom doby a jej kultúry. Pre
@@ -118,12 +118,13 @@
             „umenie“, tak to aj je umenie.“
           </p>
         </div>
-
-        <div class="col-sm-12 col-lg-6">
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/warhol/warhol_attraction.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <p class="with-circle">
             Andy Warhol miloval krásu, <b>umelú hmotu</b>, reklamu, veci ktoré
             sa rýchlo menili a boli moderné. Ak by žil dnes, čo by ho zaujímalo
@@ -180,7 +181,10 @@
           </p>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="https://www.webumenia.sk/dielo/nahlad/SVK:OGD.O_2391/800" />
+          <img
+            class="framed"
+            src="https://www.webumenia.sk/dielo/nahlad/SVK:OGD.O_2391/800"
+          />
         </div>
       </div>
     </section>
@@ -191,7 +195,7 @@
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
             <li>
               Andy Warhol na Webe umenia:
               <a href="https://www.webumenia.sk/autor/11636" target="_blank"
@@ -253,7 +257,9 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() { return { ...this.profiles["Andy Warhol"] };}
+    profile() {
+      return { ...this.profiles["Andy Warhol"] };
+    }
   },
   mounted() {
     // start idleTimer countdown
@@ -267,8 +273,12 @@ img.framed {
   max-width: 100%;
   margin-bottom: 10%;
   width: 90%;
-  margin-left: 10%;
   border: 1px solid black;
+}
+@media (min-width: 992px) {
+  img.framed {
+    margin-left: 10%;
+  }
 }
 
 section + section {

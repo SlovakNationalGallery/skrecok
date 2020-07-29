@@ -1,16 +1,24 @@
 <template>
-  <div id="top" @mousemove="onActive" @mousedown="onActive" @scroll="onActive" @touchstart="onActive">
+  <div
+    id="top"
+    @mousemove="onActive"
+    @mousedown="onActive"
+    @scroll="onActive"
+    @touchstart="onActive"
+  >
     <div class="bg-dots top-0"></div>
     <div class="bg-dots-fadedown top-1"></div>
-    <img src="/img/skrecok-lamp.png" class="bg-image lamp">
+    <img src="/img/skrecok-lamp.png" class="bg-image lamp" />
     <PingPong v-bind:videosPlaying="videosPlaying" />
 
     <section class="container my-5 py-5">
       <div class="mt-2">
-        <h1 class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">
-          {{pageTitle}}
+        <h1
+          class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1"
+        >
+          {{ pageTitle }}
         </h1>
-        <p class="mt-4 bg-light measure mx-auto">{{pageIntro}}</p>
+        <p class="mt-4 bg-light measure mx-auto">{{ pageIntro }}</p>
         <Button
           v-bind:text="pageCTA"
           v-bind:href="'#videos'"
@@ -29,7 +37,7 @@
     <div id="videos" class="container">
       <div class="d-inline-block vh-100" v-if="!videosLoaded">
         <div>videá sú na ceste...</div>
-        <img src="/img/skrecok-loop.gif">
+        <img src="/img/skrecok-loop.gif" />
       </div>
       <VideoSection
         v-for="(ytPlaylistItem, index) in ytPlaylistItems"
@@ -46,7 +54,7 @@
           subtitle: ytPlaylistItem.profileData.subtitle,
           linkSrc: ytPlaylistItem.profileData.linkSrc,
           workListImg: ytPlaylistItem.profileData.workListImg,
-          workList: ytPlaylistItem.profileData.workList,
+          workList: ytPlaylistItem.profileData.workList
         }"
         v-bind:videosPlaying.sync="videosPlaying"
         v-bind:kiosk="kiosk"
@@ -64,32 +72,32 @@
     />
 
     <div class="text-center">
-      <Button
-        v-bind:text="backToTop"
-        v-bind:href="'#top'"
-        class="mt-4"
-      />
+      <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" />
     </div>
 
     <section v-if="!kiosk" class="container mt-7">
-      <h2 class="mb-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">{{installationTitle}}</h2>
-      <img class="w-100 mb-3" src="/img/installation.jpg?v=2">
-      <p class="mx-pingpong mx-auto measure bg-light p-2 mb-0">{{installationIntro}}</p>
+      <h2 class="mb-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1">
+        {{ installationTitle }}
+      </h2>
+      <img class="w-100 mb-3" src="/img/installation.jpg?v=2" />
+      <p class="mx-pingpong mx-auto measure bg-light p-2 mb-0">
+        {{ installationIntro }}
+      </p>
       <div class="d-inline-block bg-light p-3">
         <a target="_blank" :href="installationURL" class="lead">Viac info</a>
       </div>
       <div>
-        <Button
-          v-bind:text="backToTop"
-          v-bind:href="'#top'"
-          class="mt-5"
-        />
+        <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-5" />
       </div>
     </section>
 
     <footer class="container h-footer mt-5">
-      <p v-bind:class='{ disabled: kiosk }' class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong bg-light p-3 p-md-4" v-html="footerHTML"></p>
-      <img src="/img/skrecok-carrots.png" class="bg-image carrots">
+      <p
+        v-bind:class="{ disabled: kiosk }"
+        class="text-center text-sm-left position-block position-sm-absolute bottom-0 mx-pingpong bg-light p-3 p-md-4"
+        v-html="footerHTML"
+      ></p>
+      <img src="/img/skrecok-carrots.png" class="bg-image carrots" />
     </footer>
     <div class="bg-dots-fadedown flip-vertical bottom-1"></div>
     <div class="bg-dots bottom-0"></div>
@@ -97,20 +105,18 @@
 </template>
 
 <script>
-import { state } from 'vuex'
-import BasicPage from '../components/BasicPage.vue'
+import { state } from "vuex";
+import BasicPage from "../components/BasicPage.vue";
 
 export default {
-  head () {
+  head() {
     return {
-      script: [
-        { src: 'https://apis.google.com/js/api.js' }
-      ]
-    }
+      script: [{ src: "https://apis.google.com/js/api.js" }]
+    };
   },
   mixins: [BasicPage],
   computed: {
-    profiles () {
+    profiles() {
       return this.$store.state.profiles;
     }
   },
@@ -192,14 +198,14 @@ export default {
         });
     },
     loadYTIframeAPI() {
-      var tag = document.createElement('script');
-      tag.id = 'iframe-api';
-      tag.src = 'https://www.youtube.com/iframe_api';
-      var firstScriptTag = document.getElementsByTagName('script')[0];
+      var tag = document.createElement("script");
+      tag.id = "iframe-api";
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    },
+    }
   },
-  mounted () {
+  mounted() {
     this.initGapi();
     // load YouTube iframe API
     this.loadYTIframeAPI();
@@ -207,6 +213,6 @@ export default {
     this.parseQuery(this.$route.query);
     // start idleTimer countdown
     this.resetIdleTimer();
-  },
-}
+  }
+};
 </script>

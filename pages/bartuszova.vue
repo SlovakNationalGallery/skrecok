@@ -69,15 +69,15 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12 col-lg-10">
+        <div class="col-sm-12 col-lg-10 ">
           <img class="framed" src="/img/bartuszova/bartuszova_P_2674.jpeg" />
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="container">
       <div class="row">
-        <div class="col-sm-12 col-lg-5 text-left">
+        <div class="col-sm-12 col-lg-5 text-left ">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Pred pozretím videa prineste so sebou do triedy predmet, ktorý je podľa vás vyrobený zo <b>zaujímavého materiálu</b>. Zhromaždite ich všetky do jednej krabice, po jednom ich vyťahujte a nechajte kolovať. Úlohou ostatných žiakov je hádať, z čoho je predmet vyrobený a čím mohol toho, kto ho priniesol, osloviť. Rozdeľte potom predmety do skupín podľa toho, či zaujali viac pohľadom, dotykom, čuchom, sluchom (alebo vytvorte vlastné kategórie). 
           </p>
@@ -117,11 +117,11 @@
       
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
             <img class="framed" src="/img/bartuszova/bartuszova_P_150.jpeg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           
           <h4>Aktivity</h4>
           
@@ -139,11 +139,11 @@
 
       <div class="row">
         
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/bartuszova/bartuszova_P_342.jpeg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <p class="with-circle">
             Namiešajte si hustejšiu sadru, jej menšie množstvo vlejte do väčšieho priesvitného <b>igelitového vrecka</b> a dobre zaviažte. Priložte ho bočnou stranou bez záhybov na niektorú časť tela, napr. na ruku, do dlane alebo na tvár. Počas tuhnutia s ňou nehýbte a vnímajte, ako sa sadra stáva teplejšou. Keď sadra stuhne, obal opatrne prestrihnite a odstráňte. 
           </p>
@@ -162,7 +162,7 @@
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
 						<li>
               Diela Marie Bartuszovej na Webe umenia:
               <a href="https://www.webumenia.sk/autor/513" target="_blank">
@@ -209,28 +209,9 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() {
-      let profile = { ...this.profiles["Maria_Bartuszova"] };
-      if (this.ytPlaylistItems.length > 0) {
-        const ytPlaylistItem = (this.ytPlaylistItems || []).find(function(i) {
-          return i.profileData.title === "Maria_Bartuszova";
-        });
-        if (!!ytPlaylistItem) {
-          profile = {
-            ...profile,
-            profileText: ytPlaylistItem.profileText
-          };
-        }
-      }
-      return profile;
-    }
+    profile() { return { ...this.profiles["Maria Bartuszová"] };}
   },
   mounted() {
-    this.initGapi();
-    // load YouTube iframe API
-    this.loadYTIframeAPI();
-    // parse URL query params
-    this.parseQuery(this.$route.query);
     // start idleTimer countdown
     this.resetIdleTimer();
   }

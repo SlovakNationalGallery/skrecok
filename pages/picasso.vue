@@ -82,18 +82,19 @@
     <section class="container">
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/picasso/picasso_diela.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-5 text-left">
+        <div class="col-sm-12 col-lg-5 text-left order-1 order-lg-2">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Ako ovplyvnil <b>technologický pokrok</b> v 19. storočí umelecký svet? Vynález fotoaparátu, film, farby v tubách, nové dopravné prostriedky a cestovanie, elektrifikácia, väčší prienik informácií zo sveta.</p> 
           <p>Nachádzate aj v Picassovej tvorbe vplyv technologického pokroku?</p> 
         </div>  
-        
-        <div class="col-sm-12 col-lg-6">
-          <img class="framed" src="/img/picasso/picasso_traja.jpg" />
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
+          <img class="framed" src="/img/picasso/picasso_traja.jpg order-1 order-lg-2" />
         </div>
         
         <div class="col-sm-12 col-lg-5 text-left">
@@ -139,7 +140,7 @@
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
 						<li>
               Pablo Picasso – Francov sen a lož:
               <a href="https://www.webumenia.sk/clanok/pablo-picasso-francov-sen" target="_blank">

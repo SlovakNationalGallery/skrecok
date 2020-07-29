@@ -90,11 +90,11 @@
     <section class="container">
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/daucikova/daucikova_wecare.jpeg" />
         </div>
 
-        <div class="col-sm-12 col-lg-5 text-left">
+        <div class="col-sm-12 col-lg-5 text-left order-1 order-lg-2">
           <h4>Námety na diskusiu</h4>
           <p class="with-circle">Uvažujte o pojme <b>identita</b>. Čo ju tvorí? Skúste porozmýšľať, čo konkrétne sa najvýznamnejšie podieľa(lo) na utváraní vašej identity. Môže sa identita človeka v rôznych situáciách či prostrediach meniť? </p> 
           <p class="with-circle">Jedným z faktorov, ktoré ovplyvňujú našu identitu, je <b>pohlavie</b>. Spíšte si činnosti alebo situácie, ktoré sa väčšinou spájajú s mužmi a tie prisudzované ženám. Premýšľajte, prečo je to tak a do akej miery je to nemenné. Stretli ste sa niekedy, alebo počuli ste o diskriminácii na základe rodu? Prečo je dôležité sa o tom rozprávať? Poznáte niekoho, kto sa vo svojom tele necíti dobre? Čo všetko môže na takýto pocit vplývať?</p>
@@ -140,11 +140,11 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 ">
           <h4>
             Externé odkazy
           </h4>
-          <ul>
+          <ul class="text-left">
 						<li>
               Viac o autorke a jej tvorbe:
               <a href="http://artbase.kunsthallebratislava.sk/umelec/1918" target="_blank">
