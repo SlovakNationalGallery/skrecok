@@ -207,36 +207,5 @@ export default {
   computed: {
     profile() { return { ...this.profiles["Pablo Picasso"] };}
   },
-  mounted() {
-    // start idleTimer countdown
-    this.resetIdleTimer();
-  }
 };
 </script>
-
-<style scoped lang="scss">
-img.framed {
-  max-width: 100%;
-  margin-bottom: 10%;
-  width: 90%;
-  margin-left:10%;
-  border: 1px solid black;
-}
-
-section + section {
-  padding-top: 3em;
-}
-
-li {
-  list-style: none;
-}
-
-.with-circle::before{
-    content: "○";
-    display: block;
-    position: absolute;
-    left: -.5em;
-    list-style: circle;
-    }
-
-</style>

@@ -20,7 +20,7 @@ export default {
   computed: {
     profiles() {
       return this.$store.state.profiles;
-    },
+    }
   },
   data() {
     return {
@@ -44,7 +44,7 @@ export default {
       ytPlaylistItemDescriptionSeparator: "---",
       ytPlaylistItemTitleSeparator: " – ",
       videosLoaded: false,
-      ytPlaylistItems:[],
+      ytPlaylistItems: [],
       videosPlaying: false,
       idleTime: 3000, // time until Idle in ms
       idleTimeout: null,
@@ -83,7 +83,45 @@ export default {
         clearTimeout(this.idleTimeout);
         this.idleTimeout = setTimeout(this.onIdle, this.idleTime);
       }
-    },
+    }
+  },
+  mounted() {
+    // start idleTimer countdown
+    this.resetIdleTimer();
   }
 };
 </script>
+
+
+<style lang="scss">
+img.framed {
+  max-width: 100%;
+  margin-bottom: 10%;
+  width: 90%;
+  margin-left: 10%;
+  border: 1px solid black;
+}
+
+.order-2 {
+  img.framed {
+    margin-left: 0%;
+    margin-right: 10%;
+  }
+}
+
+section + section {
+  padding-top: 3em;
+}
+
+li {
+  list-style: none;
+}
+
+.with-circle::before {
+  content: "○";
+  display: block;
+  position: absolute;
+  left: -0.5em;
+  list-style: circle;
+}
+</style>

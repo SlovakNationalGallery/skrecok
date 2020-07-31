@@ -261,39 +261,5 @@ export default {
       return { ...this.profiles["Andy Warhol"] };
     }
   },
-  mounted() {
-    // start idleTimer countdown
-    this.resetIdleTimer();
-  }
 };
 </script>
-
-<style scoped lang="scss">
-img.framed {
-  max-width: 100%;
-  margin-bottom: 10%;
-  width: 90%;
-  border: 1px solid black;
-}
-@media (min-width: 992px) {
-  img.framed {
-    margin-left: 10%;
-  }
-}
-
-section + section {
-  padding-top: 3em;
-}
-
-li {
-  list-style: none;
-}
-
-.with-circle::before {
-  content: "○";
-  display: block;
-  position: absolute;
-  left: -0.5em;
-  list-style: circle;
-}
-</style>
