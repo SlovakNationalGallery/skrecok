@@ -118,57 +118,70 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10 offset-sm-1  col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <h4>
             Externé odkazy
           </h4>
-          <ul class="text-left">
-						<li>
+          <dl class="text-left">
+						<dt>
               Zberateľskú vášeň Júliusa Kollera približuje v článku kurátorka SNG Petra Hanáková:
+              </dt><dd>
               <a href="https://www.webumenia.sk/clanok/julius-koller-zberatel" target="_blank">
                 https://www.webumenia.sk/clanok/julius-koller-zberatel
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Denník Júliusa Kollera z roku 1989, ktorý odkrýva udalosti Nežnej revolúcie, spracovala SNG aj s metodickými materiálmi pre pedagógov:
+              </dt><dd>
               <a href="https://1989.sng.sk/" target="_blank">
                 https://1989.sng.sk/
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Kategorizovaný výber tvorby Júliusa Kollera spracovaný Spoločnosťou Júliusa Kollera:
+              </dt><dd>
               <a href="https://juliuskollersociety.org/sk/archiv/" target="_blank">
                 https://juliuskollersociety.org/sk/archiv/
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Krátko pred smrťou Július Koller predstavuje UFO galériu:
+              </dt><dd>
               <a href="https://www.youtube.com/watch?v=0T6MNydabn0&feature=related" target="_blank">
                 https://www.youtube.com/watch?v=0T6MNydabn0&feature=related
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Antimúzeum Júliusa Kollera:
+              </dt><dd>
               <a href="https://antimuzeum.sk/" target="_blank">
                 https://antimuzeum.sk/
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Július Koller na Webe umenia:
+              </dt><dd>
               <a href="https://www.webumenia.sk/autor/5089" target="_blank">
                 https://www.webumenia.sk/autor/5089
               </a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </div>
       </div>
     </section>
     <div class="text-center">
-      <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Julius_Koller.pdf'" :newTab="true" class="mt-4" />
+      <a href="'../pdfs/Julius_Koller.pdf'"  class="pdf-link mt-5">
+        <img
+          src="/img/news.png"
+          class="d-inline-block"
+        />
+        <span>{{ downloadPdf }}</span>
+      </a>
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
+
       <!-- <br/>
       <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>
-
     <footer class="container h-footer mt-5">
       <div class="col-sm-6 offset-sm-3">
         <img

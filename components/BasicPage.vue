@@ -30,6 +30,7 @@ export default {
       pageCTA: "Poďme na to!",
       backToTop: "naspäť na začiatok",
       downloadPdf: "Stiahni ako PDF",
+      backHome:"Späť domov",
       installationTitle: "Navštív profesora Škrečka",
       worklist: "Metodický list",
       installationIntro:
@@ -102,6 +103,15 @@ img.framed {
   border: 1px solid black;
 }
 
+img.no-margin{
+  margin: auto;
+}
+
+@media all and (max-width:991.9px){
+  img.framed{
+  margin-left: auto;
+  }
+}
 .order-2 {
   img.framed {
     margin-left: 0%;
@@ -123,5 +133,8 @@ li {
   position: absolute;
   left: -0.5em;
   list-style: circle;
+}
+dt, dl, dd{
+  font-weight: normal;
 }
 </style>

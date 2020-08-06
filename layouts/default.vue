@@ -172,4 +172,24 @@ p.mx-pingpong {
     transform: scale3d(1.2, 1.2, 1.2);
   }
 }
+
+.pdf-link{
+  text-decoration: none;
+  border: none;
+  display: block;
+
+  img {
+    border: none;
+    height: 3em;
+    margin-bottom: -0.5em;
+  }
+
+  span {
+    vertical-align: bottom;
+  }
+
+  &:hover span {
+    border-bottom: 1px solid #000;
+  }
+}
 </style>

@@ -105,36 +105,50 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10 offset-sm-1  col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <h4>
             Externé odkazy
           </h4>
-          <ul class="text-left">
-						<li>
+          <dl class="text-left">
+						<dt>
               Rozhovor s umelcom, v ktorom spomína aj diela z videa:
+              </dt>
+              <dd>
               <a href="https://www.artantiques.cz/umeni-vsednich-situaci" target="_blank">
               https://www.artantiques.cz/umeni-vsednich-situaci
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Roman Ondak v databáze Kunsthalle Bratislava:
+              </dt>
+              <dd>
               <a href="http://artbase.kunsthallebratislava.sk/umelec/7446" target="_blank">
               http://artbase.kunsthallebratislava.sk/umelec/7446 
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Beata Jablonská o Ondakovej tvorbe:
+              </dt>
+              <dd>
               <a href="https://www.artdispecing.sk/recenzenti/beata-jablonska/trhliny-v-realite-istoty-v-umeni/" target="_blank">
               https://www.artdispecing.sk/recenzenti/beata-jablonska/trhliny-v-realite-istoty-v-umeni/
               </a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </div>
       </div>
     </section>
-    
+
     <div class="text-center">
-      <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Roman_Ondak.pdf'" :newTab="true" class="mt-4" />
+      <a href="'../pdfs/Roman_Ondak.pdf'"  class="pdf-link mt-5">
+        <img
+          src="/img/news.png"
+          class="d-inline-block"
+        />
+        <span>{{ downloadPdf }}</span>
+      </a>
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
+
       <!-- <br/>
       <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>

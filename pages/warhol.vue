@@ -191,48 +191,56 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10 offset-sm-1  col-md-10 offset-md-1 col-lg-6 offset-lg-3">
           <h4>
             Externé odkazy
           </h4>
-          <ul class="text-left">
-            <li>
+          <dl class="text-left">
+            <dt>
               Andy Warhol na Webe umenia:
+            </dt><dd>
               <a href="https://www.webumenia.sk/autor/11636" target="_blank"
                 >https://www.webumenia.sk/autor/11636
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Múzeum Andyho Warhola v Pittsburghu:
+            </dt><dd>
               <a href="https://www.warhol.org" target="_blank"
                 >https://www.warhol.org
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Múzeum moderného umenia Andyho Warhola v Medzilaborciach:
+            </dt><dd>
               <a href="https://www.muzeumaw.sk" target="_blank"
                 >https://www.muzeumaw.sk
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Videoukážka techniky kresby Andyho Warhola:
+            </dt><dd>
               <a
                 href="https://www.youtube.com/watch?v=laOLC2eYZRM"
                 target="_blank"
                 >https://www.youtube.com/watch?v=laOLC2eYZRM
               </a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </div>
       </div>
     </section>
+ 
     <div class="text-center">
-      <Button
-        v-bind:text="downloadPdf"
-        v-bind:href="'../pdfs/Andy_Warhol.pdf'"
-        :newTab="true"
-        class="mt-4"
-      />
+      <a href="'../pdfs/Andy_Warhol.pdf'"  class="pdf-link mt-5">
+        <img
+          src="/img/news.png"
+          class="d-inline-block"
+        />
+        <span>{{ downloadPdf }}</span>
+      </a>
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
+
       <!-- <br/>
       <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>

@@ -136,33 +136,48 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10 offset-sm-1  col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <h4>
             Externé odkazy
           </h4>
-          <ul class="text-left">
-						<li>
+          <dl class="text-left">
+						<dt>
               Profil architekta na slovenskom architektonickom portáli Archinfo: 
+            </dt>
+            <dd>
               <a href="https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html" target="_blank">https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html</a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Diela Vladimíra Dedečka na Webe umenia:
+            </dt>
+            <dd>
               <a href="https://www.webumenia.sk/autor/1052763" target="_blank"
                 >https://www.webumenia.sk/autor/1052763
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Dvojkanálová videoinštalácia v rámci projektu <i>Vladimír Dedeček: Práca</i>, ktorá sprostredkuje jeho myslenie a pohľad na minulosť aj súčasnosť:
+            </dt>
+            <dd>
               <a href="https://youtu.be/Z0V1VGv7thQ" target="_blank"
                 >https://youtu.be/Z0V1VGv7thQ
               </a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </div>
       </div>
     </section>
+
     <div class="text-center">
-      <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Vladimir_Dedecek.pdf'" :newTab="true" class="mt-4" />
+      <a href="'../pdfs/Vladimir_Dedecek.pdf'"  class="pdf-link mt-5">
+        <img
+          src="/img/news.png"
+          class="d-inline-block"
+        />
+        <span>{{ downloadPdf }}</span>
+      </a>
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
+
       <!-- <br/>
       <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>

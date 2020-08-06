@@ -158,29 +158,42 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10 offset-sm-1  col-md-8 offset-md-2 col-lg-4 offset-lg-4"> 
           <h4>
             Externé odkazy
           </h4>
-          <ul class="text-left">
-						<li>
+          <dl class="text-left">
+						<dt>
               Diela Marie Bartuszovej na Webe umenia:
+            </dt>
+            <dd>
               <a href="https://www.webumenia.sk/autor/513" target="_blank">
                 https://www.webumenia.sk/autor/513
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Rozhlasový profil Marie Bartuszovej:
+            </dt>
+            <dd>
               <a href="https://www.rtvs.sk/clanok/165840" target="_blank">
                 https://www.rtvs.sk/clanok/165840
               </a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </div>
       </div>
     </section>
+
     <div class="text-center">
-      <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Maria_Bartuszova.pdf'" :newTab="true" class="mt-4" />
+      <a href="'../pdfs/Maria_Bartuszova.pdf'"  class="pdf-link mt-5">
+        <img
+          src="/img/news.png"
+          class="d-inline-block"
+        />
+        <span>{{ downloadPdf }}</span>
+      </a>
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
+
       <!-- <br/>
       <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>

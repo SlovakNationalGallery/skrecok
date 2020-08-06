@@ -73,7 +73,7 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12 col-lg-10">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 no-margin">
           <img class="framed" src="/img/picasso/picasso_kubizmus.jpg" />
         </div>
       </div>
@@ -93,9 +93,6 @@
         </div>  
       </div>
       <div class="row">
-        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
-          <img class="framed" src="/img/picasso/picasso_traja.jpg order-1 order-lg-2" />
-        </div>
         
         <div class="col-sm-12 col-lg-5 text-left">
           <p class="with-circle">U Picassa, ako aj v tvorbe ostatných avantgardných umelcov, <b>stráca opodstatnenie presné zachytenie podoby</b> človeka, krajiny a vecí.</p> 
@@ -103,15 +100,18 @@
           <p>Spomeňte si a opíšte situáciu, kedy ste z vlastného rozhodnutia urobili niečo inak, ako sa od vás očakávalo a malo to pozitívny výsledok.</p>
         </div>
 
+        <div class="col-sm-12 col-lg-6">
+          <img class="framed" src="/img/picasso/picasso_traja.jpg" />
+        </div>
       </div>
 
       <div class="row">
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/picasso/picasso_masky.png" />
         </div>
 
-        <div class="col-sm-12 col-lg-5 text-left">
+        <div class="col-sm-12 col-lg-5 text-left order-1 order-lg-2">
           <p class="with-circle">Preskúmajte <i>Avignonské slečny</i>. Je pravá strana namaľovaná rovnakým štýlom ako ľavá? Na ktorej strane vidno <b>inšpiráciu africkými maskami</b>?</p> 
           <p>Diskutujte o fenoméne kolonializmu, ktorý ako systém nadvlády a kontroly jedného štátu nad iným, nemal len ekonomické a politické motivácie, ale aj kultúrny rozmer.</p>
         </div>
@@ -136,47 +136,66 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10 offset-sm-1  col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <h4>
             Externé odkazy
           </h4>
           <ul class="text-left">
 						<li>
-              Pablo Picasso – Francov sen a lož:
+              <dl> 
+                <dt>Pablo Picasso – Francov sen a lož:</dt><dd>
               <a href="https://www.webumenia.sk/clanok/pablo-picasso-francov-sen" target="_blank">
                 https://www.webumenia.sk/clanok/pablo-picasso-francov-sen
               </a>
+              </dd></dl>
             </li>
             <li>
-              Múzeum Pabla Picassa v Barcelone:
+              <dl> 
+                <dt>Múzeum Pabla Picassa v Barcelone:</dt><dd>
               <a href="http://www.museupicasso.bcn.cat/" target="_blank">
                 http://www.museupicasso.bcn.cat/
               </a>
+              </dd></dl>
             </li>
             <li>
-              Múzeum Pabla Picassa v Malage:
+              <dl> 
+                <dt>Múzeum Pabla Picassa v Malage:</dt><dd>
               <a href="https://www.museopicassomalaga.org/" target="_blank">
                 https://www.museopicassomalaga.org/
               </a>
+              </dd></dl>
             </li>
             <li>
-              Múzeum Pabla Picassa v Paríži:
+              <dl> 
+                <dt>Múzeum Pabla Picassa v Paríži:</dt><dd>
               <a href="http://www.museepicassoparis.fr/" target="_blank">
                 http://www.museepicassoparis.fr/
               </a>
+              </dd></dl>
             </li>
             <li>
-              Ako porozumieť Picassovi? (video v anglickom jazyku):
+              <dl> 
+                <dt>Ako porozumieť Picassovi? (video v anglickom jazyku):</dt><dd>
               <a href="https://www.youtube.com/watch?v=_HGW1DQO1xQ" target="_blank">
                 https://www.youtube.com/watch?v=_HGW1DQO1xQ
               </a>
+              </dd></dl>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
     <div class="text-center">
-      <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Pablo_Picasso.pdf'" :newTab="true" class="mt-4" />
+      <a href="'../pdfs/Pablo_Picasso.pdf'"  class="pdf-link mt-5">
+        <img
+          src="/img/news.png"
+          class="d-inline-block"
+        />
+        <span>{{ downloadPdf }}</span>
+      </a>
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
+
       <!-- <br/>
       <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>
@@ -205,7 +224,9 @@ export default {
     ArtistProfile
   },
   computed: {
-    profile() { return { ...this.profiles["Pablo Picasso"] };}
-  },
+    profile() {
+      return { ...this.profiles["Pablo Picasso"] };
+    }
+  }
 };
 </script>

@@ -120,11 +120,11 @@
 
       <div class="row">
         
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
           <img class="framed" src="/img/daucikova/daucikova_video.jpg" />
         </div>
 
-        <div class="col-sm-12 col-lg-6 text-left">
+        <div class="col-sm-12 col-lg-6 text-left order-1 order-lg-2">
           <h4>Aktivity</h4>
           <p class="with-circle">
             Annu Daučíkovú nezaujíma iba to, na čo sa cez kameru pozerá, ale aj pohľad samotný. Aký dôležitý je pre vás pohľad iných? Prispôsobujete sa mu? Do akej miery si to uvedomujete? 
@@ -140,35 +140,46 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-sm-12 ">
+        <div class="col-sm-10 offset-sm-1  col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <h4>
             Externé odkazy
           </h4>
-          <ul class="text-left">
-						<li>
+          <dl class="text-left">
+						<dt>
               Viac o autorke a jej tvorbe:
+              </dt><dd>
               <a href="http://artbase.kunsthallebratislava.sk/umelec/1918" target="_blank">
                 http://artbase.kunsthallebratislava.sk/umelec/1918
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Profil autorky v lexikóne Ars:
+              </dt><dd>
               <a href="https://www.arslexicon.sk/?registre&objekt=daucikova-anna" target="_blank">
                 https://www.arslexicon.sk/?registre&objekt=daucikova-anna
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               Metodické materiály združenia Aspekt o rodovocitlivej pedagogike pre učiteľov:
+              </dt><dd>
               <a href="http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna" target="_blank">
                 http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna
               </a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </div>
       </div>
     </section>
     <div class="text-center">
-      <Button v-bind:text="downloadPdf" v-bind:href="'../pdfs/Anna_Daucikova.pdf'" :newTab="true" class="mt-4" />
+      <a href="'../pdfs/Anna_Daucikova.pdf'"  class="pdf-link mt-5">
+        <img
+          src="/img/news.png"
+          class="d-inline-block"
+        />
+        <span>{{ downloadPdf }}</span>
+      </a>
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
+
       <!-- <br/>
       <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>
@@ -192,6 +203,7 @@ import ArtistProfile from "../components/ArtistProfile";
 import BasicPage from "../components/BasicPage.vue";
 
 export default {
+  scrollToTop: true,
   mixins: [BasicPage],
   components: {
     ArtistProfile
