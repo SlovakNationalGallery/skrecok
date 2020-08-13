@@ -47,7 +47,7 @@ export default {
       videosLoaded: false,
       ytPlaylistItems: [],
       videosPlaying: false,
-      idleTime: 3000, // time until Idle in ms
+      idleTime: 300000, // time until Idle in ms
       idleTimeout: null,
       socialSharing: {
         paragraph:
