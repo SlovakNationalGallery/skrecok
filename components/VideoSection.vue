@@ -35,8 +35,8 @@
     <ArtistProfile v-bind:kiosk="kiosk" v-bind:profile="profile" />
 
     <nuxt-link
-      v-if="profile.workList && !kiosk"
-      :to="profile.workList"
+      v-if="profile.workList"
+      :to="profile.workList + (kiosk? '?kiosk=1':'')"
       class="worklist button d-inline-block"
     >
       <img

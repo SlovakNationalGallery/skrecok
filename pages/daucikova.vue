@@ -10,7 +10,8 @@
     <div class="bg-dots-fadedown top-1"></div>
     <img src="/img/skrecok-lamp.png" class="bg-image lamp" />
 
-    <section class="container my-5 py-5">
+    <section class="container my-0 pt-5">
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-0 home-link mb-3" /><br/>
       <div class="mt-2">
         <h1
           class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1"
@@ -19,6 +20,7 @@
         </h1>
 
         <ArtistProfile
+          class="mt-5"
           v-bind:kiosk="kiosk"
           v-bind:profile="{ 
             ...profile, 
@@ -148,21 +150,21 @@
 						<dt>
               Viac o autorke a jej tvorbe:
               </dt><dd>
-              <a href="http://artbase.kunsthallebratislava.sk/umelec/1918" target="_blank">
+              <a v-href="kiosk?'':'http://artbase.kunsthallebratislava.sk/umelec/1918'" target="_blank">
                 http://artbase.kunsthallebratislava.sk/umelec/1918
               </a>
             </dd>
             <dt>
               Profil autorky v lexikóne Ars:
               </dt><dd>
-              <a href="https://www.arslexicon.sk/?registre&objekt=daucikova-anna" target="_blank">
+              <a v-href="kiosk?'':'https://www.arslexicon.sk/?registre&objekt=daucikova-anna'" target="_blank">
                 https://www.arslexicon.sk/?registre&objekt=daucikova-anna
               </a>
             </dd>
             <dt>
               Metodické materiály združenia Aspekt o rodovocitlivej pedagogike pre učiteľov:
               </dt><dd>
-              <a href="http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna" target="_blank">
+              <a v-href="kiosk?'':'http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna'" target="_blank">
                 http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna
               </a>
             </dd>
@@ -171,7 +173,7 @@
       </div>
     </section>
     <div class="text-center">
-      <a href="'../pdfs/Anna_Daucikova.pdf'"  class="pdf-link mt-5">
+      <a v-href="kiosk?'':'../pdfs/Anna_Daucikova.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"
@@ -179,19 +181,9 @@
         <span>{{ downloadPdf }}</span>
       </a>
       <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
-
-      <!-- <br/>
-      <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>
 
-    <footer class="container h-footer mt-5">
-      <div class="col-sm-6 offset-sm-3">
-        <img
-          v-if="profile.workListImg"
-          :src="profile.workListImg"
-        />
-      </div>
-    </footer>
+    <footer class="container space">&nbsp;</footer>
     <div class="bg-dots-fadedown flip-vertical bottom-0"></div>
     
   </div>

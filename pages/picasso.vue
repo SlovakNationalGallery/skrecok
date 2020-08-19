@@ -10,7 +10,8 @@
     <div class="bg-dots-fadedown top-1"></div>
     <img src="/img/skrecok-lamp.png" class="bg-image lamp" />
 
-    <section class="container my-5 py-5">
+    <section class="container my-0 pt-5">
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-0 home-link mb-3" /><br/>
       <div class="mt-2">
         <h1
           class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1"
@@ -19,6 +20,7 @@
         </h1>
 
         <ArtistProfile
+          class="mt-5"
           v-bind:kiosk="kiosk"
           v-bind:profile="{ 
             ...profile, 
@@ -144,7 +146,7 @@
 						<li>
               <dl> 
                 <dt>Pablo Picasso – Francov sen a lož:</dt><dd>
-              <a href="https://www.webumenia.sk/clanok/pablo-picasso-francov-sen" target="_blank">
+              <a v-href="kiosk?'':'https://www.webumenia.sk/clanok/pablo-picasso-francov-sen'" target="_blank">
                 https://www.webumenia.sk/clanok/pablo-picasso-francov-sen
               </a>
               </dd></dl>
@@ -152,7 +154,7 @@
             <li>
               <dl> 
                 <dt>Múzeum Pabla Picassa v Barcelone:</dt><dd>
-              <a href="http://www.museupicasso.bcn.cat/" target="_blank">
+              <a v-href="kiosk?'':'http://www.museupicasso.bcn.cat'" target="_blank">
                 http://www.museupicasso.bcn.cat/
               </a>
               </dd></dl>
@@ -160,7 +162,7 @@
             <li>
               <dl> 
                 <dt>Múzeum Pabla Picassa v Malage:</dt><dd>
-              <a href="https://www.museopicassomalaga.org/" target="_blank">
+              <a v-href="kiosk?'':'https://www.museopicassomalaga.org'" target="_blank">
                 https://www.museopicassomalaga.org/
               </a>
               </dd></dl>
@@ -168,7 +170,7 @@
             <li>
               <dl> 
                 <dt>Múzeum Pabla Picassa v Paríži:</dt><dd>
-              <a href="http://www.museepicassoparis.fr/" target="_blank">
+              <a v-href="kiosk?'':'http://www.museepicassoparis.fr'" target="_blank">
                 http://www.museepicassoparis.fr/
               </a>
               </dd></dl>
@@ -176,7 +178,7 @@
             <li>
               <dl> 
                 <dt>Ako porozumieť Picassovi? (video v anglickom jazyku):</dt><dd>
-              <a href="https://www.youtube.com/watch?v=_HGW1DQO1xQ" target="_blank">
+              <a v-href="kiosk?'':'https://www.youtube.com/watch?v=_HGW1DQO1xQ'" target="_blank">
                 https://www.youtube.com/watch?v=_HGW1DQO1xQ
               </a>
               </dd></dl>
@@ -187,7 +189,7 @@
     </section>
 
     <div class="text-center">
-      <a href="'../pdfs/Pablo_Picasso.pdf'"  class="pdf-link mt-5">
+      <a v-href="kiosk?'':'../pdfs/Pablo_Picasso.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"
@@ -195,19 +197,9 @@
         <span>{{ downloadPdf }}</span>
       </a>
       <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
-
-      <!-- <br/>
-      <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>
 
-    <footer class="container h-footer mt-5">
-      <div class="col-sm-6 offset-sm-3">
-        <img
-          v-if="profile.workListImg"
-          :src="profile.workListImg"
-        />
-      </div>
-    </footer>
+    <footer class="container space">&nbsp;</footer>
     <div class="bg-dots-fadedown flip-vertical bottom-0"></div>
     
   </div>

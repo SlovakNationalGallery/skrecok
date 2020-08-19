@@ -88,6 +88,7 @@ export default {
   },
   mounted() {
     // start idleTimer countdown
+    this.parseQuery(this.$route.query);
     this.resetIdleTimer();
   }
 };
@@ -110,6 +111,8 @@ img.no-margin{
 @media all and (max-width:991.9px){
   img.framed{
   margin-left: auto;
+  width: 100%;
+  margin: 2em 0 3em 0;
   }
 }
 .order-2 {

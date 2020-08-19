@@ -173,6 +173,21 @@ p.mx-pingpong {
   }
 }
 
+.container.my-5.py-5{
+  position: relative;
+}
+.home-link {
+  img {
+    border: none;
+    height: 4em;
+  }
+  background: #f3e2be;
+
+  a {
+    border: none !important;
+  }
+}
+
 .pdf-link{
   text-decoration: none;
   border: none;
@@ -180,8 +195,9 @@ p.mx-pingpong {
 
   img {
     border: none;
-    height: 3em;
+    height: 4em;
     margin-bottom: -0.5em;
+    margin-right: 0.5em;
   }
 
   span {
@@ -191,5 +207,9 @@ p.mx-pingpong {
   &:hover span {
     border-bottom: 1px solid #000;
   }
+}
+
+footer.space{
+  padding:4em 0 var(--bg-unit-height) 0 ;
 }
 </style>

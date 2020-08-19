@@ -10,7 +10,8 @@
     <div class="bg-dots-fadedown top-1"></div>
     <img src="/img/skrecok-lamp.png" class="bg-image lamp" />
 
-    <section class="container my-5 py-5">
+    <section class="container my-0 pt-5">
+      <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-0 home-link mb-3" /><br/>
       <div class="mt-2">
         <h1
           class="my-5 bg-dark text-light tilted d-inline-block px-3 pt-2 pb-1"
@@ -19,6 +20,7 @@
         </h1>
 
         <ArtistProfile
+          class="mt-5"
           v-bind:kiosk="kiosk"
           v-bind:profile="{
             ...profile,
@@ -199,31 +201,29 @@
             <dt>
               Andy Warhol na Webe umenia:
             </dt><dd>
-              <a href="https://www.webumenia.sk/autor/11636" target="_blank"
-                >https://www.webumenia.sk/autor/11636
+              <a v-href="kiosk?'':'https://www.webumenia.sk/autor/11636'" target="_blank">
+                https://www.webumenia.sk/autor/11636
               </a>
             </dd>
             <dt>
               Múzeum Andyho Warhola v Pittsburghu:
             </dt><dd>
-              <a href="https://www.warhol.org" target="_blank"
-                >https://www.warhol.org
+              <a v-href="kiosk?'':'https://www.warhol.org'" target="_blank">
+                https://www.warhol.org
               </a>
             </dd>
             <dt>
               Múzeum moderného umenia Andyho Warhola v Medzilaborciach:
             </dt><dd>
-              <a href="https://www.muzeumaw.sk" target="_blank"
-                >https://www.muzeumaw.sk
+              <a v-href="kiosk?'':'https://www.muzeumaw.sk'" target="_blank">
+                https://www.muzeumaw.sk
               </a>
             </dd>
             <dt>
               Videoukážka techniky kresby Andyho Warhola:
             </dt><dd>
-              <a
-                href="https://www.youtube.com/watch?v=laOLC2eYZRM"
-                target="_blank"
-                >https://www.youtube.com/watch?v=laOLC2eYZRM
+                <a v-href="kiosk?'':'https://www.youtube.com/watch?v=laOLC2eYZRM'" target="_blank">
+                https://www.youtube.com/watch?v=laOLC2eYZRM
               </a>
             </dd>
           </dl>
@@ -232,7 +232,7 @@
     </section>
  
     <div class="text-center">
-      <a href="'../pdfs/Andy_Warhol.pdf'"  class="pdf-link mt-5">
+      <a v-href="kiosk?'':'../pdfs/Andy_Warhol.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"
@@ -240,16 +240,9 @@
         <span>{{ downloadPdf }}</span>
       </a>
       <Button v-bind:text="backHome" v-bind:href="'/'"  class="mt-5" />
-
-      <!-- <br/>
-      <Button v-bind:text="backToTop" v-bind:href="'#top'" class="mt-4" /> -->
     </div>
 
-    <footer class="container h-footer mt-5">
-      <div class="col-sm-6 offset-sm-3">
-        <img v-if="profile.workListImg" :src="profile.workListImg" />
-      </div>
-    </footer>
+    <footer class="container space">&nbsp;</footer>
     <div class="bg-dots-fadedown flip-vertical bottom-0"></div>
   </div>
 </template> 
