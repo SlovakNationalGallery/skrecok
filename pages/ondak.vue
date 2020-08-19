@@ -35,7 +35,7 @@
         <div class="col-sm-12 col-lg-6 text-left">
           <h4 class="text-left">Diela a témy</h4>
           <p>
-            Mnohé Ondakove diela boli vytvorené len raz, nedajú sa zopakovať, ako napríklad <a v-href="kiosk?'':'https://www.artdispecing.sk/umelci/roman-ondak/loop'" target="_blank"><i>Loop</i></a> na Benátskom bienále alebo dielo <i>SK Parking</i>, ktoré vidíme aj na videu pred budovou Secession vo Viedni. Autor ich koncipoval pre konkrétne miesto a nazývame ich preto <b>miesto-špecifické</b> (site-specific art vytvorené pre daný priestor). Miesto nemá len materiálne vlastnosti, vytvárajú ho aj ľudia tým, ako ho používajú, či aký vzťah k nemu majú. Ak umelec vytvára dielo pre konkrétne miesto, zohľadňuje ako vyzerá, ale aj to, ako ho ľudia v danom kontexte vnímajú. Takéto dielo je iba zriedka možné preniesť na iné miesto. 
+            Mnohé Ondakove diela boli vytvorené len raz, nedajú sa zopakovať, ako napríklad <a v-bind:href="kiosk?null:'https://www.artdispecing.sk/umelci/roman-ondak/loop'" target="_blank"><i>Loop</i></a> na Benátskom bienále alebo dielo <i>SK Parking</i>, ktoré vidíme aj na videu pred budovou Secession vo Viedni. Autor ich koncipoval pre konkrétne miesto a nazývame ich preto <b>miesto-špecifické</b> (site-specific art vytvorené pre daný priestor). Miesto nemá len materiálne vlastnosti, vytvárajú ho aj ľudia tým, ako ho používajú, či aký vzťah k nemu majú. Ak umelec vytvára dielo pre konkrétne miesto, zohľadňuje ako vyzerá, ale aj to, ako ho ľudia v danom kontexte vnímajú. Takéto dielo je iba zriedka možné preniesť na iné miesto. 
           </p>
         </div>
 
@@ -117,7 +117,7 @@
               Rozhovor s umelcom, v ktorom spomína aj diela z videa:
               </dt>
               <dd>
-              <a v-href="kiosk?'':'https://www.artantiques.cz/umeni-vsednich-situaci'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.artantiques.cz/umeni-vsednich-situaci'" target="_blank">
               https://www.artantiques.cz/umeni-vsednich-situaci
               </a>
             </dd>
@@ -125,7 +125,7 @@
               Roman Ondak v databáze Kunsthalle Bratislava:
               </dt>
               <dd>
-              <a v-href="kiosk?'':'http://artbase.kunsthallebratislava.sk/umelec/7446'" target="_blank">
+              <a v-bind:href="kiosk?null:'http://artbase.kunsthallebratislava.sk/umelec/7446'" target="_blank">
               http://artbase.kunsthallebratislava.sk/umelec/7446 
               </a>
             </dd>
@@ -133,7 +133,7 @@
               Beata Jablonská o Ondakovej tvorbe:
               </dt>
               <dd>
-              <a v-href="kiosk?'':'https://www.artdispecing.sk/recenzenti/beata-jablonska/trhliny-v-realite-istoty-v-umeni'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.artdispecing.sk/recenzenti/beata-jablonska/trhliny-v-realite-istoty-v-umeni'" target="_blank">
               https://www.artdispecing.sk/recenzenti/beata-jablonska/trhliny-v-realite-istoty-v-umeni/
               </a>
             </dd>
@@ -143,7 +143,7 @@
     </section>
 
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Roman_Ondak.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Roman_Ondak.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"

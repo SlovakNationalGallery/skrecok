@@ -146,7 +146,7 @@
 						<li>
               <dl> 
                 <dt>Pablo Picasso – Francov sen a lož:</dt><dd>
-              <a v-href="kiosk?'':'https://www.webumenia.sk/clanok/pablo-picasso-francov-sen'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.webumenia.sk/clanok/pablo-picasso-francov-sen'" target="_blank">
                 https://www.webumenia.sk/clanok/pablo-picasso-francov-sen
               </a>
               </dd></dl>
@@ -154,7 +154,7 @@
             <li>
               <dl> 
                 <dt>Múzeum Pabla Picassa v Barcelone:</dt><dd>
-              <a v-href="kiosk?'':'http://www.museupicasso.bcn.cat'" target="_blank">
+              <a v-bind:href="kiosk?null:'http://www.museupicasso.bcn.cat'" target="_blank">
                 http://www.museupicasso.bcn.cat/
               </a>
               </dd></dl>
@@ -162,7 +162,7 @@
             <li>
               <dl> 
                 <dt>Múzeum Pabla Picassa v Malage:</dt><dd>
-              <a v-href="kiosk?'':'https://www.museopicassomalaga.org'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.museopicassomalaga.org'" target="_blank">
                 https://www.museopicassomalaga.org/
               </a>
               </dd></dl>
@@ -170,7 +170,7 @@
             <li>
               <dl> 
                 <dt>Múzeum Pabla Picassa v Paríži:</dt><dd>
-              <a v-href="kiosk?'':'http://www.museepicassoparis.fr'" target="_blank">
+              <a v-bind:href="kiosk?null:'http://www.museepicassoparis.fr'" target="_blank">
                 http://www.museepicassoparis.fr/
               </a>
               </dd></dl>
@@ -178,7 +178,7 @@
             <li>
               <dl> 
                 <dt>Ako porozumieť Picassovi? (video v anglickom jazyku):</dt><dd>
-              <a v-href="kiosk?'':'https://www.youtube.com/watch?v=_HGW1DQO1xQ'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.youtube.com/watch?v=_HGW1DQO1xQ'" target="_blank">
                 https://www.youtube.com/watch?v=_HGW1DQO1xQ
               </a>
               </dd></dl>
@@ -189,7 +189,7 @@
     </section>
 
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Pablo_Picasso.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Pablo_Picasso.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"

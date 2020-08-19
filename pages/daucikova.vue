@@ -150,21 +150,21 @@
 						<dt>
               Viac o autorke a jej tvorbe:
               </dt><dd>
-              <a v-href="kiosk?'':'http://artbase.kunsthallebratislava.sk/umelec/1918'" target="_blank">
+              <a v-bind:href="kiosk?null:'http://artbase.kunsthallebratislava.sk/umelec/1918'" target="_blank">
                 http://artbase.kunsthallebratislava.sk/umelec/1918
               </a>
             </dd>
             <dt>
               Profil autorky v lexikóne Ars:
               </dt><dd>
-              <a v-href="kiosk?'':'https://www.arslexicon.sk/?registre&objekt=daucikova-anna'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.arslexicon.sk/?registre&objekt=daucikova-anna'" target="_blank">
                 https://www.arslexicon.sk/?registre&objekt=daucikova-anna
               </a>
             </dd>
             <dt>
               Metodické materiály združenia Aspekt o rodovocitlivej pedagogike pre učiteľov:
               </dt><dd>
-              <a v-href="kiosk?'':'http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna'" target="_blank">
+              <a v-bind:href="kiosk?null:'http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna'" target="_blank">
                 http://www.ruzovyamodrysvet.sk/sk/hlavne-menu/ucebna
               </a>
             </dd>
@@ -173,7 +173,7 @@
       </div>
     </section>
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Anna_Daucikova.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Anna_Daucikova.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"

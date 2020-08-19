@@ -102,7 +102,7 @@
       <div class="row">
         <div class="col-sm-12 col-lg-6 text-left">
           <h4>Aktivity</h4>
-          <p class="with-circle">Marcel Duchamp v roku 1938 navrhol predmet Krabica v kufri, čo bola batožina vyplnená zmenšenými replikami niektorých jeho diel. Vytvorte si zmenšenú školskú galériu v krabici (buď trieda spolu vytvára jednu galériu alebo žiakov rozdeľte do menších skupín). Reprodukcie výtvarných diel slovenských či zahraničných autorov nájdite v knižnici alebo pracujte s online katalógom <a v-href="kiosk?'':'https://www.webumenia.sk'" target="_blank">
+          <p class="with-circle">Marcel Duchamp v roku 1938 navrhol predmet Krabica v kufri, čo bola batožina vyplnená zmenšenými replikami niektorých jeho diel. Vytvorte si zmenšenú školskú galériu v krabici (buď trieda spolu vytvára jednu galériu alebo žiakov rozdeľte do menších skupín). Reprodukcie výtvarných diel slovenských či zahraničných autorov nájdite v knižnici alebo pracujte s online katalógom <a v-bind:href="kiosk?null:'https://www.webumenia.sk'" target="_blank">
           wwww.webumenia.sk</a></p>	
 		      <p>
           Rozmýšľajte nad architektúrou výstavy, nad vnútorným riešením jej priestoru, inštalačnými prvkami (vytváranie priehradiek, zásuviek, stien a pod.). Pri koncipovaní výstavy si zvoľte metódu či uhol pohľadu. Môže to byť téma, obdobie alebo žáner. Na Webe umenia si potom podľa témy či pojmu (napríklad voda, SNP, atď.) môžete vytvoriť vlastnú kolekciu diel pre výstavu v krabici. 
@@ -124,21 +124,21 @@
 						<dt>
               Škótska národná galéria (vo videu nájdete viac o Duchampových kufríkových galériách):
             </dt><dd>
-                <a v-href="kiosk?'':'https://www.youtube.com/watch?v=Dn18_XOzndg&feature=youtu.be'" target="_blank">
+                <a v-bind:href="kiosk?null:'https://www.youtube.com/watch?v=Dn18_XOzndg&feature=youtu.be'" target="_blank">
                 https://www.youtube.com/watch?v=Dn18_XOzndg
               </a>
             </dd>
             <dt>
               Tate Gallery UK, viac o autorovi a jeho dielach:
             </dt><dd>
-                <a v-href="kiosk?'':'https://www.tate.org.uk/art/artists/marcel-duchamp-1036'" target="_blank">
+                <a v-bind:href="kiosk?null:'https://www.tate.org.uk/art/artists/marcel-duchamp-1036'" target="_blank">
                 https://www.tate.org.uk/art/artists/marcel-duchamp-1036
               </a>
             </dd>
             <dt>
               Kolekcia diel ready-made od slovenských a českých autorov:
             </dt><dd>
-                <a v-href="kiosk?'':'https://www.webumenia.sk/kolekcia/112'" target="_blank">
+                <a v-bind:href="kiosk?null:'https://www.webumenia.sk/kolekcia/112'" target="_blank">
               https://www.webumenia.sk/kolekcia/112
               </a>
             </dd>
@@ -148,7 +148,7 @@
     </section>
 
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Marcel_Duchamp.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Marcel_Duchamp.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"

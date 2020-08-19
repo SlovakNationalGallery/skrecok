@@ -201,28 +201,28 @@
             <dt>
               Andy Warhol na Webe umenia:
             </dt><dd>
-              <a v-href="kiosk?'':'https://www.webumenia.sk/autor/11636'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.webumenia.sk/autor/11636'" target="_blank">
                 https://www.webumenia.sk/autor/11636
               </a>
             </dd>
             <dt>
               Múzeum Andyho Warhola v Pittsburghu:
             </dt><dd>
-              <a v-href="kiosk?'':'https://www.warhol.org'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.warhol.org'" target="_blank">
                 https://www.warhol.org
               </a>
             </dd>
             <dt>
               Múzeum moderného umenia Andyho Warhola v Medzilaborciach:
             </dt><dd>
-              <a v-href="kiosk?'':'https://www.muzeumaw.sk'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.muzeumaw.sk'" target="_blank">
                 https://www.muzeumaw.sk
               </a>
             </dd>
             <dt>
               Videoukážka techniky kresby Andyho Warhola:
             </dt><dd>
-                <a v-href="kiosk?'':'https://www.youtube.com/watch?v=laOLC2eYZRM'" target="_blank">
+                <a v-bind:href="kiosk?null:'https://www.youtube.com/watch?v=laOLC2eYZRM'" target="_blank">
                 https://www.youtube.com/watch?v=laOLC2eYZRM
               </a>
             </dd>
@@ -232,7 +232,7 @@
     </section>
  
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Andy_Warhol.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Andy_Warhol.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"

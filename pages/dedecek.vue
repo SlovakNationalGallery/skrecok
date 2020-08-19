@@ -125,7 +125,7 @@
         
         <div class="col-sm-12 col-lg-6 text-left">
 					<p class="with-circle">
-						V zbierkach SNG sa okrem architektonických nárysov nachádzajú aj <a v-href="kiosk?'':'https://www.webumenia.sk/dielo/SVK:SNG.A_1618-37'" target="_blank">skice Vladimíra Dedečka</a>. Skica zachytáva tie najdôležitejšie črty. Vyhľadajte v okolí školy významné architektonické stavby a pokúste sa ich <b>naskicovať</b>. Skúmajte, ktoré prvky sú dôležité pre funkciu stavby a ktoré tvoria výraz danej architektúry. Vysvetlite si princípy perspektívy. Zachovajte proporcie a pracujte s mierkou. 
+						V zbierkach SNG sa okrem architektonických nárysov nachádzajú aj <a v-bind:href="kiosk?null:'https://www.webumenia.sk/dielo/SVK:SNG.A_1618-37'" target="_blank">skice Vladimíra Dedečka</a>. Skica zachytáva tie najdôležitejšie črty. Vyhľadajte v okolí školy významné architektonické stavby a pokúste sa ich <b>naskicovať</b>. Skúmajte, ktoré prvky sú dôležité pre funkciu stavby a ktoré tvoria výraz danej architektúry. Vysvetlite si princípy perspektívy. Zachovajte proporcie a pracujte s mierkou. 
           </p>
         </div>
         
@@ -147,13 +147,13 @@
               Profil architekta na slovenskom architektonickom portáli Archinfo: 
             </dt>
             <dd>
-              <a v-href="kiosk?'':'https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html'" target="_blank">https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html</a>
+              <a v-bind:href="kiosk?null:'https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html'" target="_blank">https://www.archinfo.sk/ludia/architekt-alebo-student-architektury/autorizovany-architekt-ska/ing-arch-vladimir-dedecek.html</a>
             </dd>
             <dt>
               Diela Vladimíra Dedečka na Webe umenia:
             </dt>
             <dd>
-              <a v-href="kiosk?'':'https://www.webumenia.sk/autor/1052763'" target="_blank"
+              <a v-bind:href="kiosk?null:'https://www.webumenia.sk/autor/1052763'" target="_blank"
                 >https://www.webumenia.sk/autor/1052763
               </a>
             </dd>
@@ -161,7 +161,7 @@
               Dvojkanálová videoinštalácia v rámci projektu <i>Vladimír Dedeček: Práca</i>, ktorá sprostredkuje jeho myslenie a pohľad na minulosť aj súčasnosť:
             </dt>
             <dd>
-              <a v-href="kiosk?'':'https://youtu.be/Z0V1VGv7thQ'" target="_blank"
+              <a v-bind:href="kiosk?null:'https://youtu.be/Z0V1VGv7thQ'" target="_blank"
                 >https://youtu.be/Z0V1VGv7thQ
               </a>
             </dd>
@@ -171,7 +171,7 @@
     </section>
 
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Vladimir_Dedecek.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Vladimir_Dedecek.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"

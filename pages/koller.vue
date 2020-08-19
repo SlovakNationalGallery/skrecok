@@ -128,42 +128,42 @@
 						<dt>
               Zberateľskú vášeň Júliusa Kollera približuje v článku kurátorka SNG Petra Hanáková:
               </dt><dd>
-              <a v-href="kiosk?'':'https://www.webumenia.sk/clanok/julius-koller-zberatel'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.webumenia.sk/clanok/julius-koller-zberatel'" target="_blank">
                 https://www.webumenia.sk/clanok/julius-koller-zberatel
               </a>
             </dd>
             <dt>
               Denník Júliusa Kollera z roku 1989, ktorý odkrýva udalosti Nežnej revolúcie, spracovala SNG aj s metodickými materiálmi pre pedagógov:
               </dt><dd>
-              <a v-href="kiosk?'':'https://1989.sng.sk/'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://1989.sng.sk/'" target="_blank">
                 https://1989.sng.sk/
               </a>
             </dd>
             <dt>
               Kategorizovaný výber tvorby Júliusa Kollera spracovaný Spoločnosťou Júliusa Kollera:
               </dt><dd>
-              <a v-href="kiosk?'':'https://juliuskollersociety.org/sk/archiv/'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://juliuskollersociety.org/sk/archiv/'" target="_blank">
                 https://juliuskollersociety.org/sk/archiv/
               </a>
             </dd>
             <dt>
               Krátko pred smrťou Július Koller predstavuje UFO galériu:
               </dt><dd>
-              <a v-href="kiosk?'':'https://www.youtube.com/watch?v=0T6MNydabn0&feature=related'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.youtube.com/watch?v=0T6MNydabn0&feature=related'" target="_blank">
                 https://www.youtube.com/watch?v=0T6MNydabn0&feature=related
               </a>
             </dd>
             <dt>
               Antimúzeum Júliusa Kollera:
               </dt><dd>
-              <a v-href="kiosk?'':'https://antimuzeum.sk/'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://antimuzeum.sk/'" target="_blank">
                 https://antimuzeum.sk/
               </a>
             </dd>
             <dt>
               Július Koller na Webe umenia:
               </dt><dd>
-              <a v-href="kiosk?'':'https://www.webumenia.sk/autor/5089'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.webumenia.sk/autor/5089'" target="_blank">
                 https://www.webumenia.sk/autor/5089
               </a>
             </dd>
@@ -172,7 +172,7 @@
       </div>
     </section>
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Julius_Koller.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Julius_Koller.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"

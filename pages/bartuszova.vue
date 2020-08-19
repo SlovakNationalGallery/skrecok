@@ -169,7 +169,7 @@
               Diela Marie Bartuszovej na Webe umenia:
             </dt>
             <dd>
-              <a v-href="kiosk?'':'https://www.webumenia.sk/autor/513'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.webumenia.sk/autor/513'" target="_blank">
                 https://www.webumenia.sk/autor/513
               </a>
             </dd>
@@ -177,7 +177,7 @@
               Rozhlasový profil Marie Bartuszovej:
             </dt>
             <dd>
-              <a v-href="kiosk?'':'https://www.rtvs.sk/clanok/165840'" target="_blank">
+              <a v-bind:href="kiosk?null:'https://www.rtvs.sk/clanok/165840'" target="_blank">
                 https://www.rtvs.sk/clanok/165840
               </a>
             </dd>
@@ -187,7 +187,7 @@
     </section>
 
     <div class="text-center">
-      <a v-href="kiosk?'':'../pdfs/Maria_Bartuszova.pdf'"  class="pdf-link mt-5 mb-3">
+      <a v-bind:href="kiosk?null:'../pdfs/Maria_Bartuszova.pdf'"  class="pdf-link mt-5 mb-3">
         <img
           src="/img/news.png"
           class="d-inline-block"
